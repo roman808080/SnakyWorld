@@ -11,9 +11,7 @@ void loop();
 
 int main()
 {
-    std::cout << "Hello World!\n";
 	loop();
-
 	return 0;
 }
 
@@ -24,5 +22,6 @@ void loop() {
 	int bottom, left, right, top;
 	std::tie(bottom, left, right, top) = Utils::getScreenCoordinates();
 
-	std::cerr << cpp_sgr::b_green_bg << "This text has a bright green background";
+	Utils::setCursorPositon(1, 1);
+	std::cerr << cpp_sgr::b_green_bg << "  ";
 }

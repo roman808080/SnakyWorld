@@ -7,10 +7,15 @@
 #include <conio.h>
 
 
-void Utils::setCursorPositon(unsigned int x, unsigned int y)
+void Utils::setCursorPositon(int x, int y)
 {
 	std::cout.flush();
-	printf("\x1b[%d;%dH", y + 1, y + 1);
+
+	// Convert to the row and column format.
+	int row = y + 1;
+	int column = x + 1;
+
+	printf("\x1b[%d;%dH", row, column);
 }
 
 void Utils::showConsoleCursor(bool showFlag)

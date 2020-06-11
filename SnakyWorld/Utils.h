@@ -14,7 +14,7 @@ namespace Utils
 		UNDEFINED 
 	};
 
-	void setCursorPositon(unsigned int x, unsigned int y);
+	void setCursorPositon(int x, int y);
 	void showConsoleCursor(bool showFlag);
 
 	Directon getCurrentDirection();
