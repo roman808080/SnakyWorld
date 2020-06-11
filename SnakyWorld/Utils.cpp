@@ -1,0 +1,80 @@
+#include "Utils.h"
+
+#include <windows.h>
+#include <conio.h>
+
+
+Utils::Directon Utils::getCurrentDirection()
+{
+	if (!_kbhit())
+	{
+		return Directon::UNDEFINED;
+	}
+
+	switch (_getch())
+	{
+	case 'a':
+		return Directon::LEFT;
+	case 'd':
+		return Directon::RIGHT;
+	case 'w':
+		return Directon::UP;
+	case 's':
+		return Directon::DOWN;
+	case 'x':
+		return Directon::STOP;
+	default:
+		return Directon::UNDEFINED;
+	}
+}
+
+void Utils::clearConslole() {
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	COORD coordScreen = { 0, 0 };    // home for the cursor 
+	DWORD cCharsWritten;
+	CONSOLE_SCREEN_BUFFER_INFO csbi;
+	DWORD dwConSize;
+
+	// Get the number of character cells in the current buffer. 
+
+	if (!GetConsoleScreenBufferInfo(hConsole, &csbi))
+	{
+		return;
+	}
+
+	dwConSize = csbi.dwSize.X * csbi.dwSize.Y;
+
+	// Fill the entire screen with blanks.
+
+	if (!FillConsoleOutputCharacter(hConsole,        // Handle to console screen buffer 
+		(TCHAR) ' ',     // Character to write to the buffer
+		dwConSize,       // Number of cells to write 
+		coordScreen,     // Coordinates of first cell 
+		&cCharsWritten))// Receive number of characters written
+	{
+		return;
+	}
+
+	// Get the current text attribute.
+
+	if (!GetConsoleScreenBufferInfo(hConsole, &csbi))
+	{
+		return;
+	}
+
+	// Set the buffer's attributes accordingly.
+
+	if (!FillConsoleOutputAttribute(hConsole,         // Handle to console screen buffer 
+		csbi.wAttributes, // Character attributes to use
+		dwConSize,        // Number of cells to set attribute 
+		coordScreen,      // Coordinates of first cell 
+		&cCharsWritten)) // Receive number of characters written
+	{
+		return;
+	}
+
+	// Put the cursor at its home coordinates.
+
+	SetConsoleCursorPosition(hConsole, coordScreen);
+}
