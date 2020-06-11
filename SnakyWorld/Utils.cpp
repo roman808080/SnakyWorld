@@ -1,8 +1,28 @@
 #include "Utils.h"
 
+#include <iostream>
+#include <tuple>
+
 #include <windows.h>
 #include <conio.h>
 
+
+void Utils::setCursorPositon(unsigned int x, unsigned int y)
+{
+	std::cout.flush();
+	printf("\x1b[%d;%dH", y + 1, y + 1);
+}
+
+void Utils::showConsoleCursor(bool showFlag)
+{
+	HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	CONSOLE_CURSOR_INFO cursorInfo;
+
+	GetConsoleCursorInfo(out, &cursorInfo);
+	cursorInfo.bVisible = showFlag;
+	SetConsoleCursorInfo(out, &cursorInfo);
+}
 
 Utils::Directon Utils::getCurrentDirection()
 {
@@ -77,4 +97,25 @@ void Utils::clearConslole() {
 	// Put the cursor at its home coordinates.
 
 	SetConsoleCursorPosition(hConsole, coordScreen);
+}
+
+std::tuple<int, int, int, int> Utils::getScreenCoordinates()
+{
+	CONSOLE_SCREEN_BUFFER_INFO bufferInfo;
+	BOOL bCsbi = 0;
+	bCsbi = GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &bufferInfo);
+	if (!bCsbi)
+	{
+		return std::make_tuple(-1, -1, -1, -1);
+	}
+
+	auto bottom = bufferInfo.srWindow.Bottom;
+	auto left = bufferInfo.srWindow.Left;
+	auto right = bufferInfo.srWindow.Right;
+	auto top = bufferInfo.srWindow.Top;
+
+	return std::make_tuple(bufferInfo.srWindow.Bottom,
+						   bufferInfo.srWindow.Left,
+						   bufferInfo.srWindow.Right,
+						   bufferInfo.srWindow.Top);
 }

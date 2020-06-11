@@ -1,0 +1,3 @@
+[submodule "ext/cpp_sgr"]
+	path = ext/cpp_sgr
+	url = https://github.com/mrhatch97/cpp_sgr.git
