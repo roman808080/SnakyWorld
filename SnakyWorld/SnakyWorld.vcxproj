@@ -154,6 +154,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Ceil.cpp" />
+    <ClCompile Include="Line.cpp" />
     <ClCompile Include="SnakyWorld.cpp" />
     <ClCompile Include="Console.cpp" />
   </ItemGroup>
@@ -161,6 +162,7 @@
     <ClInclude Include="Ceil.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="ConsoleObject.h" />
+    <ClInclude Include="Line.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

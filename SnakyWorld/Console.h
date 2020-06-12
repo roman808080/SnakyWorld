@@ -22,6 +22,7 @@ public:
     {
         Black,
         Green,
+        Red,
         Unknown
     };
 

@@ -4,6 +4,7 @@
 #include <string>
 
 #include "Ceil.h"
+#include "Line.h"
 
 void loop();
 
@@ -21,4 +22,5 @@ void loop()
    std::tie(sizeX, sizeY) = console->getScreenSize();
 
    Ceil ceil(console, Coordinate(sizeX - 1, sizeY - 1));
+   Line line(console, Coordinate(0, sizeY - 1), Coordinate(sizeX - 1, sizeY - 1));
 }
