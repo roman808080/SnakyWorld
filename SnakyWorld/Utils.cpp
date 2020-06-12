@@ -5,31 +5,22 @@
 
 #include <windows.h>
 #include <conio.h>
+#include <sgr.hpp>
 
 
-void Utils::setCursorPositon(int x, int y)
+Console::Console()
+    : consoleHandler(GetStdHandle(STD_OUTPUT_HANDLE))
 {
-    std::cout.flush();
- 
-    // Convert to the row and column format.
-    int row = y + 1;
-    int column = x + 1;
-
-    printf("\x1b[%d;%dH", row, column);
+    showConsoleCursor(false);
+    clear();
 }
 
-void Utils::showConsoleCursor(bool showFlag)
+Console::~Console()
 {
-    HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
-
-    CONSOLE_CURSOR_INFO cursorInfo;
-
-    GetConsoleCursorInfo(out, &cursorInfo);
-    cursorInfo.bVisible = showFlag;
-    SetConsoleCursorInfo(out, &cursorInfo);
+    CloseHandle(consoleHandler);
 }
 
-Utils::Directon Utils::getCurrentDirection()
+Console::Directon Console::getCurrentDirection()
 {
     if (!_kbhit())
     {
@@ -53,17 +44,28 @@ Utils::Directon Utils::getCurrentDirection()
     }
 }
 
-void Utils::clearConslole() {
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+std::tuple<int, int> Console::getScreenSize()
+{
+    int x, y;
+    std::tie(x, y) = getRealScreenSize();
+    return std::make_tuple(x / 2, y);
+}
 
-    COORD coordScreen = { 0, 0 };    // home for the cursor 
+void Console::drawCeil(int x, int y)
+{
+    setRealCursorPositon(x * 2, y);
+    std::cerr << cpp_sgr::b_green_bg << "  ";
+}
+
+void Console::clear()
+{
+    COORD coordScreen = { 0, 0 }; // home for the cursor 
     DWORD cCharsWritten;
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     DWORD dwConSize;
 
     // Get the number of character cells in the current buffer. 
-
-    if (!GetConsoleScreenBufferInfo(hConsole, &csbi))
+    if (!GetConsoleScreenBufferInfo(consoleHandler, &csbi))
     {
         return;
     }
@@ -71,56 +73,66 @@ void Utils::clearConslole() {
     dwConSize = csbi.dwSize.X * csbi.dwSize.Y;
 
     // Fill the entire screen with blanks.
-
-    if (!FillConsoleOutputCharacter(hConsole,        // Handle to console screen buffer 
+    if (!FillConsoleOutputCharacter(
+        consoleHandler,  // Handle to console screen buffer
         (TCHAR) ' ',     // Character to write to the buffer
-        dwConSize,       // Number of cells to write 
-        coordScreen,     // Coordinates of first cell 
-        &cCharsWritten))// Receive number of characters written
-    {
-        return;
-    }
-
-    // Get the current text attribute.
-
-    if (!GetConsoleScreenBufferInfo(hConsole, &csbi))
-    {
-        return;
-    }
-
-    // Set the buffer's attributes accordingly.
-
-    if (!FillConsoleOutputAttribute(hConsole,         // Handle to console screen buffer 
-        csbi.wAttributes, // Character attributes to use
-        dwConSize,        // Number of cells to set attribute 
-        coordScreen,      // Coordinates of first cell 
+        dwConSize,       // Number of cells to write
+        coordScreen,     // Coordinates of first cell
         &cCharsWritten)) // Receive number of characters written
     {
         return;
     }
 
-    // Put the cursor at its home coordinates.
+    // Get the current text attribute.
+    if (!GetConsoleScreenBufferInfo(consoleHandler, &csbi))
+    {
+        return;
+    }
 
-    SetConsoleCursorPosition(hConsole, coordScreen);
+    // Set the buffer's attributes accordingly.
+    if (!FillConsoleOutputAttribute(
+        consoleHandler,   // Handle to console screen buffer
+        csbi.wAttributes, // Character attributes to use
+        dwConSize,        // Number of cells to set attribute
+        coordScreen,      // Coordinates of first cell
+        &cCharsWritten))  // Receive number of characters written
+    {
+        return;
+    }
+
+    // Put the cursor at its home coordinates.
+    SetConsoleCursorPosition(consoleHandler, coordScreen);
 }
 
-std::tuple<int, int, int, int> Utils::getScreenCoordinates()
+void Console::showConsoleCursor(bool showFlag)
+{
+    CONSOLE_CURSOR_INFO cursorInfo;
+
+    GetConsoleCursorInfo(consoleHandler, &cursorInfo);
+    cursorInfo.bVisible = showFlag;
+    SetConsoleCursorInfo(consoleHandler, &cursorInfo);
+}
+
+void Console::setRealCursorPositon(int x, int y)
+{
+    std::cout.flush();
+
+    // Convert to the row and column format.
+    int row = y + 1;
+    int column = x + 1;
+
+    printf("\x1b[%d;%dH", row, column);
+}
+
+std::tuple<int, int> Console::getRealScreenSize()
 {
     CONSOLE_SCREEN_BUFFER_INFO bufferInfo;
     BOOL bCsbi = 0;
     bCsbi = GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &bufferInfo);
     if (!bCsbi)
     {
-        return std::make_tuple(-1, -1, -1, -1);
+        return std::make_tuple(-1, -1);
     }
 
-    auto bottom = bufferInfo.srWindow.Bottom;
-    auto left = bufferInfo.srWindow.Left;
-    auto right = bufferInfo.srWindow.Right;
-    auto top = bufferInfo.srWindow.Top;
-
-    return std::make_tuple(bufferInfo.srWindow.Bottom,
-                           bufferInfo.srWindow.Left,
-                           bufferInfo.srWindow.Right,
-                           bufferInfo.srWindow.Top);
+    return std::make_tuple(bufferInfo.srWindow.Right, bufferInfo.srWindow.Bottom);
 }

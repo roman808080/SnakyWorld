@@ -1,8 +1,9 @@
 #pragma once
 
 #include <tuple>
+#include <windows.h>
 
-namespace Utils
+class Console
 {
     enum class Directon
     {
@@ -14,16 +15,20 @@ namespace Utils
         UNDEFINED
     };
 
-    void setCursorPositon(int x, int y);
-    void showConsoleCursor(bool showFlag);
+public:
+    Console();
+    ~Console();
 
     Directon getCurrentDirection();
-    void clearConslole();
+    std::tuple<int, int> getScreenSize();
+    void drawCeil(int x, int y);
+    void clear();
 
-    std::tuple<int, int, int, int> getScreenCoordinates();
+private:
+    void showConsoleCursor(bool showFlag);
+    void setRealCursorPositon(int x, int y);
+    std::tuple<int, int> getRealScreenSize();
 
-    class Console
-    {
-       Console(){}
-    };
+private:
+    HANDLE consoleHandler;
 };
