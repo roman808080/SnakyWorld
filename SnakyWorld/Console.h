@@ -6,6 +6,8 @@
 // Console is responsible for low level interaction with a console.
 class Console
 {
+public:
+
     enum class Directon
     {
         Stop,
@@ -16,7 +18,6 @@ class Console
         Undefined // If was pressed a different key.
     };
 
-public:
     Console();
     ~Console();
 
