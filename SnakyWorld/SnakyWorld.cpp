@@ -11,17 +11,17 @@ void loop();
 
 int main()
 {
-	loop();
-	return 0;
+    loop();
+    return 0;
 }
 
 void loop() {
-	Utils::clearConslole();
-	Utils::showConsoleCursor(false);
+    Utils::clearConslole();
+    Utils::showConsoleCursor(false);
 
-	int bottom, left, right, top;
-	std::tie(bottom, left, right, top) = Utils::getScreenCoordinates();
+    int bottom, left, right, top;
+    std::tie(bottom, left, right, top) = Utils::getScreenCoordinates();
 
-	Utils::setCursorPositon(1, 1);
-	std::cerr << cpp_sgr::b_green_bg << "  ";
+    Utils::setCursorPositon(1, 1);
+    std::cerr << cpp_sgr::b_green_bg << "  ";
 }
