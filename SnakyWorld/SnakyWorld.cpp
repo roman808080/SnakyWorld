@@ -2,6 +2,7 @@
 #include <thread>
 #include <chrono>
 #include <string>
+#include <vector>
 
 #include "Cell.h"
 #include "Line.h"
@@ -31,13 +32,22 @@ void loop()
    std::tie(sizeX, sizeY) = console->getScreenSize();
 
    Cell cell(console, Coordinate(sizeX - 3, sizeY - 3));
-   Line leftLine(console, Coordinate(0, 0), Coordinate(sizeX - 1, 0));
-   Line rightLine(console, Coordinate(0, sizeY - 1), Coordinate(sizeX - 1, sizeY - 1));
 
-   Line bottomLine(console, Coordinate(sizeX - 1, 0), Coordinate(sizeX - 1, sizeY));
-   Line topLine(console, Coordinate(0, 1), Coordinate(0, sizeY - 1));
+   std::vector<std::shared_ptr<ConsoleObject>> objects;
 
-   Snake snake(console, Coordinate(5, 5));
+   auto leftLine = std::make_shared<Line>(console, Coordinate(0, 0), Coordinate(sizeX - 1, 0));
+   auto rightLine = std::make_shared<Line>(console, Coordinate(0, sizeY - 1), Coordinate(sizeX - 1, sizeY - 1));
+   auto bottomLine = std::make_shared<Line>(console, Coordinate(sizeX - 1, 0), Coordinate(sizeX - 1, sizeY));
+   auto topLine = std::make_shared<Line>(console, Coordinate(0, 1), Coordinate(0, sizeY - 1));
+
+   objects.push_back(leftLine);
+   objects.push_back(rightLine);
+   objects.push_back(bottomLine);
+   objects.push_back(topLine);
+
+   auto snake = std::make_shared<Snake>(console, Coordinate(5, 5));
+   objects.push_back(snake);
+
    while (true)
    {
        auto direction = console->getCurrentDirection();
@@ -46,7 +56,7 @@ void loop()
            return;
        }
 
-       snake.move(direction);
+       snake->move(direction);
        std::this_thread::sleep_for(std::chrono::seconds(1));
    }
 }
