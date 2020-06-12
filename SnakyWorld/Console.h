@@ -32,11 +32,11 @@ public:
 
     Directon getCurrentDirection();
 
-    // Returns a formatted screen size. The x axe is reduced due to uneven rectangles.
+    // Returns a formatted screen size. The y axe is reduced due to uneven rectangles.
     std::tuple<int, int> getScreenSize();
 
     // Draws a cell.
-    // In reality, it draws two ceils because the size in the y-direction is doubled compared to the x-direction.
+    // In reality, it draws two cells because the size in the x-direction is doubled compared to the y-direction.
     void drawCell(Color color, int x, int y);
 
     // Clears the screen.
@@ -49,7 +49,7 @@ private:
     // It sets to put the cursor in a real console position.
     void setRealCursorPositon(int x, int y);
 
-    // It is used to get a real size without a reduction in the x axis.
+    // It is used to get a real size without a reduction in the y axis.
     std::tuple<int, int> getRealScreenSize();
 
 private:

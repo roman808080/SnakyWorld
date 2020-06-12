@@ -23,14 +23,15 @@ void loop()
    std::tie(sizeX, sizeY) = console->getScreenSize();
 
    Cell cell(console, Coordinate(sizeX - 3, sizeY - 3));
-   Line topLine(console, Coordinate(0, 0), Coordinate(sizeX - 1, 0));
-   Line bottomLine(console, Coordinate(0, sizeY - 1), Coordinate(sizeX, sizeY - 1));
+   Line leftLine(console, Coordinate(0, 0), Coordinate(sizeX - 1, 0));
+   Line rightLine(console, Coordinate(0, sizeY - 1), Coordinate(sizeX - 1, sizeY - 1));
 
-   Line backLine(console, Coordinate(sizeX - 1, 0), Coordinate(sizeX - 1, sizeY - 1));
-   Line frontLine(console, Coordinate(0, 1), Coordinate(0, sizeY - 1));
+   Line bottomLine(console, Coordinate(sizeX - 1, 0), Coordinate(sizeX - 1, sizeY));
+   Line topLine(console, Coordinate(0, 1), Coordinate(0, sizeY - 1));
 
    Snake snake(console, Coordinate(5, 5));
-   while (true) {
+   while (true)
+   {
        std::this_thread::sleep_for(std::chrono::seconds(1));
        auto direction = console->getCurrentDirection();
        snake.move(direction);

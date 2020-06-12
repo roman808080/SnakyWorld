@@ -72,14 +72,14 @@ std::tuple<int, int> Console::getScreenSize()
     int x, y;
     std::tie(x, y) = getRealScreenSize();
 
-    // Hides the real size of the x axe because of uneven sizes of axes.
-    return std::make_tuple(x / kReductionRate, y);
+    // Hides the real size of the y axe because of uneven sizes of axes.
+    return std::make_tuple(x, y / kReductionRate);
 }
 
 void Console::drawCell(Color color, int x, int y)
 {
     // Fix the reduction and draw to positions.
-    setRealCursorPositon(x * kReductionRate, y);
+    setRealCursorPositon(x, y * kReductionRate);
     std::cerr << convertColor(color) << kCell;
 }
 
@@ -139,13 +139,9 @@ void Console::showConsoleCursor(bool showFlag)
     SetConsoleCursorInfo(consoleHandler, &cursorInfo);
 }
 
-void Console::setRealCursorPositon(int x, int y)
+void Console::setRealCursorPositon(int row, int column)
 {
     std::cout.flush();
-
-    // Convert to the row and column format.
-    int row = y + 1;
-    int column = x + 1;
 
     // Using escape sequences to set the cursor position.
     printf("\x1b[%d;%dH", row, column);
@@ -161,5 +157,5 @@ std::tuple<int, int> Console::getRealScreenSize()
         return std::make_tuple(-1, -1);
     }
 
-    return std::make_tuple(bufferInfo.srWindow.Right, bufferInfo.srWindow.Bottom);
+    return std::make_tuple(bufferInfo.srWindow.Bottom, bufferInfo.srWindow.Right);
 }

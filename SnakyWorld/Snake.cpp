@@ -14,22 +14,22 @@ void Snake::move(Console::Directon direction)
         return;
 
     case Console::Directon::Left:
-        --head.first;
-        doStep(direction);
-        return;
-
-    case Console::Directon::Right:
-        ++head.first;
-        doStep(direction);
-        return;
-
-    case Console::Directon::Up:
         --head.second;
         doStep(direction);
         return;
 
-    case Console::Directon::Down:
+    case Console::Directon::Right:
         ++head.second;
+        doStep(direction);
+        return;
+
+    case Console::Directon::Up:
+        --head.first;
+        doStep(direction);
+        return;
+
+    case Console::Directon::Down:
+        ++head.first;
         doStep(direction);
         return;
 
