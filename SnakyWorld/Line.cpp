@@ -6,7 +6,7 @@ Line::Line(std::shared_ptr<Console> console, const Coordinate& startCoordinate, 
     : console(console), startCoordinate(startCoordinate), endCoordinate(endCoordinate)
 {
     isHorizontal = isLineHorizontal();
-    draw();
+    draw(Console::Color::Red);
 }
 
 Interaction Line::isInteracted(const ConsoleObject& consoleObject)
@@ -37,13 +37,12 @@ bool Line::isLineHorizontal()
     }
 }
 
-void Line::draw()
+void Line::draw(Console::Color color)
 {
     auto currentCoordinate = startCoordinate;
     while (currentCoordinate != endCoordinate)
     {
-        console->drawCeil(Console::Color::Red,
-                          currentCoordinate.first, currentCoordinate.second);
+        console->drawCeil(color, currentCoordinate.first, currentCoordinate.second);
         if (isHorizontal)
         {
             ++currentCoordinate.second;
@@ -57,4 +56,5 @@ void Line::draw()
 
 Line::~Line()
 {
+    draw(Console::Color::Black);
 }

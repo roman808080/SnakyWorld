@@ -16,7 +16,7 @@ public:
 
 private:
     bool isLineHorizontal();
-    void draw();
+    void draw(Console::Color color);
 
 private:
     std::shared_ptr<Console> console;
