@@ -1,10 +1,9 @@
 #include "Ceil.h"
 
-
 Ceil::Ceil(std::shared_ptr<Console> console, Coordinate coordinate)
     : console(console), coordinate(coordinate)
 {
-    console->drawCeil(this->coordinate.first, this->coordinate.second);
+    console->drawCeil(Console::Color::Green, this->coordinate.first, this->coordinate.second);
 }
 
 Interaction Ceil::isInteracted(const ConsoleObject& consoleObject)
@@ -19,4 +18,5 @@ Coordinate Ceil::getCoordindate()
 
 Ceil::~Ceil()
 {
+    console->drawCeil(Console::Color::Black, this->coordinate.first, this->coordinate.second);
 }

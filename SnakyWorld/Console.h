@@ -15,7 +15,14 @@ public:
         Right,
         Up,
         Down,
-        Undefined // If was pressed a different key.
+        Unknown // If was pressed a different key.
+    };
+
+    enum class Color
+    {
+        Black,
+        Green,
+        Unknown
     };
 
     Console();
@@ -28,7 +35,7 @@ public:
 
     // Draws a ceil.
     // In reality, it draws two ceils because the size in the y-direction is doubled compared to the x-direction.
-    void drawCeil(int x, int y);
+    void drawCeil(Color color, int x, int y);
 
     // Clears the screen.
     void clear();

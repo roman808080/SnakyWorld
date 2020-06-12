@@ -1,6 +1,7 @@
 #pragma once
-#include "ConsoleObject.h"
 #include <memory>
+
+#include "ConsoleObject.h"
 #include "Console.h"
 
 class Ceil: public ConsoleObject

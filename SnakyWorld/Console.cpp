@@ -10,6 +10,20 @@
 namespace
 {
     const int kReductionRate = 2;
+    const char kCeil[] = "  ";
+
+    cpp_sgr::sgr convertColor(Console::Color color)
+    {
+        switch (color)
+        {
+        case Console::Color::Black:
+            return cpp_sgr::black_bg;
+        case Console::Color::Green:
+            return cpp_sgr::b_green_bg;
+        default:
+            return cpp_sgr::black_bg;
+        }
+    }
 }
 
 
@@ -29,7 +43,7 @@ Console::Directon Console::getCurrentDirection()
 {
     if (!_kbhit())
     {
-        return Directon::Undefined;
+        return Directon::Unknown;
     }
 
     switch (_getch())
@@ -45,7 +59,7 @@ Console::Directon Console::getCurrentDirection()
     case 'x':
         return Directon::Stop;
     default:
-        return Directon::Undefined;
+        return Directon::Unknown;
     }
 }
 
@@ -58,11 +72,11 @@ std::tuple<int, int> Console::getScreenSize()
     return std::make_tuple(x / kReductionRate, y);
 }
 
-void Console::drawCeil(int x, int y)
+void Console::drawCeil(Color color, int x, int y)
 {
     // Fix the reduction and draw to positions.
     setRealCursorPositon(x * kReductionRate, y);
-    std::cerr << cpp_sgr::b_green_bg << "  ";
+    std::cerr << convertColor(color) << kCeil;
 }
 
 void Console::clear()
