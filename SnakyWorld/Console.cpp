@@ -11,7 +11,9 @@ namespace
 {
     const int kReductionRate = 2;
 
+    const int kEsc = 27;
     const int kArrowKey = 224;
+
     const int kArrowUp = 72;
     const int kArrowLeft = 75;
     const int kArrowRight = 77;
@@ -72,6 +74,8 @@ Console::Directon Console::getCurrentDirection()
         return Directon::Stop;
     case kArrowKey:
         return getArrowDirection();
+    case kEsc:
+        return Directon::Esc;
     default:
         return Directon::Unknown;
     }

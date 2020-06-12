@@ -11,7 +11,15 @@ void loop();
 
 int main()
 {
-    loop();
+    try
+    {
+        loop();
+    }
+    catch (const std::exception& exc)
+    {
+        std::cout << " Something bad happend. Reason = " << exc.what();
+    }
+    
     return 0;
 }
 
@@ -32,8 +40,13 @@ void loop()
    Snake snake(console, Coordinate(5, 5));
    while (true)
    {
-       std::this_thread::sleep_for(std::chrono::seconds(1));
        auto direction = console->getCurrentDirection();
+       if (direction == Console::Directon::Esc)
+       {
+           return;
+       }
+
        snake.move(direction);
+       std::this_thread::sleep_for(std::chrono::seconds(1));
    }
 }
