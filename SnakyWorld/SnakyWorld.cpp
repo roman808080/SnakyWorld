@@ -30,4 +30,9 @@ void loop()
    Line frontLine(console, Coordinate(0, 1), Coordinate(0, sizeY - 1));
 
    Snake snake(console, Coordinate(5, 5));
+   while (true) {
+       std::this_thread::sleep_for(std::chrono::seconds(1));
+       auto direction = console->getCurrentDirection();
+       snake.move(direction);
+   }
 }
