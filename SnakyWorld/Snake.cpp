@@ -15,26 +15,22 @@ void Snake::move(Console::Directon direction)
 
     case Console::Directon::Left:
         --head.first;
-        cellDeque.emplace_back(console, head, Console::Color::Yellow);
-        cellDeque.pop_front();
+        doStep(direction);
         return;
 
     case Console::Directon::Right:
         ++head.first;
-        cellDeque.emplace_back(console, head, Console::Color::Yellow);
-        cellDeque.pop_front();
+        doStep(direction);
         return;
 
     case Console::Directon::Up:
         --head.second;
-        cellDeque.emplace_back(console, head, Console::Color::Yellow);
-        cellDeque.pop_front();
+        doStep(direction);
         return;
 
     case Console::Directon::Down:
         ++head.second;
-        cellDeque.emplace_back(console, head, Console::Color::Yellow);
-        cellDeque.pop_front();
+        doStep(direction);
         return;
 
     case Console::Directon::Unknown:
@@ -44,6 +40,13 @@ void Snake::move(Console::Directon direction)
     default:
         return;
     }
+}
+
+void Snake::doStep(Console::Directon direction)
+{
+    lastDirection = direction;
+    cellDeque.emplace_back(console, head, Console::Color::Yellow);
+    cellDeque.pop_front();
 }
 
 Snake::~Snake()

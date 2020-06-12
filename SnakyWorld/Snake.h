@@ -13,7 +13,12 @@ public:
     void move(Console::Directon direction);
 
 private:
+    void doStep(Console::Directon direction);
+
+private:
     std::shared_ptr<Console> console;
     std::deque<Cell> cellDeque;
+
     Coordinate head;
+    Console::Directon lastDirection;
 };
