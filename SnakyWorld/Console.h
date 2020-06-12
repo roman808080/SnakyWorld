@@ -8,12 +8,12 @@ class Console
 {
     enum class Directon
     {
-        STOP,
-        LEFT,
-        RIGHT,
-        UP,
-        DOWN,
-        UNDEFINED // If was pressed a different key.
+        Stop,
+        Left,
+        Right,
+        Up,
+        Down,
+        Undefined // If was pressed a different key.
     };
 
 public:

@@ -29,23 +29,23 @@ Console::Directon Console::getCurrentDirection()
 {
     if (!_kbhit())
     {
-        return Directon::UNDEFINED;
+        return Directon::Undefined;
     }
 
     switch (_getch())
     {
     case 'a':
-        return Directon::LEFT;
+        return Directon::Left;
     case 'd':
-        return Directon::RIGHT;
+        return Directon::Right;
     case 'w':
-        return Directon::UP;
+        return Directon::Up;
     case 's':
-        return Directon::DOWN;
+        return Directon::Down;
     case 'x':
-        return Directon::STOP;
+        return Directon::Stop;
     default:
-        return Directon::UNDEFINED;
+        return Directon::Undefined;
     }
 }
 
@@ -53,23 +53,26 @@ std::tuple<int, int> Console::getScreenSize()
 {
     int x, y;
     std::tie(x, y) = getRealScreenSize();
+
+    // Hides the real size of the x axe because of uneven sizes of axes.
     return std::make_tuple(x / kReductionRate, y);
 }
 
 void Console::drawCeil(int x, int y)
 {
+    // Fix the reduction and draw to positions.
     setRealCursorPositon(x * kReductionRate, y);
     std::cerr << cpp_sgr::b_green_bg << "  ";
 }
 
 void Console::clear()
 {
-    COORD coordScreen = { 0, 0 }; // home for the cursor 
+    COORD coordScreen = { 0, 0 }; // Home for the cursor
     DWORD cCharsWritten;
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     DWORD dwConSize;
 
-    // Get the number of character cells in the current buffer. 
+    // Get the number of character cells in the current buffer.
     if (!GetConsoleScreenBufferInfo(consoleHandler, &csbi))
     {
         return;
@@ -126,6 +129,7 @@ void Console::setRealCursorPositon(int x, int y)
     int row = y + 1;
     int column = x + 1;
 
+    // Using escape sequences to set the cursor position.
     printf("\x1b[%d;%dH", row, column);
 }
 
