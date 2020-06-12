@@ -7,7 +7,7 @@
 class Ceil: public ConsoleObject
 {
 public:
-    Ceil(std::shared_ptr<Console> console, Coordinate coordinate);
+    Ceil(std::shared_ptr<Console> console, const Coordinate& coordinate);
 
     virtual Interaction isInteracted(const ConsoleObject& consoleObject) override;
     virtual Coordinate getCoordindate() override;

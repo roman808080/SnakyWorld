@@ -2,7 +2,7 @@
 #include <stdexcept>
 
 
-Line::Line(std::shared_ptr<Console> console, Coordinate startCoordinate, Coordinate endCoordinate)
+Line::Line(std::shared_ptr<Console> console, const Coordinate& startCoordinate, const Coordinate& endCoordinate)
     : console(console), startCoordinate(startCoordinate), endCoordinate(endCoordinate)
 {
     isHorizontal = isLineHorizontal();

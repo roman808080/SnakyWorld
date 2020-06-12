@@ -7,7 +7,7 @@
 class Line: public ConsoleObject
 {
 public:
-    Line(std::shared_ptr<Console> console, Coordinate startCoordinate, Coordinate endCoordinate);
+    Line(std::shared_ptr<Console> console, const Coordinate& startCoordinate, const Coordinate& endCoordinate);
 
     virtual Interaction isInteracted(const ConsoleObject& consoleObject) override;
     virtual Coordinate getCoordindate() override;

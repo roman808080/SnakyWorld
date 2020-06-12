@@ -1,6 +1,6 @@
 #include "Ceil.h"
 
-Ceil::Ceil(std::shared_ptr<Console> console, Coordinate coordinate)
+Ceil::Ceil(std::shared_ptr<Console> console, const Coordinate& coordinate)
     : console(console), coordinate(coordinate)
 {
     console->drawCeil(Console::Color::Green, this->coordinate.first, this->coordinate.second);
