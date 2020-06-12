@@ -52,6 +52,9 @@ private:
     // It is used to get a real size without a reduction in the y axis.
     std::tuple<int, int> getRealScreenSize();
 
+    // In case arrow keys were used.
+    Directon getArrowDirection();
+
 private:
     HANDLE consoleHandler;
 };

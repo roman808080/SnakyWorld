@@ -10,6 +10,13 @@
 namespace
 {
     const int kReductionRate = 2;
+
+    const int kArrowKey = 224;
+    const int kArrowUp = 72;
+    const int kArrowLeft = 75;
+    const int kArrowRight = 77;
+    const int kArrowDown = 80;
+
     const char kCell[] = "  ";
 
     cpp_sgr::sgr convertColor(Console::Color color)
@@ -50,7 +57,8 @@ Console::Directon Console::getCurrentDirection()
         return Directon::Unknown;
     }
 
-    switch (_getch())
+    auto symbol = _getch();
+    switch (symbol)
     {
     case 'a':
         return Directon::Left;
@@ -62,6 +70,8 @@ Console::Directon Console::getCurrentDirection()
         return Directon::Down;
     case 'x':
         return Directon::Stop;
+    case kArrowKey:
+        return getArrowDirection();
     default:
         return Directon::Unknown;
     }
@@ -158,4 +168,28 @@ std::tuple<int, int> Console::getRealScreenSize()
     }
 
     return std::make_tuple(bufferInfo.srWindow.Bottom, bufferInfo.srWindow.Right);
+}
+
+Console::Directon Console::getArrowDirection()
+{
+    if (!_kbhit())
+    {
+        return Directon::Unknown;
+    }
+
+    switch (_getch())
+    {
+    case kArrowLeft:
+        return Directon::Left;
+    case kArrowRight:
+        return Directon::Right;
+    case kArrowUp:
+        return Directon::Up;
+    case kArrowDown:
+        return Directon::Down;
+    case kArrowKey:
+        return getArrowDirection();
+    default:
+        return Directon::Unknown;
+    }
 }
