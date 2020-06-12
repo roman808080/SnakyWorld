@@ -23,6 +23,7 @@ public:
         Black,
         Green,
         Red,
+        Yellow,
         Unknown
     };
 

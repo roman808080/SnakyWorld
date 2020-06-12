@@ -22,6 +22,8 @@ namespace
             return cpp_sgr::b_green_bg;
         case Console::Color::Red:
             return cpp_sgr::b_red_bg;
+        case Console::Color::Yellow:
+            return cpp_sgr::yellow_bg;
         default:
             return cpp_sgr::black_bg;
         }

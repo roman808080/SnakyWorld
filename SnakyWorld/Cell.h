@@ -7,7 +7,8 @@
 class Cell: public ConsoleObject
 {
 public:
-    Cell(std::shared_ptr<Console> console, const Coordinate& coordinate);
+    Cell(std::shared_ptr<Console> console, const Coordinate& coordinate,
+         Console::Color color = Console::Color::Green);
 
     virtual Interaction isInteracted(const ConsoleObject& consoleObject) override;
     virtual Coordinate getCoordindate() override;

@@ -1,9 +1,10 @@
 #include "Cell.h"
 
-Cell::Cell(std::shared_ptr<Console> console, const Coordinate& coordinate)
+Cell::Cell(std::shared_ptr<Console> console, const Coordinate& coordinate,
+           Console::Color color)
     : console(console), coordinate(coordinate)
 {
-    console->drawCell(Console::Color::Green, this->coordinate.first, this->coordinate.second);
+    console->drawCell(color, this->coordinate.first, this->coordinate.second);
 }
 
 Interaction Cell::isInteracted(const ConsoleObject& consoleObject)
