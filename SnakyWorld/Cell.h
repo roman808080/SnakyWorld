@@ -4,15 +4,15 @@
 #include "ConsoleObject.h"
 #include "Console.h"
 
-class Ceil: public ConsoleObject
+class Cell: public ConsoleObject
 {
 public:
-    Ceil(std::shared_ptr<Console> console, const Coordinate& coordinate);
+    Cell(std::shared_ptr<Console> console, const Coordinate& coordinate);
 
     virtual Interaction isInteracted(const ConsoleObject& consoleObject) override;
     virtual Coordinate getCoordindate() override;
 
-    virtual ~Ceil();
+    virtual ~Cell();
 
 private:
     Coordinate coordinate;

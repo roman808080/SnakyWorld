@@ -153,16 +153,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Ceil.cpp" />
+    <ClCompile Include="Cell.cpp" />
     <ClCompile Include="Line.cpp" />
+    <ClCompile Include="Snake.cpp" />
     <ClCompile Include="SnakyWorld.cpp" />
     <ClCompile Include="Console.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Ceil.h" />
+    <ClInclude Include="Cell.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="ConsoleObject.h" />
     <ClInclude Include="Line.h" />
+    <ClInclude Include="Snake.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

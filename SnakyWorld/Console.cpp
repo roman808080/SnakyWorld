@@ -10,7 +10,7 @@
 namespace
 {
     const int kReductionRate = 2;
-    const char kCeil[] = "  ";
+    const char kCell[] = "  ";
 
     cpp_sgr::sgr convertColor(Console::Color color)
     {
@@ -74,11 +74,11 @@ std::tuple<int, int> Console::getScreenSize()
     return std::make_tuple(x / kReductionRate, y);
 }
 
-void Console::drawCeil(Color color, int x, int y)
+void Console::drawCell(Color color, int x, int y)
 {
     // Fix the reduction and draw to positions.
     setRealCursorPositon(x * kReductionRate, y);
-    std::cerr << convertColor(color) << kCeil;
+    std::cerr << convertColor(color) << kCell;
 }
 
 void Console::clear()

@@ -34,9 +34,9 @@ public:
     // Returns a formatted screen size. The x axe is reduced due to uneven rectangles.
     std::tuple<int, int> getScreenSize();
 
-    // Draws a ceil.
+    // Draws a cell.
     // In reality, it draws two ceils because the size in the y-direction is doubled compared to the x-direction.
-    void drawCeil(Color color, int x, int y);
+    void drawCell(Color color, int x, int y);
 
     // Clears the screen.
     void clear();

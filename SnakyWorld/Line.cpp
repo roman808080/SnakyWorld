@@ -42,7 +42,7 @@ void Line::draw(Console::Color color)
     auto currentCoordinate = startCoordinate;
     while (currentCoordinate != endCoordinate)
     {
-        console->drawCeil(color, currentCoordinate.first, currentCoordinate.second);
+        console->drawCell(color, currentCoordinate.first, currentCoordinate.second);
         if (isHorizontal)
         {
             ++currentCoordinate.second;
