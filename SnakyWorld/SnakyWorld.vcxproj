@@ -154,10 +154,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="SnakyWorld.cpp" />
-    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Console.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Console.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

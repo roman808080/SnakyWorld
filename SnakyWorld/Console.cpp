@@ -1,4 +1,4 @@
-#include "Utils.h"
+#include "Console.h"
 
 #include <iostream>
 #include <tuple>
@@ -6,6 +6,11 @@
 #include <windows.h>
 #include <conio.h>
 #include <sgr.hpp>
+
+namespace
+{
+    const int kReductionRate = 2;
+}
 
 
 Console::Console()
@@ -48,12 +53,12 @@ std::tuple<int, int> Console::getScreenSize()
 {
     int x, y;
     std::tie(x, y) = getRealScreenSize();
-    return std::make_tuple(x / 2, y);
+    return std::make_tuple(x / kReductionRate, y);
 }
 
 void Console::drawCeil(int x, int y)
 {
-    setRealCursorPositon(x * 2, y);
+    setRealCursorPositon(x * kReductionRate, y);
     std::cerr << cpp_sgr::b_green_bg << "  ";
 }
 
