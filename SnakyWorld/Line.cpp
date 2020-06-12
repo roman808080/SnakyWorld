@@ -9,7 +9,7 @@ Line::Line(std::shared_ptr<Console> console, const Coordinate& startCoordinate, 
     draw(Console::Color::Red);
 }
 
-Interaction Line::isInteracted(const Coordinate& otherCoordinate)
+Interaction Line::isInteracted(const Coordinate& otherCoordinate) const
 {
     if ((isHorizontal and otherCoordinate.first != startCoordinate.first) or
         (!isHorizontal and otherCoordinate.second != startCoordinate.second))
@@ -20,7 +20,7 @@ Interaction Line::isInteracted(const Coordinate& otherCoordinate)
     return Interaction::Collided;
 }
 
-Coordinate Line::getCoordindate()
+Coordinate Line::getCoordindate() const
 {
     return startCoordinate;
 }

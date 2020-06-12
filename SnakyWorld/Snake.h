@@ -4,13 +4,16 @@
 
 #include "Cell.h"
 
-class Snake
+class Snake: public ConsoleObject
 {
 public:
     Snake(std::shared_ptr<Console> console, const Coordinate& coordinate);
     ~Snake();
 
     void move(Console::Directon direction);
+
+    virtual Interaction isInteracted(const Coordinate& otherCoordinate) const override;
+    virtual Coordinate getCoordindate() const override;
 
 private:
     void doStep(Console::Directon direction);

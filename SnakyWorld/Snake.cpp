@@ -1,5 +1,7 @@
 #include "Snake.h"
 
+#include <algorithm>
+
 Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate)
     : console(console), head(coordinate), lastDirection(Console::Directon::Unknown)
 {
@@ -37,6 +39,25 @@ void Snake::move(Console::Directon direction)
         tryToUseLastStep();
         return;
     }
+}
+
+Interaction Snake::isInteracted(const Coordinate& otherCoordinate) const
+{
+    auto result = std::find_if(std::begin(cellDeque), std::end(cellDeque),
+                               [&](const Cell & cell)
+        { return cell.isInteracted(otherCoordinate) == Interaction::Collided; });
+
+    if (result != std::end(cellDeque))
+    {
+        return Interaction::Collided;
+    }
+
+    return Interaction::NoInteraction;
+}
+
+Coordinate Snake::getCoordindate() const
+{
+    return head;
 }
 
 void Snake::doStep(Console::Directon direction)
