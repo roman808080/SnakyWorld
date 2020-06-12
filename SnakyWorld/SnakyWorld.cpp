@@ -4,6 +4,7 @@
 #include <string>
 
 #include "Console.h"
+#include "Ceil.h"
 
 void loop();
 
@@ -15,8 +16,10 @@ int main()
 
 void loop()
 {
-    Console console;
-    int sizeX, sizeY;
-    std::tie(sizeX, sizeY) = console.getScreenSize();
-    console.drawCeil(1, 1);
+   auto console = std::make_shared<Console>();
+
+   int sizeX, sizeY;
+   std::tie(sizeX, sizeY) = console->getScreenSize();
+
+   Ceil ceil(console, Coordinate(sizeX - 1, sizeY - 1));
 }
