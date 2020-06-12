@@ -14,6 +14,7 @@ public:
 
 private:
     void doStep(Console::Directon direction);
+    void tryToUseLastStep();
 
 private:
     std::shared_ptr<Console> console;
