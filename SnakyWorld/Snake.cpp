@@ -43,11 +43,11 @@ void Snake::move(Console::Directon direction)
 
 Interaction Snake::isInteracted(const Coordinate& otherCoordinate) const
 {
-    auto result = std::find_if(std::begin(cellDeque), std::end(cellDeque),
-                               [&](const Cell & cell)
+    int count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
+                              [&](const Cell & cell)
         { return cell.isInteracted(otherCoordinate) == Interaction::Collided; });
 
-    if (result != std::end(cellDeque))
+    if (count > 1)
     {
         return Interaction::Collided;
     }

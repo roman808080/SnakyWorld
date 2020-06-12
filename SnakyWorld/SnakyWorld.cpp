@@ -8,7 +8,11 @@
 #include "Line.h"
 #include "Snake.h"
 
+using InteractionObjects = std::vector<std::shared_ptr<ConsoleObject>>;
+
 void loop();
+Interaction getInteractionStatus(const InteractionObjects& objects,
+                                 const Coordinate& snakeHead);
 
 int main()
 {
@@ -33,7 +37,7 @@ void loop()
 
    Cell cell(console, Coordinate(sizeX - 3, sizeY - 3));
 
-   std::vector<std::shared_ptr<ConsoleObject>> objects;
+   InteractionObjects objects;
 
    auto leftLine = std::make_shared<Line>(console, Coordinate(0, 0), Coordinate(sizeX - 1, 0));
    auto rightLine = std::make_shared<Line>(console, Coordinate(0, sizeY - 1), Coordinate(sizeX - 1, sizeY - 1));
@@ -57,6 +61,29 @@ void loop()
        }
 
        snake->move(direction);
+       auto snakeHead = snake->getCoordindate();
+       auto status = getInteractionStatus(objects, snakeHead);
+
+       if (status == Interaction::Collided)
+       {
+           return;
+       }
+
        std::this_thread::sleep_for(std::chrono::seconds(1));
    }
+}
+
+Interaction getInteractionStatus(const InteractionObjects& objects,
+                                 const Coordinate& snakeHead)
+{
+    for (const auto& object: objects)
+    {
+        auto status = object->isInteracted(snakeHead);
+        if (status != Interaction::NoInteraction)
+        {
+            return status;
+        }
+    }
+
+    return Interaction::NoInteraction;
 }
