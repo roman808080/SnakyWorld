@@ -41,9 +41,13 @@ public:
     // In reality, it draws two cells because the size in the x-direction is doubled compared to the y-direction.
     void drawCell(Color color, int x, int y);
 
+    // Draws a horizontal line.
+    void drawHorizontalLine(Color color, int x, int y, int size);
+
     // Clears the screen.
     void clear();
 
+    // Fills the screen with a background color.
     void drawBackground();
 
 private:

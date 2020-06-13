@@ -45,18 +45,18 @@ bool Line::isLineHorizontal()
 
 void Line::draw(Console::Color color)
 {
+    if (isHorizontal)
+    {
+        int size = endCoordinate.second - startCoordinate.second + 1;
+        console->drawHorizontalLine(color, startCoordinate.first, startCoordinate.second, size);
+        return;
+    }
+
     auto currentCoordinate = startCoordinate;
     while (currentCoordinate != endCoordinate)
     {
         console->drawCell(color, currentCoordinate.first, currentCoordinate.second);
-        if (isHorizontal)
-        {
-            ++currentCoordinate.second;
-        }
-        else
-        {
-            ++currentCoordinate.first;
-        }
+        ++currentCoordinate.first;
     }
 }
 

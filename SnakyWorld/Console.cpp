@@ -113,6 +113,14 @@ void Console::drawCell(Color color, int x, int y)
     std::cerr << convertColor(color) << kCell;
 }
 
+void Console::drawHorizontalLine(Color color, int x, int y, int size)
+{
+    auto spaces = getSpaces(size);
+    setRealCursorPositon(x, y);
+
+    std::cerr << convertColor(color) << spaces;
+}
+
 void Console::clear()
 {
     COORD coordScreen = { 0, 0 }; // Home for the cursor
@@ -164,12 +172,10 @@ void Console::drawBackground()
 {
     int sizeX, sizeY;
     std::tie(sizeX, sizeY) = getScreenSize();
-    auto spaces = getSpaces(sizeY);
 
     for (int x = 0; x < sizeX - 1; ++x)
     {
-        setRealCursorPositon(x, 0);
-        std::cerr << convertColor(Color::Background) << spaces;
+        drawHorizontalLine(Color::Background, x, 0, sizeY);
     }
 }
 
