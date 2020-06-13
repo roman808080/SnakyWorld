@@ -5,19 +5,18 @@
 Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int size)
     : console(console), head(coordinate), lastDirection(Console::Directon::Unknown)
 {
+    auto teil = head;
     for (int i = 0; i < size; ++i)
     {
-        cellDeque.emplace_back(console, head, Console::Color::Yellow);
-        ++head.first;
+        cellDeque.emplace_front(console, teil, Console::Color::Yellow);
+        --teil.second;
     }
-    --head.first;
 }
 
 void Snake::move(Console::Directon direction)
 {
     auto oppositeDirection = getOppositeDirection(lastDirection);
-    if (oppositeDirection != Console::Directon::Unknown and
-        direction == getOppositeDirection(lastDirection))
+    if (direction == getOppositeDirection(lastDirection))
     {
         tryToUseLastStep();
         return;
@@ -100,6 +99,11 @@ void Snake::tryToUseLastStep()
 
 Console::Directon Snake::getOppositeDirection(Console::Directon direction)
 {
+    if (lastDirection == Console::Directon::Unknown)
+    {
+        return Console::Directon::Left;
+    }
+
     switch (direction)
     {
     case Console::Directon::Left:

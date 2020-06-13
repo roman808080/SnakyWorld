@@ -48,7 +48,7 @@ void loop()
    objects.push_back(bottomLine);
    objects.push_back(topLine);
 
-   auto snake = std::make_shared<Snake>(console, Coordinate(5, 5));
+   auto snake = std::make_shared<Snake>(console, Coordinate(2, 4));
    snake->setSpawn(std::make_shared<Cell>(console, Coordinate(10, 15)));
    objects.push_back(snake);
 
