@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Board.cpp" />
     <ClCompile Include="Cell.cpp" />
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="Snake.cpp" />
@@ -160,6 +161,7 @@
     <ClCompile Include="Console.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Board.h" />
     <ClInclude Include="Cell.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="ConsoleObject.h" />
