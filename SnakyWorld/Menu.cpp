@@ -1,8 +1,10 @@
 #include "Menu.h"
+#include <thread>
 
 namespace
 {
     const int kMaxMenuItemsSize = 10;
+    const std::chrono::milliseconds kPause(200);
 }
 
 
@@ -18,6 +20,7 @@ Menu::Menu()
 
     startLine = xSize / 3;
     createItems();
+    moveActiveItem(true);
 }
 
 Menu::~Menu()
@@ -27,8 +30,41 @@ Menu::~Menu()
 
 void Menu::loop()
 {
-    auto board = std::make_shared<Board>(console);
-    board->loop();
+    while (true)
+    {
+        auto direction = console->getCurrentDirection();
+        if (direction == Console::Directon::Esc)
+        {
+            return;
+        }
+
+        if (direction == Console::Directon::Up)
+        {
+            moveActiveItem(false);
+        }
+
+        if (direction == Console::Directon::Down)
+        {
+            moveActiveItem(true);
+        }
+
+        if (false)
+        {
+            auto board = std::make_shared<Board>(console);
+            board->loop();
+        }
+
+        std::this_thread::sleep_for(kPause);
+    }
+}
+
+void Menu::drawAll()
+{
+    for (auto& item : menuItems)
+    {
+        item.draw(false);
+    }
+    menuItems[activeItem].draw(true);
 }
 
 void Menu::createItems()
@@ -50,12 +86,36 @@ void Menu::createItems()
         ++currentLine;
     }
 
-    for (int i = 0; i < menuItems.size(); ++i)
+    for (size_t i = 0; i < menuItems.size(); ++i)
     {
         if (menuItems[i].getText() == "Play" or
             menuItems[i].getText() == "Exit")
         {
             menuItems[i].setAccessibility(true);
+        }
+    }
+}
+
+void Menu::moveActiveItem(bool forward)
+{
+    int direction = 0;
+    if (forward)
+    {
+        direction = 1;
+    }
+    else
+    {
+        direction = -1;
+    }
+
+    menuItems[activeItem % menuItems.size()].draw(false);
+    while (true)
+    {
+        activeItem = activeItem % menuItems.size() + direction;
+        if (menuItems[activeItem].isAccessible())
+        {
+            menuItems[activeItem].draw(true);
+            return;
         }
     }
 }
