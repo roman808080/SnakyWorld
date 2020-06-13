@@ -110,4 +110,3 @@ Console::Directon Snake::getOppositeDirection(Console::Directon direction)
         return Console::Directon::Unknown;
     }
 }
-

@@ -30,6 +30,7 @@ public:
     Console();
     ~Console();
 
+    // Returns current direction.
     Directon getCurrentDirection();
 
     // Returns a formatted screen size. The y axe is reduced due to uneven rectangles.
@@ -54,6 +55,9 @@ private:
 
     // In case arrow keys were used.
     Directon getArrowDirection();
+
+    // Fixes an issue on Windows 10 with ANSI symbols.
+    void enableVirtualTerminalProcessing();
 
 private:
     HANDLE consoleHandler;

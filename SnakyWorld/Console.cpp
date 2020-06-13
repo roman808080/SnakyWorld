@@ -43,12 +43,15 @@ namespace
 Console::Console()
     : consoleHandler(GetStdHandle(STD_OUTPUT_HANDLE))
 {
+    enableVirtualTerminalProcessing();
     showConsoleCursor(false);
     clear();
 }
 
 Console::~Console()
 {
+    clear();
+    showConsoleCursor(true);
     CloseHandle(consoleHandler);
 }
 
@@ -194,4 +197,19 @@ Console::Directon Console::getArrowDirection()
     default:
         return Directon::Unknown;
     }
+}
+
+void Console::enableVirtualTerminalProcessing()
+{
+    DWORD mode = 0;
+    GetConsoleMode(consoleHandler, &mode);
+    mode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+    SetConsoleMode(consoleHandler, mode);
+
+    // References:
+    //SetConsoleMode() and ENABLE_VIRTUAL_TERMINAL_PROCESSING?
+    //https://stackoverflow.com/questions/38772468/setconsolemode-and-enable-virtual-terminal-processing
+
+    // Windows console with ANSI colors handling
+    // https://superuser.com/questions/413073/windows-console-with-ansi-colors-handling
 }
