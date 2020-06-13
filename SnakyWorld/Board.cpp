@@ -30,7 +30,8 @@ Board::Board()
     objects.push_back(topLine);
 
     snake = std::make_shared<Snake>(console, kDefaultSnakePosition);
-    snake->setSpawn(std::make_shared<Cell>(console, Coordinate(sizeX - 2, sizeY - 2)));
+    snake->setSpawn(std::make_shared<Cell>(console, Coordinate(sizeX - 10, sizeY - 5)));
+    snake->setConsumptionObserver(this);
 
     objects.push_back(snake);
 }
@@ -60,6 +61,11 @@ void Board::loop()
 
         std::this_thread::sleep_for(std::chrono::milliseconds(300));
     }
+}
+
+void Board::spawnWasEaten()
+{
+    snake->setSpawn(std::make_shared<Cell>(console, Coordinate(5, 5)));
 }
 
 bool Board::getInteractionStatus(const Coordinate& snakeHead)

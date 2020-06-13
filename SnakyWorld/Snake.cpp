@@ -3,7 +3,8 @@
 #include <algorithm>
 
 Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int size)
-    : console(console), head(coordinate), lastDirection(Console::Directon::Unknown)
+    : console(console), head(coordinate), lastDirection(Console::Directon::Unknown),
+      consumptionObserver(nullptr)
 {
     auto teil = head;
     for (int i = 0; i < size; ++i)
@@ -55,6 +56,11 @@ void Snake::setSpawn(std::shared_ptr<Cell> spawn)
     this->spawn = spawn;
 }
 
+void Snake::setConsumptionObserver(ConsumptionObserver* consumptionObserver)
+{
+    this->consumptionObserver = consumptionObserver;
+}
+
 bool Snake::isInteracted(const Coordinate& otherCoordinate) const
 {
     int count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
@@ -80,6 +86,10 @@ void Snake::doStep(Console::Directon direction)
     if (spawn and spawn->isInteracted(head))
     {
         spawn.reset();
+        if (consumptionObserver != nullptr)
+        {
+            consumptionObserver->spawnWasEaten();
+        }
     }
     else
     {

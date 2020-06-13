@@ -3,6 +3,7 @@
 #include <deque>
 
 #include "Cell.h"
+#include "ConsumptionObserver.h"
 
 class Snake: public ConsoleObject
 {
@@ -11,6 +12,7 @@ public:
 
     void move(Console::Directon direction);
     void setSpawn(std::shared_ptr<Cell> spawn);
+    void setConsumptionObserver(ConsumptionObserver* consumptionObserver);
 
     virtual bool isInteracted(const Coordinate& otherCoordinate) const override;
     virtual Coordinate getCoordindate() const override;
@@ -27,4 +29,6 @@ private:
 
     Coordinate head;
     Console::Directon lastDirection;
+
+    ConsumptionObserver* consumptionObserver;
 };

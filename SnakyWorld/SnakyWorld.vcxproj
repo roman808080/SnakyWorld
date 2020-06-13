@@ -165,6 +165,7 @@
     <ClInclude Include="Cell.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="ConsoleObject.h" />
+    <ClInclude Include="ConsumptionObserver.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="Snake.h" />
   </ItemGroup>
