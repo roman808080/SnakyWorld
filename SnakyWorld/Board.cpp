@@ -45,8 +45,7 @@ Board::Board()
 
     snake = std::make_shared<Snake>(console, kDefaultSnakePosition);
 
-    auto spawnCoordinate = getRandomCoordinate(2, sizeX - 1, 1, sizeY - 1);
-    snake->setSpawn(std::make_shared<Cell>(console, spawnCoordinate));
+    snake->setSpawn(std::make_shared<Cell>(console, getSpawnCoordinate()));
     snake->setConsumptionObserver(this);
 
     objects.push_back(snake);
@@ -81,8 +80,7 @@ void Board::loop()
 
 void Board::spawnWasEaten()
 {
-    auto spawnCoordinate = getRandomCoordinate(2, sizeX - 1, 1, sizeY - 1);
-    snake->setSpawn(std::make_shared<Cell>(console, spawnCoordinate));
+    snake->setSpawn(std::make_shared<Cell>(console, getSpawnCoordinate()));
 }
 
 bool Board::getInteractionStatus(const Coordinate& snakeHead)
@@ -97,4 +95,17 @@ bool Board::getInteractionStatus(const Coordinate& snakeHead)
     }
 
     return false;
+}
+
+Coordinate Board::getSpawnCoordinate()
+{
+    auto spawnCoordinate = getRandomCoordinate(2, sizeX - 1, 1, sizeY - 1);
+    bool collided = getInteractionStatus(spawnCoordinate);
+
+    if (collided)
+    {
+        return getSpawnCoordinate();
+    }
+
+    return spawnCoordinate;
 }

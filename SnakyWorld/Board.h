@@ -22,6 +22,7 @@ public:
 
 private:
     bool getInteractionStatus(const Coordinate& snakeHead);
+    Coordinate getSpawnCoordinate();
 
 private:
     std::shared_ptr<Console> console;
