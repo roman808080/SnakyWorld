@@ -7,17 +7,21 @@ class Item
 {
 public:
     Item(std::shared_ptr<Console> console,
-         const std::string& name, int line);
+        const std::string& text,
+        int line);
     ~Item();
 
-    void setActivity(bool isActive);
-    void draw();
+    void setAccessibility(bool accessible);
+    bool isAccessible();
+    void draw(bool isActive);
+
+    void setText(const std::string& text);
+    std::string getText();
 
 private:
     std::shared_ptr<Console> console;
-
-    std::string nonActive;
-    std::string active;
+    std::string text;
 
     int line;
+    bool accessible;
 };

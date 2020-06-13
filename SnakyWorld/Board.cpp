@@ -27,8 +27,8 @@ namespace
     }
 }
 
-Board::Board()
-    : console(std::make_shared<Console>()),
+Board::Board(std::shared_ptr<Console> console)
+    : console(console),
       score(0),
       pause(kMaxTime)
 {

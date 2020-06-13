@@ -1,12 +1,13 @@
 #include <iostream>
 #include "Board.h"
+#include "Menu.h"
 
 int main()
 {
     try
     {
-        Board board;
-        board.loop();
+        Menu menu;
+        menu.loop();
     }
     catch (const std::exception& exc)
     {

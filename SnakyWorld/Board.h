@@ -15,7 +15,7 @@ using InteractionObjects = std::vector<std::shared_ptr<ConsoleObject>>;
 class Board: public ConsumptionObserver
 {
 public:
-    Board();
+    Board(std::shared_ptr<Console> console);
     virtual ~Board();
 
     void loop();

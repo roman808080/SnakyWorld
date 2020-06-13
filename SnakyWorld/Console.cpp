@@ -36,7 +36,7 @@ namespace
         case Console::Color::Yellow:
             return cpp_sgr::yellow_bg;
         case Console::Color::Background:
-            return cpp_sgr::blue_bg;
+            return cpp_sgr::b_cyan_bg;
         default:
             return cpp_sgr::black_bg;
         }
@@ -186,7 +186,7 @@ void Console::printLine(Color color, int line,
     std::tie(_, sizeY) = getScreenSize();
     drawHorizontalLine(color, line, 0, sizeY);
 
-    int textPosition = (sizeY / 2 - text.size() / 2 + 1) * kReductionRate;
+    int textPosition = (sizeY / 2 - text.size() / 4) * kReductionRate;
     setRealCursorPositon(line, textPosition);
     if (isBold)
     {
