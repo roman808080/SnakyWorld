@@ -41,18 +41,17 @@ void Snake::move(Console::Directon direction)
     }
 }
 
-Interaction Snake::isInteracted(const Coordinate& otherCoordinate) const
+bool Snake::isInteracted(const Coordinate& otherCoordinate) const
 {
     int count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
-                              [&](const Cell & cell)
-        { return cell.isInteracted(otherCoordinate) == Interaction::Collided; });
+                              [&](const Cell & cell) { return cell.isInteracted(otherCoordinate); });
 
     if (count > 1)
     {
-        return Interaction::Collided;
+        return true;
     }
 
-    return Interaction::NoInteraction;
+    return false;
 }
 
 Coordinate Snake::getCoordindate() const

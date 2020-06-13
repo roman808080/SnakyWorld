@@ -7,13 +7,13 @@ Cell::Cell(std::shared_ptr<Console> console, const Coordinate& coordinate,
     console->drawCell(color, this->coordinate.first, this->coordinate.second);
 }
 
-Interaction Cell::isInteracted(const Coordinate& otherCoordinate) const
+bool Cell::isInteracted(const Coordinate& otherCoordinate) const
 {
     if (otherCoordinate == coordinate)
     {
-        return Interaction::Collided;
+        return true;
     }
-    return Interaction::NoInteraction;
+    return false;
 }
 
 Coordinate Cell::getCoordindate() const

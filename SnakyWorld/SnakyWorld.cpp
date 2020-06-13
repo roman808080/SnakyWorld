@@ -11,8 +11,7 @@
 using InteractionObjects = std::vector<std::shared_ptr<ConsoleObject>>;
 
 void loop();
-Interaction getInteractionStatus(const InteractionObjects& objects,
-                                 const Coordinate& snakeHead);
+bool getInteractionStatus(const InteractionObjects& objects, const Coordinate& snakeHead);
 
 int main()
 {
@@ -62,9 +61,9 @@ void loop()
 
        snake->move(direction);
        auto snakeHead = snake->getCoordindate();
-       auto status = getInteractionStatus(objects, snakeHead);
+       auto interacted = getInteractionStatus(objects, snakeHead);
 
-       if (status == Interaction::Collided)
+       if (interacted)
        {
            return;
        }
@@ -73,17 +72,16 @@ void loop()
    }
 }
 
-Interaction getInteractionStatus(const InteractionObjects& objects,
-                                 const Coordinate& snakeHead)
+bool getInteractionStatus(const InteractionObjects& objects, const Coordinate& snakeHead)
 {
     for (const auto& object: objects)
     {
-        auto status = object->isInteracted(snakeHead);
-        if (status != Interaction::NoInteraction)
+        auto interacted = object->isInteracted(snakeHead);
+        if (interacted)
         {
-            return status;
+            return true;
         }
     }
 
-    return Interaction::NoInteraction;
+    return false;
 }

@@ -9,7 +9,7 @@ class Line: public ConsoleObject
 public:
     Line(std::shared_ptr<Console> console, const Coordinate& startCoordinate, const Coordinate& endCoordinate);
 
-    virtual Interaction isInteracted(const Coordinate& otherCoordinate) const override;
+    virtual bool isInteracted(const Coordinate& otherCoordinate) const override;
     virtual Coordinate getCoordindate() const override;
 
     virtual ~Line();

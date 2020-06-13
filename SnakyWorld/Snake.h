@@ -8,11 +8,11 @@ class Snake: public ConsoleObject
 {
 public:
     Snake(std::shared_ptr<Console> console, const Coordinate& coordinate);
-    ~Snake();
+    virtual ~Snake();
 
     void move(Console::Directon direction);
 
-    virtual Interaction isInteracted(const Coordinate& otherCoordinate) const override;
+    virtual bool isInteracted(const Coordinate& otherCoordinate) const override;
     virtual Coordinate getCoordindate() const override;
 
 private:
