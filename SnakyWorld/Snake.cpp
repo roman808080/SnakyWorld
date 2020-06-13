@@ -15,6 +15,14 @@ Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int
 
 void Snake::move(Console::Directon direction)
 {
+    auto oppositeDirection = getOppositeDirection(lastDirection);
+    if (oppositeDirection != Console::Directon::Unknown and
+        direction == getOppositeDirection(lastDirection))
+    {
+        tryToUseLastStep();
+        return;
+    }
+
     switch (direction)
     {
     case Console::Directon::Left:
