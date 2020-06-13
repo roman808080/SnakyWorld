@@ -2,10 +2,10 @@
 
 #include <algorithm>
 
-Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate)
+Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int size)
     : console(console), head(coordinate), lastDirection(Console::Directon::Unknown)
 {
-    for (int i = 0; i < 3; ++i)
+    for (int i = 0; i < size; ++i)
     {
         cellDeque.emplace_back(console, head, Console::Color::Yellow);
         ++head.first;
