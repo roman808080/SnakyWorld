@@ -116,7 +116,7 @@ void Console::drawCell(Color color, int x, int y)
 void Console::drawHorizontalLine(Color color, int x, int y, int size)
 {
     auto spaces = getSpaces(size);
-    setRealCursorPositon(x, y);
+    setRealCursorPositon(x, y * kReductionRate);
 
     std::cerr << convertColor(color) << spaces;
 }
