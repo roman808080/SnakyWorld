@@ -25,6 +25,7 @@ private:
     bool getInteractionStatus(const Coordinate& snakeHead);
     Coordinate getSpawnCoordinate();
     void speedUp();
+    void addScore(int gain);
 
 private:
     std::shared_ptr<Console> console;
@@ -33,6 +34,8 @@ private:
 
     int sizeX;
     int sizeY;
+
+    int score;
 
     std::chrono::milliseconds pause;
 };

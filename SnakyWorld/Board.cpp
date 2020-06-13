@@ -29,6 +29,7 @@ namespace
 
 Board::Board()
     : console(std::make_shared<Console>()),
+      score(0),
       pause(kMaxTime)
 {
     console->drawBackground();
@@ -52,8 +53,7 @@ Board::Board()
     snake->setConsumptionObserver(this);
 
     objects.push_back(snake);
-
-    console->printLine(Console::Color::Black, 0, "Score:");
+    addScore(0);
 }
 
 Board::~Board()
@@ -87,6 +87,7 @@ void Board::spawnWasEaten()
 {
     snake->setSpawn(std::make_shared<Cell>(console, getSpawnCoordinate()));
     speedUp();
+    addScore(1);
 }
 
 bool Board::getInteractionStatus(const Coordinate& snakeHead)
@@ -122,4 +123,11 @@ void Board::speedUp()
     {
         pause -= kAcceleration;
     }
+}
+
+void Board::addScore(int gain)
+{
+    score += gain;
+    std::string text("Score: " + std::to_string(score));
+    console->printLine(Console::Color::Black, 0, text);
 }
