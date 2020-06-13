@@ -179,19 +179,18 @@ void Console::drawBackground()
     }
 }
 
-void Console::printLine(const std::string& text, int line)
+void Console::printLine(Color color, int line, const std::string& text)
 {
     int _, sizeY;
     std::tie(_, sizeY) = getScreenSize();
 
-    int firstHalfSize = sizeY / 2 - text.size() / 2;
-    auto firstHalf = getSpaces(firstHalfSize);
+    int halfSize = sizeY / 2 - text.size() / 2 + 1;
+    auto spaces = getSpaces(halfSize);
 
-    int secondHalfSize = (sizeY - firstHalf.size() + text.size());
-    auto secondHalf = getSpaces(secondHalfSize);
-    
+    drawHorizontalLine(color, line, 0, sizeY);
+ 
     setRealCursorPositon(line, 0);
-    std::cerr << convertColor(Color::Background) << firstHalf << text << secondHalf;
+    std::cerr << convertColor(color) << cpp_sgr::bold << spaces << text;
 }
 
 void Console::showConsoleCursor(bool showFlag)

@@ -53,7 +53,7 @@ Board::Board()
 
     objects.push_back(snake);
 
-    console->printLine("Score:", 0);
+    console->printLine(Console::Color::Black, 0, "Score:");
 }
 
 Board::~Board()
