@@ -179,18 +179,21 @@ void Console::drawBackground()
     }
 }
 
-void Console::printLine(Color color, int line, const std::string& text)
+void Console::printLine(Color color, int line,
+                        const std::string& text, Color textBackgroundColor, bool isBold)
 {
     int _, sizeY;
     std::tie(_, sizeY) = getScreenSize();
-
-    int halfSize = sizeY / 2 - text.size() / 2 + 1;
-    auto spaces = getSpaces(halfSize);
-
     drawHorizontalLine(color, line, 0, sizeY);
- 
-    setRealCursorPositon(line, 0);
-    std::cerr << convertColor(color) << cpp_sgr::bold << spaces << text;
+
+    int textPosition = (sizeY / 2 - text.size() / 2) * kReductionRate;
+    setRealCursorPositon(line, textPosition);
+    if (isBold)
+    {
+        std::cerr << convertColor(textBackgroundColor) << cpp_sgr::bold << text;
+        return;
+    }
+    std::cerr << convertColor(textBackgroundColor) << text;
 }
 
 void Console::showConsoleCursor(bool showFlag)

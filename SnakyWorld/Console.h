@@ -52,7 +52,8 @@ public:
     // Fills the screen with a background color.
     void drawBackground();
 
-    void printLine(Color color, int line, const std::string& text);
+    void printLine(Color color, int line,
+                   const std::string& text, Color textBackgroundColor, bool isBold);
 
 private:
     // It is used to hide the cursor.
