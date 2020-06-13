@@ -7,7 +7,7 @@
 
 namespace
 {
-    const Coordinate kDefaultSnakePosition(2, 4);
+    const Coordinate kDefaultSnakePosition(3, 4);
 }
 
 
@@ -18,11 +18,11 @@ Board::Board()
 
     std::tie(sizeX, sizeY) = console->getScreenSize();
 
-    auto leftLine = std::make_shared<Line>(console, Coordinate(0, 0), Coordinate(sizeX, 0));
-    auto rightLine = std::make_shared<Line>(console, Coordinate(0, sizeY - 1), Coordinate(sizeX, sizeY - 1));
+    auto leftLine = std::make_shared<Line>(console, Coordinate(1, 0), Coordinate(sizeX, 0));
+    auto rightLine = std::make_shared<Line>(console, Coordinate(1, sizeY - 1), Coordinate(sizeX, sizeY - 1));
 
     auto bottomLine = std::make_shared<Line>(console, Coordinate(sizeX - 1, 1), Coordinate(sizeX - 1, sizeY - 1));
-    auto topLine = std::make_shared<Line>(console, Coordinate(0, 1), Coordinate(0, sizeY - 1));
+    auto topLine = std::make_shared<Line>(console, Coordinate(1, 1), Coordinate(1, sizeY - 1));
 
     objects.push_back(leftLine);
     objects.push_back(rightLine);
@@ -30,7 +30,7 @@ Board::Board()
     objects.push_back(topLine);
 
     snake = std::make_shared<Snake>(console, kDefaultSnakePosition);
-    snake->setSpawn(std::make_shared<Cell>(console, Coordinate(10, 15)));
+    snake->setSpawn(std::make_shared<Cell>(console, Coordinate(sizeX - 2, sizeY - 2)));
 
     objects.push_back(snake);
 }
