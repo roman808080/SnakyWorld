@@ -1,10 +1,12 @@
 #include "Console.h"
 
 #include <iostream>
+#include <iomanip>
 #include <tuple>
 
 #include <windows.h>
 #include <conio.h>
+
 #include <sgr.hpp>
 
 namespace
@@ -39,6 +41,16 @@ namespace
             return cpp_sgr::black_bg;
         }
     }
+
+    std::string getSpaces(int size)
+    {
+        std::string result = "";
+        for (int i = 0; i < size; ++i)
+        {
+            result += kCell;
+        }
+        return result;
+    }
 }
 
 
@@ -54,6 +66,7 @@ Console::~Console()
 {
     clear();
     showConsoleCursor(true);
+
     CloseHandle(consoleHandler);
 }
 
@@ -151,13 +164,12 @@ void Console::drawBackground()
 {
     int sizeX, sizeY;
     std::tie(sizeX, sizeY) = getScreenSize();
+    auto spaces = getSpaces(sizeY);
 
     for (int x = 0; x < sizeX - 1; ++x)
     {
-        for (int y = 0; y < sizeY - 1; ++y)
-        {
-            drawCell(Color::Background, x, y);
-        }
+        setRealCursorPositon(x, 0);
+        std::cerr << convertColor(Color::Background) << spaces;
     }
 }
 
