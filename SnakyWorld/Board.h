@@ -17,7 +17,9 @@ class Board: public ConsumptionObserver
 public:
     Board();
     virtual ~Board();
+
     void loop();
+    int getScore();
 
     virtual void spawnWasEaten() override;
 

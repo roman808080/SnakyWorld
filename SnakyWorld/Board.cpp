@@ -83,6 +83,11 @@ void Board::loop()
     }
 }
 
+int Board::getScore()
+{
+    return score;
+}
+
 void Board::spawnWasEaten()
 {
     snake->setSpawn(std::make_shared<Cell>(console, getSpawnCoordinate()));
