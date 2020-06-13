@@ -2,6 +2,7 @@
 
 #include <memory>
 #include <vector>
+#include <chrono>
 
 #include "Cell.h"
 #include "Line.h"
@@ -23,6 +24,7 @@ public:
 private:
     bool getInteractionStatus(const Coordinate& snakeHead);
     Coordinate getSpawnCoordinate();
+    void speedUp();
 
 private:
     std::shared_ptr<Console> console;
@@ -31,4 +33,6 @@ private:
 
     int sizeX;
     int sizeY;
+
+    std::chrono::milliseconds pause;
 };

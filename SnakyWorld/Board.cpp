@@ -2,7 +2,6 @@
 
 #include <iostream>
 #include <thread>
-#include <chrono>
 #include <string>
 
 #include <stdlib.h>
@@ -11,6 +10,9 @@
 namespace
 {
     const Coordinate kDefaultSnakePosition(3, 4);
+    const std::chrono::milliseconds kMaxTime(150);
+    const std::chrono::milliseconds kMinTime(20);
+    const std::chrono::milliseconds kAcceleration(10);
 
     int getRandomNumberInRange(int start, int end)
     {
@@ -26,7 +28,8 @@ namespace
 }
 
 Board::Board()
-    : console(std::make_shared<Console>())
+    : console(std::make_shared<Console>()),
+      pause(kMaxTime)
 {
     console->drawBackground();
 
@@ -74,13 +77,14 @@ void Board::loop()
             return;
         }
 
-        std::this_thread::sleep_for(std::chrono::milliseconds(300));
+        std::this_thread::sleep_for(pause);
     }
 }
 
 void Board::spawnWasEaten()
 {
     snake->setSpawn(std::make_shared<Cell>(console, getSpawnCoordinate()));
+    speedUp();
 }
 
 bool Board::getInteractionStatus(const Coordinate& snakeHead)
@@ -108,4 +112,12 @@ Coordinate Board::getSpawnCoordinate()
     }
 
     return spawnCoordinate;
+}
+
+void Board::speedUp()
+{
+    if (pause > kMinTime)
+    {
+        pause -= kAcceleration;
+    }
 }
