@@ -186,7 +186,7 @@ void Console::printLine(Color color, int line,
     std::tie(_, sizeY) = getScreenSize();
     drawHorizontalLine(color, line, 0, sizeY);
 
-    int textPosition = (sizeY / 2 - text.size() / 2) * kReductionRate;
+    int textPosition = (sizeY / 2 - text.size() / 2 + 1) * kReductionRate;
     setRealCursorPositon(line, textPosition);
     if (isBold)
     {

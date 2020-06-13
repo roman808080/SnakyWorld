@@ -133,6 +133,6 @@ void Board::speedUp()
 void Board::addScore(int gain)
 {
     score += gain;
-    std::string text("Score: " + std::to_string(score));
-    console->printLine(Console::Color::Black, 0, text, Console::Color::Black, true);
+    std::string text(" Score: " + std::to_string(score) + " ");
+    console->printLine(Console::Color::Black, 0, text, Console::Color::Red, true);
 }
