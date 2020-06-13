@@ -33,6 +33,8 @@ namespace
             return cpp_sgr::b_red_bg;
         case Console::Color::Yellow:
             return cpp_sgr::yellow_bg;
+        case Console::Color::Background:
+            return cpp_sgr::blue_bg;
         default:
             return cpp_sgr::black_bg;
         }
@@ -143,6 +145,20 @@ void Console::clear()
 
     // Put the cursor at its home coordinates.
     SetConsoleCursorPosition(consoleHandler, coordScreen);
+}
+
+void Console::drawBackground()
+{
+    int sizeX, sizeY;
+    std::tie(sizeX, sizeY) = getScreenSize();
+
+    for (int x = 0; x < sizeX - 1; ++x)
+    {
+        for (int y = 0; y < sizeY - 1; ++y)
+        {
+            drawCell(Color::Background, x, y);
+        }
+    }
 }
 
 void Console::showConsoleCursor(bool showFlag)

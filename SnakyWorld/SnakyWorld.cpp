@@ -30,6 +30,7 @@ int main()
 void loop()
 {
    auto console = std::make_shared<Console>();
+   console->drawBackground();
 
    int sizeX, sizeY;
    std::tie(sizeX, sizeY) = console->getScreenSize();

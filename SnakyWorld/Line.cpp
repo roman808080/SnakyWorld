@@ -62,5 +62,5 @@ void Line::draw(Console::Color color)
 
 Line::~Line()
 {
-    draw(Console::Color::Black);
+    draw(Console::Color::Background);
 }

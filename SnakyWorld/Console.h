@@ -24,6 +24,7 @@ public:
         Green,
         Red,
         Yellow,
+        Background,
         Unknown
     };
 
@@ -42,6 +43,8 @@ public:
 
     // Clears the screen.
     void clear();
+
+    void drawBackground();
 
 private:
     // It is used to hide the cursor.

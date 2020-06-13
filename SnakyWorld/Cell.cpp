@@ -23,5 +23,5 @@ Coordinate Cell::getCoordindate() const
 
 Cell::~Cell()
 {
-    console->drawCell(Console::Color::Black, this->coordinate.first, this->coordinate.second);
+    console->drawCell(Console::Color::Background, this->coordinate.first, this->coordinate.second);
 }
