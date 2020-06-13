@@ -1,6 +1,8 @@
 #pragma once
 
 #include <tuple>
+#include <string>
+
 #include <windows.h>
 
 // Console is responsible for low level interaction with a console.
@@ -49,6 +51,8 @@ public:
 
     // Fills the screen with a background color.
     void drawBackground();
+
+    void printLine(const std::string& text, int line);
 
 private:
     // It is used to hide the cursor.

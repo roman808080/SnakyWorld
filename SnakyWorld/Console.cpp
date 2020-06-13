@@ -179,6 +179,21 @@ void Console::drawBackground()
     }
 }
 
+void Console::printLine(const std::string& text, int line)
+{
+    int _, sizeY;
+    std::tie(_, sizeY) = getScreenSize();
+
+    int firstHalfSize = sizeY / 2 - text.size() / 2;
+    auto firstHalf = getSpaces(firstHalfSize);
+
+    int secondHalfSize = (sizeY - firstHalf.size() + text.size());
+    auto secondHalf = getSpaces(secondHalfSize);
+    
+    setRealCursorPositon(line, 0);
+    std::cerr << convertColor(Color::Background) << firstHalf << text << secondHalf;
+}
+
 void Console::showConsoleCursor(bool showFlag)
 {
     CONSOLE_CURSOR_INFO cursorInfo;

@@ -52,6 +52,8 @@ Board::Board()
     snake->setConsumptionObserver(this);
 
     objects.push_back(snake);
+
+    console->printLine("Score:", 0);
 }
 
 Board::~Board()
