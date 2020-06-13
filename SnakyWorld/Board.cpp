@@ -5,11 +5,25 @@
 #include <chrono>
 #include <string>
 
+#include <stdlib.h>
+#include <time.h>
+
 namespace
 {
     const Coordinate kDefaultSnakePosition(3, 4);
-}
 
+    int getRandomNumberInRange(int start, int end)
+    {
+        srand(time(nullptr));
+        return rand() % (end - start) + start;
+    }
+
+    Coordinate getRandomCoordinate(int xStart, int xEnd, int yStart, int yEnd)
+    {
+        return Coordinate(getRandomNumberInRange(xStart, xEnd),
+                          getRandomNumberInRange(yStart, yEnd));
+    }
+}
 
 Board::Board()
     : console(std::make_shared<Console>())
@@ -30,7 +44,9 @@ Board::Board()
     objects.push_back(topLine);
 
     snake = std::make_shared<Snake>(console, kDefaultSnakePosition);
-    snake->setSpawn(std::make_shared<Cell>(console, Coordinate(sizeX - 10, sizeY - 5)));
+
+    auto spawnCoordinate = getRandomCoordinate(2, sizeX - 1, 1, sizeY - 1);
+    snake->setSpawn(std::make_shared<Cell>(console, spawnCoordinate));
     snake->setConsumptionObserver(this);
 
     objects.push_back(snake);
@@ -65,7 +81,8 @@ void Board::loop()
 
 void Board::spawnWasEaten()
 {
-    snake->setSpawn(std::make_shared<Cell>(console, Coordinate(5, 5)));
+    auto spawnCoordinate = getRandomCoordinate(2, sizeX - 1, 1, sizeY - 1);
+    snake->setSpawn(std::make_shared<Cell>(console, spawnCoordinate));
 }
 
 bool Board::getInteractionStatus(const Coordinate& snakeHead)
