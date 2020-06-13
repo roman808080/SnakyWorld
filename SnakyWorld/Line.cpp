@@ -47,7 +47,7 @@ void Line::draw(Console::Color color)
 {
     if (isHorizontal)
     {
-        int size = endCoordinate.second - startCoordinate.second + 1;
+        int size = endCoordinate.second - startCoordinate.second;
         console->drawHorizontalLine(color, startCoordinate.first, startCoordinate.second, size);
         return;
     }

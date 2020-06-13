@@ -37,9 +37,10 @@ void loop()
 
    InteractionObjects objects;
 
-   auto leftLine = std::make_shared<Line>(console, Coordinate(0, 0), Coordinate(sizeX - 1, 0));
-   auto rightLine = std::make_shared<Line>(console, Coordinate(0, sizeY - 1), Coordinate(sizeX - 1, sizeY - 1));
-   auto bottomLine = std::make_shared<Line>(console, Coordinate(sizeX - 1, 0), Coordinate(sizeX - 1, sizeY - 1));
+   auto leftLine = std::make_shared<Line>(console, Coordinate(0, 0), Coordinate(sizeX, 0));
+   auto rightLine = std::make_shared<Line>(console, Coordinate(0, sizeY - 1), Coordinate(sizeX, sizeY - 1));
+
+   auto bottomLine = std::make_shared<Line>(console, Coordinate(sizeX - 1, 1), Coordinate(sizeX - 1, sizeY - 1));
    auto topLine = std::make_shared<Line>(console, Coordinate(0, 1), Coordinate(0, sizeY - 1));
 
    objects.push_back(leftLine);

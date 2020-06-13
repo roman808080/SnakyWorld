@@ -173,7 +173,7 @@ void Console::drawBackground()
     int sizeX, sizeY;
     std::tie(sizeX, sizeY) = getScreenSize();
 
-    for (int x = 0; x < sizeX - 1; ++x)
+    for (int x = 0; x < sizeX; ++x)
     {
         drawHorizontalLine(Color::Background, x, 0, sizeY);
     }
