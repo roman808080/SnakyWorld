@@ -18,6 +18,7 @@ public:
 private:
     void doStep(Console::Directon direction);
     void tryToUseLastStep();
+    Console::Directon getOppositeDirection(Console::Directon direction);
 
 private:
     std::shared_ptr<Console> console;

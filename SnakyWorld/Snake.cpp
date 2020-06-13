@@ -5,7 +5,12 @@
 Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate)
     : console(console), head(coordinate), lastDirection(Console::Directon::Unknown)
 {
-    cellDeque.emplace_back(console, coordinate, Console::Color::Yellow);
+    for (int i = 0; i < 15; ++i)
+    {
+        cellDeque.emplace_back(console, head, Console::Color::Yellow);
+        ++head.first;
+    }
+    --head.first;
 }
 
 void Snake::move(Console::Directon direction)
@@ -67,15 +72,17 @@ Coordinate Snake::getCoordindate() const
 void Snake::doStep(Console::Directon direction)
 {
     lastDirection = direction;
-    cellDeque.emplace_back(console, head, Console::Color::Yellow);
-    
+
     if (spawn and spawn->isInteracted(head))
     {
         spawn.reset();
-        return;
+    }
+    else
+    {
+        cellDeque.pop_front();
     }
 
-    cellDeque.pop_front();
+    cellDeque.emplace_back(console, head, Console::Color::Yellow);
 }
 
 void Snake::tryToUseLastStep()
@@ -85,3 +92,25 @@ void Snake::tryToUseLastStep()
         move(lastDirection);
     }
 }
+
+Console::Directon Snake::getOppositeDirection(Console::Directon direction)
+{
+    switch (direction)
+    {
+    case Console::Directon::Left:
+        return Console::Directon::Right;
+
+    case Console::Directon::Right:
+        return Console::Directon::Left;
+
+    case Console::Directon::Up:
+        return Console::Directon::Down;
+
+    case Console::Directon::Down:
+        return Console::Directon::Up;
+
+    default:
+        return Console::Directon::Unknown;
+    }
+}
+
