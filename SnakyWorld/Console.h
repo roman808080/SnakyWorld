@@ -10,7 +10,6 @@ public:
 
     enum class Directon
     {
-        Stop,
         Left,
         Right,
         Up,

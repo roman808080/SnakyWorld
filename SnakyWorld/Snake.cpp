@@ -5,7 +5,7 @@
 Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate)
     : console(console), head(coordinate), lastDirection(Console::Directon::Unknown)
 {
-    for (int i = 0; i < 15; ++i)
+    for (int i = 0; i < 3; ++i)
     {
         cellDeque.emplace_back(console, head, Console::Color::Yellow);
         ++head.first;
@@ -17,9 +17,6 @@ void Snake::move(Console::Directon direction)
 {
     switch (direction)
     {
-    case Console::Directon::Stop:
-        return;
-
     case Console::Directon::Left:
         --head.second;
         doStep(direction);

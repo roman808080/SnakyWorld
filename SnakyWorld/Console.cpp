@@ -70,8 +70,6 @@ Console::Directon Console::getCurrentDirection()
         return Directon::Up;
     case 's':
         return Directon::Down;
-    case 'x':
-        return Directon::Stop;
     case kArrowKey:
         return getArrowDirection();
     case kEsc:
