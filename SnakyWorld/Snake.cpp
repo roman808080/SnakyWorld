@@ -41,6 +41,11 @@ void Snake::move(Console::Directon direction)
     }
 }
 
+void Snake::setSpawn(std::shared_ptr<Cell> spawn)
+{
+    this->spawn = spawn;
+}
+
 bool Snake::isInteracted(const Coordinate& otherCoordinate) const
 {
     int count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
@@ -63,6 +68,13 @@ void Snake::doStep(Console::Directon direction)
 {
     lastDirection = direction;
     cellDeque.emplace_back(console, head, Console::Color::Yellow);
+    
+    if (spawn and spawn->isInteracted(head))
+    {
+        spawn.reset();
+        return;
+    }
+
     cellDeque.pop_front();
 }
 
@@ -72,8 +84,4 @@ void Snake::tryToUseLastStep()
     {
         move(lastDirection);
     }
-}
-
-Snake::~Snake()
-{
 }

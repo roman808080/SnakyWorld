@@ -158,7 +158,7 @@ void Console::setRealCursorPositon(int row, int column)
     std::cout.flush();
 
     // Using escape sequences to set the cursor position.
-    printf("\x1b[%d;%dH", row, column);
+    printf("\x1b[%d;%dH", row + 1, column + 1);
 }
 
 std::tuple<int, int> Console::getRealScreenSize()

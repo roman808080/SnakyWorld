@@ -34,8 +34,6 @@ void loop()
    int sizeX, sizeY;
    std::tie(sizeX, sizeY) = console->getScreenSize();
 
-   Cell cell(console, Coordinate(sizeX - 3, sizeY - 3));
-
    InteractionObjects objects;
 
    auto leftLine = std::make_shared<Line>(console, Coordinate(0, 0), Coordinate(sizeX - 1, 0));
@@ -49,6 +47,7 @@ void loop()
    objects.push_back(topLine);
 
    auto snake = std::make_shared<Snake>(console, Coordinate(5, 5));
+   snake->setSpawn(std::make_shared<Cell>(console, Coordinate(sizeX - 3, sizeY - 3)));
    objects.push_back(snake);
 
    while (true)
@@ -68,7 +67,7 @@ void loop()
            return;
        }
 
-       std::this_thread::sleep_for(std::chrono::seconds(1));
+       std::this_thread::sleep_for(std::chrono::milliseconds(300));
    }
 }
 

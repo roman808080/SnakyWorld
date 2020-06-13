@@ -8,9 +8,9 @@ class Snake: public ConsoleObject
 {
 public:
     Snake(std::shared_ptr<Console> console, const Coordinate& coordinate);
-    virtual ~Snake();
 
     void move(Console::Directon direction);
+    void setSpawn(std::shared_ptr<Cell> spawn);
 
     virtual bool isInteracted(const Coordinate& otherCoordinate) const override;
     virtual Coordinate getCoordindate() const override;
@@ -21,6 +21,7 @@ private:
 
 private:
     std::shared_ptr<Console> console;
+    std::shared_ptr<Cell> spawn;
     std::deque<Cell> cellDeque;
 
     Coordinate head;
