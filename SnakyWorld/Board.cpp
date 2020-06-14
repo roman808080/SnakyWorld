@@ -73,7 +73,7 @@ void Board::loop()
             return;
         }
 
-        snake->move(direction);
+        snake->move();
         auto snakeHead = snake->getCoordindate();
         auto interacted = getInteractionStatus(snakeHead);
 

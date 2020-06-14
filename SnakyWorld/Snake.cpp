@@ -85,15 +85,9 @@ void Snake::setConsumptionObserver(ConsumptionObserver* consumptionObserver)
 
 bool Snake::isInteracted(const Coordinate& otherCoordinate) const
 {
-    int count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
+    int count = std::count_if(std::begin(cellDeque), std::end(cellDeque) - 1,
                               [&](const Cell & cell) { return cell.isInteracted(otherCoordinate); });
-
-    if (count > 1)
-    {
-        return true;
-    }
-
-    return false;
+    return count != 0;
 }
 
 Coordinate Snake::getCoordindate() const
