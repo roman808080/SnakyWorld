@@ -163,17 +163,6 @@ PossibleDirections Snake::getPossibleDirections()
                                                     Console::Directon::Up,
                                                     Console::Directon::Down);
 
-    auto oppositeDirection = getOppositeDirection(lastDirection);
-    if (horizontalDirection == oppositeDirection)
-    {
-        horizontalDirection = Console::Directon::Down;
-    }
-
-    if (verticalDirection == oppositeDirection)
-    {
-        verticalDirection = Console::Directon::Right;
-    }
-
     return PossibleDirections(horizontalDirection, verticalDirection);
 }
 
