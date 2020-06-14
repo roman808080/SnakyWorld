@@ -40,20 +40,9 @@ MenuRow::MenuRow(std::shared_ptr<Console> console,
            int line)
     : console(console),
       text(text),
-      line(line),
-      accessible(false)
+      line(line)
 {
     draw(false);
-}
-
-void MenuRow::setAccessibility(bool accessible)
-{
-    this->accessible = accessible;
-}
-
-bool MenuRow::isAccessible()
-{
-    return accessible;
 }
 
 void MenuRow::draw(bool isActive)

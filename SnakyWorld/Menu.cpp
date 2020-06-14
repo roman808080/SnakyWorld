@@ -10,18 +10,15 @@ namespace
     const std::vector<std::string> kMenuTemplate { "", "",
                                                    "SNAKY WORLD",
                                                    "",
-                                                   "----------------",
+                                                   "------------------",
                                                    "<<score>>",
-                                                   "----------------",
+                                                   "------------------",
                                                    "",
                                                    "<<options>>",
                                                    "", "" };
 
     // Prerecorded options. For now, there are no needs for dynamic menu.
     const std::vector<std::string> kMenuOptions {"Play", "Exit"};
-
-    const unsigned int kGapsAmount = 2; // <score> and <menu>
-    const unsigned int kScoreSize = 1; // just to avoid a magic number
 }
 
 
@@ -88,9 +85,6 @@ void Menu::draw()
 void Menu::build()
 {
     int currentLine = startLine;
-
-    int menuSize = kMenuTemplate.size() + kMenuOptions.size() + kScoreSize - kGapsAmount;
-    menuRows.reserve(menuSize);
 
     for (const auto& rowText: kMenuTemplate)
     {

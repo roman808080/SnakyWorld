@@ -11,8 +11,6 @@ public:
         int line);
     ~MenuRow();
 
-    void setAccessibility(bool accessible);
-    bool isAccessible();
     void draw(bool isActive = false);
 
     void setText(const std::string& text);
@@ -23,5 +21,4 @@ private:
     std::string text;
 
     int line;
-    bool accessible;
 };
