@@ -4,6 +4,16 @@
 namespace
 {
     const std::chrono::milliseconds kPause(200);
+
+    const std::vector<std::string> kMenuTemplate { "", "",
+                                                   "SNAKY WORLD",
+                                                   "",
+                                                   "----------------",
+                                                   "<score>",
+                                                   "----------------",
+                                                   "",
+                                                   "<menu>",
+                                                   "", "" };
 }
 
 
