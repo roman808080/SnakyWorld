@@ -1,6 +1,7 @@
 #include "Snake.h"
 
 #include <algorithm>
+#include <vector>
 
 namespace
 {
@@ -37,17 +38,40 @@ void Snake::move()
     auto directions = getPossibleDirections();
     auto coordinate = moveCoordinate(head, directions.first);
 
-    int countFirst = std::count_if(std::begin(cellDeque), std::end(cellDeque),
+    int count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
         [&](const Cell& cell) { return cell.isInteracted(coordinate); });
 
-    if (countFirst == 0)
+    if (count == 0)
     {
         move(directions.first);
+        return;
     }
-    else
+
+    coordinate = moveCoordinate(head, directions.second);
+    count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
+        [&](const Cell & cell) { return cell.isInteracted(coordinate); });
+    
+    if (count == 0)
     {
         move(directions.second);
+        return;
     }
+
+    std::vector<Console::Directon> allPossibleDirections { Console::Directon::Down, Console::Directon::Up,
+    Console::Directon::Left, Console::Directon::Right};
+    for (const auto possibleDirection: allPossibleDirections)
+    {
+        coordinate = moveCoordinate(head, possibleDirection);
+        count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
+            [&](const Cell & cell) { return cell.isInteracted(coordinate); });
+
+        if (count == 0)
+        {
+            move(possibleDirection);
+        }
+    }
+
+    move(Console::Directon::Unknown);
 }
 
 void Snake::move(Console::Directon direction)
