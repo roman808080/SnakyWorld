@@ -2,6 +2,24 @@
 
 #include <algorithm>
 
+namespace
+{
+    Console::Directon getDirectionBaseOnDiff(int diff, Console::Directon first, Console::Directon second)
+    {
+        if (diff < 0)
+        {
+            return first;
+        }
+ 
+        if (diff > 0)
+        {
+            return second;
+        }
+
+        return Console::Directon::Unknown;
+    }
+}
+
 Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int size)
     : console(console), head(coordinate), lastDirection(Console::Directon::Unknown),
       consumptionObserver(nullptr)
@@ -144,26 +162,12 @@ PossibleDirections Snake::getPossibleDirections()
     int xDiff = destination.first - head.first;
     int yDiff = destination.second - head.second;
 
-    auto horizontalDirection = Console::Directon::Unknown;
-    auto verticalDirection = Console::Directon::Unknown;
-
-    if (xDiff > 0)
-    {
-        verticalDirection = Console::Directon::Down;
-    }
-    else if (xDiff < 0)
-    {
-        verticalDirection = Console::Directon::Up;
-    }
- 
-    if (yDiff < 0)
-    {
-        horizontalDirection = Console::Directon::Left;
-    }
-    else if (yDiff > 0)
-    {
-        horizontalDirection = Console::Directon::Right;
-    }
+    auto horizontalDirection = getDirectionBaseOnDiff(yDiff,
+                                                      Console::Directon::Left,
+                                                      Console::Directon::Right);
+    auto verticalDirection = getDirectionBaseOnDiff(xDiff,
+                                                    Console::Directon::Up,
+                                                    Console::Directon::Down);
 
     auto oppositeDirection = getOppositeDirection(lastDirection);
     if (horizontalDirection == oppositeDirection)
