@@ -111,7 +111,7 @@ void Menu::moveActiveItem(bool forward)
     menuItems[activeItem % menuItems.size()].draw(false);
     while (true)
     {
-        activeItem = activeItem % menuItems.size() + direction;
+        activeItem = (menuItems.size() + activeItem + direction) % menuItems.size();
         if (menuItems[activeItem].isAccessible())
         {
             menuItems[activeItem].draw(true);
