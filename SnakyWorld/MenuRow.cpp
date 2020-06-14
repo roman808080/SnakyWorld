@@ -66,8 +66,3 @@ std::string MenuRow::getText()
 {
     return text;
 }
-
-MenuRow::~MenuRow()
-{
-    console->printLine(Console::Color::Background, line, "", Console::Color::Background, false);
-}

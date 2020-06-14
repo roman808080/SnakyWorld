@@ -9,7 +9,6 @@ public:
     MenuRow(std::shared_ptr<Console> console,
         const std::string& text,
         int line);
-    ~MenuRow();
 
     void draw(bool isActive = false);
 

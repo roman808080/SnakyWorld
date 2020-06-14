@@ -47,10 +47,9 @@ void Menu::loop()
     stop = false;
     while (!stop)
     {
+        std::this_thread::sleep_for(kPause);
         auto direction = console->getCurrentDirection();
         handleKey(direction);
-
-        std::this_thread::sleep_for(kPause);
     }
 }
 
