@@ -44,25 +44,11 @@ void Snake::move(Console::Directon direction)
     switch (direction)
     {
     case Console::Directon::Left:
-        --head.second;
-        doStep(direction);
-        return;
-
     case Console::Directon::Right:
-        ++head.second;
-        doStep(direction);
-        return;
-
     case Console::Directon::Up:
-        --head.first;
-        doStep(direction);
-        return;
-
     case Console::Directon::Down:
-        ++head.first;
         doStep(direction);
         return;
-
     default:
         tryToUseLastStep();
         return;
@@ -99,6 +85,7 @@ Coordinate Snake::getCoordindate() const
 
 void Snake::doStep(Console::Directon direction)
 {
+    head = moveCoordinate(head, direction);
     lastDirection = direction;
 
     if (spawn and spawn->isInteracted(head))

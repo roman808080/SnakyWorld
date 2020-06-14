@@ -7,8 +7,8 @@ class MenuRow
 {
 public:
     MenuRow(std::shared_ptr<Console> console,
-        const std::string& text,
-        int line);
+            const std::string& text,
+            int line);
 
     void draw(bool isActive = false);
 

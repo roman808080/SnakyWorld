@@ -11,6 +11,7 @@ Line::Line(std::shared_ptr<Console> console, const Coordinate& startCoordinate, 
 
 bool Line::isInteracted(const Coordinate& otherCoordinate) const
 {
+    // assumes that the is line infinite. ignores the edges of the line
     if ((isHorizontal and otherCoordinate.first != startCoordinate.first) or
         (!isHorizontal and otherCoordinate.second != startCoordinate.second))
     {
