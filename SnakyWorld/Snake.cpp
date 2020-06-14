@@ -1,7 +1,6 @@
 #include "Snake.h"
 
 #include <algorithm>
-#include <vector>
 
 namespace
 {
@@ -19,6 +18,27 @@ namespace
 
         return Console::Directon::Unknown;
     }
+
+    Console::Directon reverseDirection(Console::Directon direction)
+    {
+        switch (direction)
+        {
+        case Console::Directon::Left:
+            return Console::Directon::Right;
+
+        case Console::Directon::Right:
+            return Console::Directon::Left;
+
+        case Console::Directon::Up:
+            return Console::Directon::Down;
+
+        case Console::Directon::Down:
+            return Console::Directon::Up;
+
+        default:
+            return Console::Directon::Unknown;
+        }
+    }
 }
 
 Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int size)
@@ -35,43 +55,8 @@ Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int
 
 void Snake::move()
 {
-    auto directions = getPossibleDirections();
-    auto coordinate = moveCoordinate(head, directions.first);
-
-    int count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
-        [&](const Cell& cell) { return cell.isInteracted(coordinate); });
-
-    if (count == 0)
-    {
-        move(directions.first);
-        return;
-    }
-
-    coordinate = moveCoordinate(head, directions.second);
-    count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
-        [&](const Cell & cell) { return cell.isInteracted(coordinate); });
-    
-    if (count == 0)
-    {
-        move(directions.second);
-        return;
-    }
-
-    std::vector<Console::Directon> allPossibleDirections { Console::Directon::Down, Console::Directon::Up,
-    Console::Directon::Left, Console::Directon::Right};
-    for (const auto possibleDirection: allPossibleDirections)
-    {
-        coordinate = moveCoordinate(head, possibleDirection);
-        count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
-            [&](const Cell & cell) { return cell.isInteracted(coordinate); });
-
-        if (count == 0)
-        {
-            move(possibleDirection);
-        }
-    }
-
-    move(Console::Directon::Unknown);
+    auto direction = calculateDirection(head, spawn->getCoordindate());
+    move(direction);
 }
 
 void Snake::move(Console::Directon direction)
@@ -154,31 +139,14 @@ Console::Directon Snake::getOppositeDirection(Console::Directon direction)
     {
         return Console::Directon::Left;
     }
-
-    switch (direction)
-    {
-    case Console::Directon::Left:
-        return Console::Directon::Right;
-
-    case Console::Directon::Right:
-        return Console::Directon::Left;
-
-    case Console::Directon::Up:
-        return Console::Directon::Down;
-
-    case Console::Directon::Down:
-        return Console::Directon::Up;
-
-    default:
-        return Console::Directon::Unknown;
-    }
+    return reverseDirection(direction);
 }
 
-PossibleDirections Snake::getPossibleDirections()
+std::vector<Console::Directon> Snake::getPossibleDirections(const Coordinate& snakeHead,
+                                                            const Coordinate& destination)
 {
-    auto destination = spawn->getCoordindate();
-    int xDiff = destination.first - head.first;
-    int yDiff = destination.second - head.second;
+    int xDiff = destination.first - snakeHead.first;
+    int yDiff = destination.second - snakeHead.second;
 
     auto horizontalDirection = getDirectionBaseOnDiff(yDiff,
                                                       Console::Directon::Left,
@@ -187,7 +155,28 @@ PossibleDirections Snake::getPossibleDirections()
                                                     Console::Directon::Up,
                                                     Console::Directon::Down);
 
-    return PossibleDirections(horizontalDirection, verticalDirection);
+    std::vector<Console::Directon> directions{ horizontalDirection, verticalDirection,
+                                               reverseDirection(horizontalDirection),
+                                               reverseDirection(verticalDirection) };
+
+    return directions;
+}
+
+Console::Directon Snake::calculateDirection(const Coordinate& snakeHead, const Coordinate& spawnCoordinate)
+{
+    auto directions = getPossibleDirections(snakeHead, spawnCoordinate);
+    for (const auto direction : directions)
+    {
+        auto coordinate = moveCoordinate(head, direction);
+        int count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
+            [&](const Cell & cell) { return cell.isInteracted(coordinate); });
+        if (count == 0)
+        {
+            return direction;
+        }
+    }
+
+    return Console::Directon::Unknown;
 }
 
 Coordinate Snake::moveCoordinate(const Coordinate& coordinate, Console::Directon direction)

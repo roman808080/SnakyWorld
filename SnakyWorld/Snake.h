@@ -1,11 +1,11 @@
 #pragma once
 #include <memory>
 #include <deque>
+#include <vector>
 
 #include "Cell.h"
 #include "ConsumptionObserver.h"
 
-using PossibleDirections = std::pair<Console::Directon, Console::Directon>;
 
 class Snake: public ConsoleObject
 {
@@ -25,7 +25,10 @@ private:
     void tryToUseLastStep();
 
     Console::Directon getOppositeDirection(Console::Directon direction);
-    PossibleDirections getPossibleDirections();
+    std::vector<Console::Directon> getPossibleDirections(const Coordinate& snakeHead,
+                                                         const Coordinate& destination);
+    Console::Directon calculateDirection(const Coordinate& snakeHead,
+                                         const Coordinate& spawnCoordinate);
     Coordinate moveCoordinate(const Coordinate& coordinate,
                               Console::Directon direction);
 
