@@ -1,13 +1,13 @@
-#include "Item.h"
+#include "MenuRow.h"
 
 namespace
 {
-    const int wrapperSize = 30;
-    const int activeShift = 4;
+    const unsigned int wrapperSize = 30;
+    const unsigned int activeShift = 4;
 
     std::string wrapText(const std::string& text, bool isActive)
     {
-        int wrapUntil = wrapperSize;
+        unsigned int wrapUntil = wrapperSize;
         std::string newText(text);
         if (isActive)
         {
@@ -35,7 +35,7 @@ namespace
 
 }
 
-Item::Item(std::shared_ptr<Console> console,
+MenuRow::MenuRow(std::shared_ptr<Console> console,
            const std::string& text,
            int line)
     : console(console),
@@ -46,39 +46,39 @@ Item::Item(std::shared_ptr<Console> console,
     draw(false);
 }
 
-void Item::setAccessibility(bool accessible)
+void MenuRow::setAccessibility(bool accessible)
 {
     this->accessible = accessible;
 }
 
-bool Item::isAccessible()
+bool MenuRow::isAccessible()
 {
     return accessible;
 }
 
-void Item::draw(bool isActive)
+void MenuRow::draw(bool isActive)
 {
     std::string menuText(wrapText(text, isActive));
-    auto itemBackground = Console::Color::Red;
+    auto rowBackground = Console::Color::Red;
     if (isActive)
     {
-        itemBackground = Console::Color::ActiveBackground;
+        rowBackground = Console::Color::ActiveBackground;
     }
 
-    console->printLine(Console::Color::Background, line, menuText, itemBackground, true);
+    console->printLine(Console::Color::Background, line, menuText, rowBackground, true);
 }
 
-void Item::setText(const std::string& text)
+void MenuRow::setText(const std::string& text)
 {
     this->text = text;
 }
 
-std::string Item::getText()
+std::string MenuRow::getText()
 {
     return text;
 }
 
-Item::~Item()
+MenuRow::~MenuRow()
 {
     console->printLine(Console::Color::Background, line, "", Console::Color::Background, false);
 }

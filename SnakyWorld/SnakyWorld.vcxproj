@@ -155,7 +155,7 @@
   <ItemGroup>
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="Cell.cpp" />
-    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="MenuRow.cpp" />
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Snake.cpp" />
@@ -168,7 +168,7 @@
     <ClInclude Include="Console.h" />
     <ClInclude Include="ConsoleObject.h" />
     <ClInclude Include="ConsumptionObserver.h" />
-    <ClInclude Include="Item.h" />
+    <ClInclude Include="MenuRow.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Snake.h" />

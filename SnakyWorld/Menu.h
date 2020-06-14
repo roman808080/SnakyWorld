@@ -2,7 +2,7 @@
 
 #include <vector>
 
-#include "Item.h"
+#include "MenuRow.h"
 #include "Board.h"
 
 class Menu
@@ -20,7 +20,7 @@ private:
 
 private:
     std::shared_ptr<Console> console;
-    std::vector<Item> menuItems;
+    std::vector<MenuRow> menuItems;
 
     int startLine;
     int activeItem;

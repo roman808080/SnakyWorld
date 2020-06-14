@@ -3,13 +3,13 @@
 
 #include "Console.h"
 
-class Item
+class MenuRow
 {
 public:
-    Item(std::shared_ptr<Console> console,
+    MenuRow(std::shared_ptr<Console> console,
         const std::string& text,
         int line);
-    ~Item();
+    ~MenuRow();
 
     void setAccessibility(bool accessible);
     bool isAccessible();
