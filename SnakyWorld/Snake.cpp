@@ -16,42 +16,26 @@ Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int
 
 void Snake::move()
 {
-    auto destination = spawn->getCoordindate();
-    int xDiff = destination.first - head.first;
-    int yDiff = destination.second - head.second;
+    auto directions = getPossibleDirections();
+    auto coordinate = moveCoordinate(head, directions.first);
 
-    if (xDiff > 0)
+    int countFirst = std::count_if(std::begin(cellDeque), std::end(cellDeque),
+        [&](const Cell& cell) { return cell.isInteracted(coordinate); });
+
+    if (countFirst == 0)
     {
-        move(Console::Directon::Down);
-        return;
+        move(directions.first);
     }
-
-    if (xDiff < 0)
+    else
     {
-        move(Console::Directon::Up);
-        return;
+        move(directions.second);
     }
-
-    if (yDiff < 0)
-    {
-        move(Console::Directon::Left);
-        return;
-    }
-
-    if (yDiff > 0)
-    {
-        move(Console::Directon::Right);
-        return;
-    }
-
-    move(Console::Directon::Unknown);
-    return;
 }
 
 void Snake::move(Console::Directon direction)
 {
     auto oppositeDirection = getOppositeDirection(lastDirection);
-    if (direction == getOppositeDirection(lastDirection))
+    if (direction == oppositeDirection)
     {
         tryToUseLastStep();
         return;
@@ -164,5 +148,67 @@ Console::Directon Snake::getOppositeDirection(Console::Directon direction)
 
     default:
         return Console::Directon::Unknown;
+    }
+}
+
+PossibleDirections Snake::getPossibleDirections()
+{
+    auto destination = spawn->getCoordindate();
+    int xDiff = destination.first - head.first;
+    int yDiff = destination.second - head.second;
+
+    auto horizontalDirection = Console::Directon::Unknown;
+    auto verticalDirection = Console::Directon::Unknown;
+
+    if (xDiff > 0)
+    {
+        verticalDirection = Console::Directon::Down;
+    }
+    else if (xDiff < 0)
+    {
+        verticalDirection = Console::Directon::Up;
+    }
+ 
+    if (yDiff < 0)
+    {
+        horizontalDirection = Console::Directon::Left;
+    }
+    else if (yDiff > 0)
+    {
+        horizontalDirection = Console::Directon::Right;
+    }
+
+    auto oppositeDirection = getOppositeDirection(lastDirection);
+    if (horizontalDirection == oppositeDirection)
+    {
+        horizontalDirection = Console::Directon::Down;
+    }
+
+    if (verticalDirection == oppositeDirection)
+    {
+        verticalDirection = Console::Directon::Right;
+    }
+
+    return PossibleDirections(horizontalDirection, verticalDirection);
+}
+
+Coordinate Snake::moveCoordinate(const Coordinate& coordinate, Console::Directon direction)
+{
+    switch (direction)
+    {
+    case Console::Directon::Left:
+        return Coordinate(coordinate.first, coordinate.second - 1);
+
+    case Console::Directon::Right:
+        return Coordinate(coordinate.first, coordinate.second + 1);
+
+    case Console::Directon::Up:
+        return Coordinate(coordinate.first - 1, coordinate.second);
+
+    case Console::Directon::Down:
+        return Coordinate(coordinate.first + 1, coordinate.second);
+
+    default:
+        return coordinate;
     }
 }

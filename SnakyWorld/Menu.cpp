@@ -155,8 +155,11 @@ void Menu::handleOption()
         auto board = std::make_shared<Board>(console);
         board->loop();
 
+        auto currentScore = board->getScore();
+        board.reset(); // destroy the board before redraw the menu.
+
         draw();
-        updateScore(board->getScore());
+        updateScore(currentScore);
     }
     else if (action == "Exit")
     {

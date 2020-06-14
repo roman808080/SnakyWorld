@@ -5,6 +5,8 @@
 #include "Cell.h"
 #include "ConsumptionObserver.h"
 
+using PossibleDirections = std::pair<Console::Directon, Console::Directon>;
+
 class Snake: public ConsoleObject
 {
 public:
@@ -21,7 +23,11 @@ public:
 private:
     void doStep(Console::Directon direction);
     void tryToUseLastStep();
+
     Console::Directon getOppositeDirection(Console::Directon direction);
+    PossibleDirections getPossibleDirections();
+    Coordinate moveCoordinate(const Coordinate& coordinate,
+                              Console::Directon direction);
 
 private:
     std::shared_ptr<Console> console;

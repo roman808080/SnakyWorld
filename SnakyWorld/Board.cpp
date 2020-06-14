@@ -4,20 +4,23 @@
 #include <thread>
 #include <string>
 
-#include <stdlib.h>
-#include <time.h>
+#include <random>
 
 namespace
 {
     const Coordinate kDefaultSnakePosition(3, 4);
     const std::chrono::milliseconds kMaxTime(150);
-    const std::chrono::milliseconds kMinTime(20);
+    const std::chrono::milliseconds kMinTime(60);
     const std::chrono::milliseconds kAcceleration(5);
 
     int getRandomNumberInRange(int start, int end)
     {
         srand(time(nullptr));
-        return rand() % (end - start) + start;
+        std::random_device dev;
+        std::mt19937 rng(dev());
+        std::uniform_int_distribution<std::mt19937::result_type> dist6(start, end);
+
+        return dist6(rng);
     }
 
     Coordinate getRandomCoordinate(int xStart, int xEnd, int yStart, int yEnd)
