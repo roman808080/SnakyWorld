@@ -167,10 +167,12 @@ Console::Directon Snake::calculateDirection(const Coordinate& snakeHead, const C
     auto directions = getPossibleDirections(snakeHead, spawnCoordinate);
     for (const auto direction : directions)
     {
+        if (direction == Console::Directon::Unknown)
+        {
+            continue;
+        }
         auto coordinate = moveCoordinate(head, direction);
-        int count = std::count_if(std::begin(cellDeque), std::end(cellDeque),
-            [&](const Cell & cell) { return cell.isInteracted(coordinate); });
-        if (count == 0)
+        if (!isInteracted(coordinate))
         {
             return direction;
         }
