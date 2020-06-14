@@ -12,7 +12,7 @@ namespace
     const Coordinate kDefaultSnakePosition(3, 4);
     const std::chrono::milliseconds kMaxTime(150);
     const std::chrono::milliseconds kMinTime(20);
-    const std::chrono::milliseconds kAcceleration(10);
+    const std::chrono::milliseconds kAcceleration(5);
 
     int getRandomNumberInRange(int start, int end)
     {
@@ -70,7 +70,7 @@ void Board::loop()
             return;
         }
 
-        snake->move(direction);
+        snake->move();
         auto snakeHead = snake->getCoordindate();
         auto interacted = getInteractionStatus(snakeHead);
 

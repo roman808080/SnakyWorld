@@ -10,6 +10,7 @@ class Snake: public ConsoleObject
 public:
     Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int size = 3);
 
+    void move();
     void move(Console::Directon direction);
     void setSpawn(std::shared_ptr<Cell> spawn);
     void setConsumptionObserver(ConsumptionObserver* consumptionObserver);

@@ -14,6 +14,40 @@ Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int
     }
 }
 
+void Snake::move()
+{
+    auto destination = spawn->getCoordindate();
+    int xDiff = destination.first - head.first;
+    int yDiff = destination.second - head.second;
+
+    if (xDiff > 0)
+    {
+        move(Console::Directon::Down);
+        return;
+    }
+
+    if (xDiff < 0)
+    {
+        move(Console::Directon::Up);
+        return;
+    }
+
+    if (yDiff < 0)
+    {
+        move(Console::Directon::Left);
+        return;
+    }
+
+    if (yDiff > 0)
+    {
+        move(Console::Directon::Right);
+        return;
+    }
+
+    move(Console::Directon::Unknown);
+    return;
+}
+
 void Snake::move(Console::Directon direction)
 {
     auto oppositeDirection = getOppositeDirection(lastDirection);
