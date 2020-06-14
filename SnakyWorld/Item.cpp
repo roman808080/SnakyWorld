@@ -3,17 +3,20 @@
 namespace
 {
     const int wrapperSize = 30;
+    const int activeShift = 4;
 
     std::string wrapText(const std::string& text, bool isActive)
     {
+        int wrapUntil = wrapperSize;
         std::string newText(text);
         if (isActive)
         {
             newText = "<" + text + ">";
+            wrapUntil += activeShift;
         }
 
         bool right = true;
-        while (newText.size() < wrapperSize)
+        while (newText.size() < wrapUntil)
         {
             if (right)
             {
@@ -56,7 +59,13 @@ bool Item::isAccessible()
 void Item::draw(bool isActive)
 {
     std::string menuText(wrapText(text, isActive));
-    console->printLine(Console::Color::Background, line, menuText, Console::Color::Red, true);
+    auto itemBackground = Console::Color::Red;
+    if (isActive)
+    {
+        itemBackground = Console::Color::ActiveBackground;
+    }
+
+    console->printLine(Console::Color::Background, line, menuText, itemBackground, true);
 }
 
 void Item::setText(const std::string& text)

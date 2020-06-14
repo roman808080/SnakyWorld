@@ -35,6 +35,8 @@ namespace
             return cpp_sgr::b_red_bg;
         case Console::Color::Yellow:
             return cpp_sgr::yellow_bg;
+        case Console::Color::ActiveBackground:
+            return cpp_sgr::red_bg;
         case Console::Color::Background:
             return cpp_sgr::b_cyan_bg;
         default:

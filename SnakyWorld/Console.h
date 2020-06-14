@@ -26,6 +26,7 @@ public:
         Green,
         Red,
         Yellow,
+        ActiveBackground,
         Background,
         Unknown
     };

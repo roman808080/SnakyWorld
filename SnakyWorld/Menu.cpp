@@ -3,7 +3,6 @@
 
 namespace
 {
-    const int kMaxMenuItemsSize = 10;
     const std::chrono::milliseconds kPause(200);
 }
 
@@ -13,14 +12,13 @@ Menu::Menu()
       startLine(0),
       activeItem(0)
 {
-    console->drawBackground();
-
     int xSize, _;
     std::tie(xSize, _) = console->getScreenSize();
 
     startLine = xSize / 3;
     createItems();
     moveActiveItem(true);
+    drawAll();
 }
 
 Menu::~Menu()
@@ -60,6 +58,7 @@ void Menu::loop()
 
 void Menu::drawAll()
 {
+    console->drawBackground();
     for (auto& item : menuItems)
     {
         item.draw(false);
@@ -71,14 +70,16 @@ void Menu::createItems()
 {
     std::vector<std::string> labels{"", "",
                                     "SNAKY WORLD",
+                                    "",
                                     "----------------",
-                                    "|Current Score: 0|",
+                                    "Current Score: 0",
                                     "----------------",
+                                    "",
                                     "Play",
                                     "Exit",
                                     "", ""};
     int currentLine = startLine;
-    menuItems.reserve(kMaxMenuItemsSize);
+    menuItems.reserve(labels.size());
 
     for (const auto& label: labels)
     {
