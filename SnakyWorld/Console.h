@@ -17,6 +17,7 @@ public:
         Up,
         Down,
         Esc,
+        Enter,
         Unknown // If was pressed a different key.
     };
 

@@ -22,6 +22,9 @@ private:
     void shiftOption(int shift);
     void updateScore(int score);
 
+    void handleKey(Console::Directon key);
+    void handleOption();
+
 private:
     std::shared_ptr<Console> console;
 
@@ -31,4 +34,5 @@ private:
 
     int startLine;
     int activeOption;
+    bool stop;
 };

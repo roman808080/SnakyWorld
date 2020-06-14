@@ -21,6 +21,8 @@ namespace
     const int kArrowRight = 77;
     const int kArrowDown = 80;
 
+    const char kEnter = '\r';
+
     const char kCell[] = "  ";
 
     cpp_sgr::sgr convertColor(Console::Color color)
@@ -94,6 +96,8 @@ Console::Directon Console::getCurrentDirection()
         return getArrowDirection();
     case kEsc:
         return Directon::Esc;
+    case kEnter:
+        return Directon::Enter;
     default:
         return Directon::Unknown;
     }

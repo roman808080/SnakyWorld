@@ -25,7 +25,8 @@ namespace
 Menu::Menu()
     : console(std::make_shared<Console>()),
       startLine(0),
-      activeOption(0)
+      activeOption(0),
+      stop(true)
 {
     int xSize, _;
     std::tie(xSize, _) = console->getScreenSize();
@@ -43,29 +44,11 @@ Menu::~Menu()
 
 void Menu::loop()
 {
-    while (true)
+    stop = false;
+    while (!stop)
     {
         auto direction = console->getCurrentDirection();
-        if (direction == Console::Directon::Esc)
-        {
-            return;
-        }
-
-        if (direction == Console::Directon::Up)
-        {
-            shiftOption(-1);
-        }
-
-        if (direction == Console::Directon::Down)
-        {
-            shiftOption(1);
-        }
-
-        if (false)
-        {
-            auto board = std::make_shared<Board>(console);
-            board->loop();
-        }
+        handleKey(direction);
 
         std::this_thread::sleep_for(kPause);
     }
@@ -143,4 +126,41 @@ void Menu::updateScore(int score)
     std::string scoreString = "Current score: " + std::to_string(score);
     scoreRow->setText(scoreString);
     scoreRow->draw();
+}
+
+void Menu::handleKey(Console::Directon key)
+{
+    switch (key)
+    {
+    case Console::Directon::Esc:
+        stop = true;
+        return;
+    case Console::Directon::Enter:
+        handleOption();
+        return;
+    case Console::Directon::Up:
+        shiftOption(-1);
+        return;
+    case Console::Directon::Down:
+        shiftOption(1);
+    default:
+        return;
+    }
+}
+
+void Menu::handleOption()
+{
+    auto action = optionRows[activeOption]->getText();
+    if (action == "Play")
+    {
+        auto board = std::make_shared<Board>(console);
+        board->loop();
+
+        draw();
+        updateScore(board->getScore());
+    }
+    else if (action == "Exit")
+    {
+        stop = true;
+    }
 }
