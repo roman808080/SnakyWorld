@@ -3,32 +3,40 @@
 
 namespace
 {
+    // the pause between iterations.
     const std::chrono::milliseconds kPause(200);
 
+    // brief template how the menu will look like.
     const std::vector<std::string> kMenuTemplate { "", "",
                                                    "SNAKY WORLD",
                                                    "",
                                                    "----------------",
-                                                   "<score>",
+                                                   "<<score>>",
                                                    "----------------",
                                                    "",
-                                                   "<menu>",
+                                                   "<<options>>",
                                                    "", "" };
+
+    // Prerecorded options. For now, there are no needs for dynamic menu.
+    const std::vector<std::string> kMenuOptions {"Play", "Exit"};
+
+    const unsigned int kGapsAmount = 2; // <score> and <menu>
+    const unsigned int kScoreSize = 1; // just to avoid a magic number
 }
 
 
 Menu::Menu()
     : console(std::make_shared<Console>()),
       startLine(0),
-      activeItem(0)
+      activeOption(0)
 {
     int xSize, _;
     std::tie(xSize, _) = console->getScreenSize();
 
     startLine = xSize / 3;
-    createItems();
-    moveActiveItem(true);
-    drawAll();
+
+    build();
+    draw();
 }
 
 Menu::~Menu()
@@ -48,12 +56,12 @@ void Menu::loop()
 
         if (direction == Console::Directon::Up)
         {
-            moveActiveItem(false);
+            shiftOption(-1);
         }
 
         if (direction == Console::Directon::Down)
         {
-            moveActiveItem(true);
+            shiftOption(1);
         }
 
         if (false)
@@ -66,67 +74,79 @@ void Menu::loop()
     }
 }
 
-void Menu::drawAll()
+void Menu::draw()
 {
     console->drawBackground();
-    for (auto& item : menuItems)
+    for (auto& row : menuRows)
     {
-        item.draw(false);
+        row->draw();
     }
-    menuItems[activeItem].draw(true);
+
+    optionRows[activeOption]->draw(true);
 }
 
-void Menu::createItems()
+void Menu::build()
 {
-    std::vector<std::string> labels{"", "",
-                                    "SNAKY WORLD",
-                                    "",
-                                    "----------------",
-                                    "Current Score: 0",
-                                    "----------------",
-                                    "",
-                                    "Play",
-                                    "Exit",
-                                    "", ""};
     int currentLine = startLine;
-    menuItems.reserve(labels.size());
 
-    for (const auto& label: labels)
-    {
-        menuItems.emplace_back(console, label, currentLine);
-        ++currentLine;
-    }
+    int menuSize = kMenuTemplate.size() + kMenuOptions.size() + kScoreSize - kGapsAmount;
+    menuRows.reserve(menuSize);
 
-    for (size_t i = 0; i < menuItems.size(); ++i)
+    for (const auto& rowText: kMenuTemplate)
     {
-        if (menuItems[i].getText() == "Play" or
-            menuItems[i].getText() == "Exit")
+        if (rowText == "<<score>>")
         {
-            menuItems[i].setAccessibility(true);
+            scoreRow = std::make_shared<MenuRow>(console, "", currentLine);
+            menuRows.push_back(scoreRow);
+            updateScore(0);
+
+            ++currentLine;
         }
+        else if (rowText == "<<options>>")
+        {
+            currentLine = buildOptions(currentLine);
+        }
+        else
+        {
+            auto menuRow = std::make_shared<MenuRow>(console, rowText, currentLine);
+            menuRows.push_back(menuRow);
+            ++currentLine;
+        }
+        
     }
 }
 
-void Menu::moveActiveItem(bool forward)
+int Menu::buildOptions(int line)
 {
-    int direction = 0;
-    if (forward)
+    for (const auto& rowText : kMenuOptions)
     {
-        direction = 1;
+        auto menuRow = std::make_shared<MenuRow>(console, rowText, line);
+        menuRows.push_back(menuRow);
+        optionRows.push_back(menuRow);
+
+        ++line;
     }
-    else
+    return line;
+}
+
+void Menu::shiftOption(int shift)
+{
+    // reset last option to non-active state.
+    optionRows[activeOption]->draw();
+
+    // calculate and draw a new row.
+    activeOption = (optionRows.size() + activeOption + shift) % optionRows.size();
+    optionRows[activeOption]->draw(true);
+}
+
+void Menu::updateScore(int score)
+{
+    if (!scoreRow)
     {
-        direction = -1;
+        return;
     }
 
-    menuItems[activeItem % menuItems.size()].draw(false);
-    while (true)
-    {
-        activeItem = (menuItems.size() + activeItem + direction) % menuItems.size();
-        if (menuItems[activeItem].isAccessible())
-        {
-            menuItems[activeItem].draw(true);
-            return;
-        }
-    }
+    std::string scoreString = "Current score: " + std::to_string(score);
+    scoreRow->setText(scoreString);
+    scoreRow->draw();
 }

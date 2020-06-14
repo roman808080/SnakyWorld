@@ -13,7 +13,7 @@ public:
 
     void setAccessibility(bool accessible);
     bool isAccessible();
-    void draw(bool isActive);
+    void draw(bool isActive = false);
 
     void setText(const std::string& text);
     std::string getText();
