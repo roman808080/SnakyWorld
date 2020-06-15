@@ -39,6 +39,7 @@ Menu::Menu()
 
 Menu::~Menu()
 {
+    // clear after ourselves
     console->clear();
 }
 
@@ -55,12 +56,14 @@ void Menu::loop()
 
 void Menu::draw()
 {
+    // redraws step by step everything.
     console->drawBackground();
     for (auto& row : menuRows)
     {
         row->draw();
     }
 
+    // draws the active element.
     optionRows[activeOption]->draw(true);
 }
 
@@ -72,18 +75,22 @@ void Menu::build()
     {
         if (rowText == "<<score>>")
         {
+            // we need to remember where score is. Save it in an additional variable.
             scoreRow = std::make_shared<MenuRow>(console, "", currentLine);
             menuRows.push_back(scoreRow);
             updateScore(0);
 
+            // increase the current line index because we used the previous one already.
             ++currentLine;
         }
         else if (rowText == "<<options>>")
         {
+            // generate options in the separeted method
             currentLine = buildOptions(currentLine);
         }
         else
         {
+            // if it is just a row lets put it in a common backet and forget about this one.
             auto menuRow = std::make_shared<MenuRow>(console, rowText, currentLine);
             menuRows.push_back(menuRow);
             ++currentLine;
@@ -122,6 +129,7 @@ void Menu::updateScore(int score)
         return;
     }
 
+    // generate a new score string.
     std::string scoreString = "Current score: " + std::to_string(score);
     scoreRow->setText(scoreString);
     scoreRow->draw();
@@ -131,32 +139,35 @@ void Menu::handleKey(Console::Direction key)
 {
     switch (key)
     {
-    case Console::Direction::Esc:
+    case Console::Direction::Esc: // quits the game.
         stop = true;
         return;
-    case Console::Direction::Enter:
+    case Console::Direction::Enter: // triggers an action.
         handleOption();
         return;
-    case Console::Direction::Up:
+    case Console::Direction::Up: // choose the next option above
         shiftOption(-1);
         return;
-    case Console::Direction::Down:
+    case Console::Direction::Down: // choose the next option down
         shiftOption(1);
     default:
-        return;
+        return; // or just ignore the key.
     }
 }
 
 void Menu::handleOption()
 {
     auto action = optionRows[activeOption]->getText();
+
+    // decides what to do based on the screen text.
+    // Can be buggy in the future, maybe refactoring is needed.
     if (action == "Play" or action == "Demo")
     {
         auto board = std::make_shared<Board>(console);
-        board->loop(action == "Demo");
+        board->loop(action == "Demo"); // starts demo if the action is equal to "Demo"
 
         auto currentScore = board->getScore();
-        board.reset(); // destroy the board before redraw the menu.
+        board.reset(); // destroy the board before redraw the menu to clean the screen.
 
         draw();
         updateScore(currentScore);

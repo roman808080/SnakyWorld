@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Board.h"
 #include "Menu.h"
 
 int main()

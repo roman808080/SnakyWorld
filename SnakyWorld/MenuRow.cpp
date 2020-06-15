@@ -5,12 +5,15 @@ namespace
     const unsigned int wrapperSize = 30;
     const unsigned int activeShift = 4;
 
+    // wraps text. the function possibly needs the refactoring.
+    // there is possibly a duplication with functions in the Console class.
     std::string wrapText(const std::string& text, bool isActive)
     {
         unsigned int wrapUntil = wrapperSize;
         std::string newText(text);
         if (isActive)
         {
+            // wraps with additional elements.
             newText = "<" + text + ">";
             wrapUntil += activeShift;
         }
