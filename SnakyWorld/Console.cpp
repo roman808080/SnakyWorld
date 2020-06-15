@@ -74,32 +74,32 @@ Console::~Console()
     CloseHandle(consoleHandler);
 }
 
-Console::Directon Console::getCurrentDirection()
+Console::Direction Console::getCurrentDirection()
 {
     if (!_kbhit())
     {
-        return Directon::Unknown;
+        return Direction::Unknown;
     }
 
     auto symbol = _getch();
     switch (symbol)
     {
     case 'a':
-        return Directon::Left;
+        return Direction::Left;
     case 'd':
-        return Directon::Right;
+        return Direction::Right;
     case 'w':
-        return Directon::Up;
+        return Direction::Up;
     case 's':
-        return Directon::Down;
+        return Direction::Down;
     case kArrowKey:
         return getArrowDirection();
     case kEsc:
-        return Directon::Esc;
+        return Direction::Esc;
     case kEnter:
-        return Directon::Enter;
+        return Direction::Enter;
     default:
-        return Directon::Unknown;
+        return Direction::Unknown;
     }
 }
 
@@ -232,27 +232,27 @@ std::tuple<int, int> Console::getRealScreenSize()
     return std::make_tuple(bufferInfo.srWindow.Bottom, bufferInfo.srWindow.Right);
 }
 
-Console::Directon Console::getArrowDirection()
+Console::Direction Console::getArrowDirection()
 {
     if (!_kbhit())
     {
-        return Directon::Unknown;
+        return Direction::Unknown;
     }
 
     switch (_getch())
     {
     case kArrowLeft:
-        return Directon::Left;
+        return Direction::Left;
     case kArrowRight:
-        return Directon::Right;
+        return Direction::Right;
     case kArrowUp:
-        return Directon::Up;
+        return Direction::Up;
     case kArrowDown:
-        return Directon::Down;
+        return Direction::Down;
     case kArrowKey:
         return getArrowDirection();
     default:
-        return Directon::Unknown;
+        return Direction::Unknown;
     }
 }
 

@@ -14,7 +14,7 @@ public:
     Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int size = 3);
 
     void move();
-    void move(Console::Directon direction);
+    void move(Console::Direction direction);
 
     void setBorders(const Coordinate& topLeftCorner, const Coordinate& bottomRightCorner);
     void setSpawn(std::shared_ptr<Cell> spawn);
@@ -24,17 +24,17 @@ public:
     virtual Coordinate getCoordindate() const override;
 
 private:
-    void doStep(Console::Directon direction);
+    void doStep(Console::Direction direction);
     void tryToUseLastStep();
 
-    Console::Directon getOppositeDirection(Console::Directon direction);
-    std::vector<Console::Directon> getPossibleDirections(const Coordinate& snakeHead,
+    Console::Direction getOppositeDirection(Console::Direction direction);
+    std::vector<Console::Direction> getPossibleDirections(const Coordinate& snakeHead,
                                                          const Coordinate& destination);
-    Console::Directon calculateDirection(const Coordinate& snakeHead, const Coordinate& spawnCoordinate,
-                                        Console::Directon previousDirection = Console::Directon::Unknown,
+    Console::Direction calculateDirection(const Coordinate& snakeHead, const Coordinate& spawnCoordinate,
+                                        Console::Direction previousDirection = Console::Direction::Unknown,
                                         int depth = 40);
     Coordinate moveCoordinate(const Coordinate& coordinate,
-                              Console::Directon direction);
+                              Console::Direction direction);
     bool isBorderCollision(const Coordinate& otherCoordinate);
     void calculationRequest();
 
@@ -48,8 +48,8 @@ private:
     Coordinate topLeftCorner;
     Coordinate bottomRightCorner;
 
-    Console::Directon lastDirection;
-    std::future<Console::Directon> nextDirection;
+    Console::Direction lastDirection;
+    std::future<Console::Direction> nextDirection;
 
     ConsumptionObserver* consumptionObserver;
 };

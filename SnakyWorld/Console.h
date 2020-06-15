@@ -6,11 +6,13 @@
 #include <windows.h>
 
 // Console is responsible for low level interaction with a console.
+// The object is omnipresent, maybe needs to be singleton, but I am not sure about this.
+
 class Console
 {
 public:
 
-    enum class Directon
+    enum class Direction
     {
         Left,
         Right,
@@ -36,7 +38,7 @@ public:
     ~Console();
 
     // Returns current direction.
-    Directon getCurrentDirection();
+    Direction getCurrentDirection();
 
     // Returns a formatted screen size. The y axe is reduced due to uneven rectangles.
     std::tuple<int, int> getScreenSize();
@@ -68,7 +70,7 @@ private:
     std::tuple<int, int> getRealScreenSize();
 
     // In case arrow keys were used.
-    Directon getArrowDirection();
+    Direction getArrowDirection();
 
     // Fixes an issue on Windows 10 with ANSI symbols.
     void enableVirtualTerminalProcessing();

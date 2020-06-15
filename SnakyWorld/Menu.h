@@ -22,7 +22,7 @@ private:
     void shiftOption(int shift);
     void updateScore(int score);
 
-    void handleKey(Console::Directon key);
+    void handleKey(Console::Direction key);
     void handleOption();
 
 private:

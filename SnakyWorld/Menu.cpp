@@ -127,20 +127,20 @@ void Menu::updateScore(int score)
     scoreRow->draw();
 }
 
-void Menu::handleKey(Console::Directon key)
+void Menu::handleKey(Console::Direction key)
 {
     switch (key)
     {
-    case Console::Directon::Esc:
+    case Console::Direction::Esc:
         stop = true;
         return;
-    case Console::Directon::Enter:
+    case Console::Direction::Enter:
         handleOption();
         return;
-    case Console::Directon::Up:
+    case Console::Direction::Up:
         shiftOption(-1);
         return;
-    case Console::Directon::Down:
+    case Console::Direction::Down:
         shiftOption(1);
     default:
         return;

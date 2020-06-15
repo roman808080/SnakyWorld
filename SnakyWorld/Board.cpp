@@ -72,7 +72,7 @@ void Board::loop(bool isDemo)
     while (true)
     {
         auto direction = console->getCurrentDirection();
-        if (direction == Console::Directon::Esc)
+        if (direction == Console::Direction::Esc)
         {
             return;
         }

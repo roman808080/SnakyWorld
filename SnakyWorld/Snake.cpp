@@ -4,7 +4,7 @@
 
 namespace
 {
-    Console::Directon getDirectionBaseOnDiff(int diff, Console::Directon first, Console::Directon second)
+    Console::Direction getDirectionBaseOnDiff(int diff, Console::Direction first, Console::Direction second)
     {
         if (diff < 0)
         {
@@ -16,34 +16,34 @@ namespace
             return second;
         }
 
-        return Console::Directon::Unknown;
+        return Console::Direction::Unknown;
     }
 
-    Console::Directon reverseDirection(Console::Directon direction)
+    Console::Direction reverseDirection(Console::Direction direction)
     {
         switch (direction)
         {
-        case Console::Directon::Left:
-            return Console::Directon::Right;
+        case Console::Direction::Left:
+            return Console::Direction::Right;
 
-        case Console::Directon::Right:
-            return Console::Directon::Left;
+        case Console::Direction::Right:
+            return Console::Direction::Left;
 
-        case Console::Directon::Up:
-            return Console::Directon::Down;
+        case Console::Direction::Up:
+            return Console::Direction::Down;
 
-        case Console::Directon::Down:
-            return Console::Directon::Up;
+        case Console::Direction::Down:
+            return Console::Direction::Up;
 
         default:
-            return Console::Directon::Unknown;
+            return Console::Direction::Unknown;
         }
     }
 }
 
 Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int size)
     : console(console), head(coordinate), topLeftCorner(0, 0), bottomRightCorner(0, 0),
-      lastDirection(Console::Directon::Unknown), consumptionObserver(nullptr)
+      lastDirection(Console::Direction::Unknown), consumptionObserver(nullptr)
 {
     auto teil = head;
     for (int i = 0; i < size; ++i)
@@ -59,7 +59,7 @@ void Snake::move()
     calculationRequest();
 }
 
-void Snake::move(Console::Directon direction)
+void Snake::move(Console::Direction direction)
 {
     auto oppositeDirection = getOppositeDirection(lastDirection);
     if (direction == oppositeDirection)
@@ -70,10 +70,10 @@ void Snake::move(Console::Directon direction)
 
     switch (direction)
     {
-    case Console::Directon::Left:
-    case Console::Directon::Right:
-    case Console::Directon::Up:
-    case Console::Directon::Down:
+    case Console::Direction::Left:
+    case Console::Direction::Right:
+    case Console::Direction::Up:
+    case Console::Direction::Down:
         doStep(direction);
         return;
     default:
@@ -111,7 +111,7 @@ Coordinate Snake::getCoordindate() const
     return head;
 }
 
-void Snake::doStep(Console::Directon direction)
+void Snake::doStep(Console::Direction direction)
 {
     head = moveCoordinate(head, direction);
     lastDirection = direction;
@@ -134,43 +134,43 @@ void Snake::doStep(Console::Directon direction)
 
 void Snake::tryToUseLastStep()
 {
-    if (lastDirection != Console::Directon::Unknown)
+    if (lastDirection != Console::Direction::Unknown)
     {
         move(lastDirection);
     }
 }
 
-Console::Directon Snake::getOppositeDirection(Console::Directon direction)
+Console::Direction Snake::getOppositeDirection(Console::Direction direction)
 {
-    if (lastDirection == Console::Directon::Unknown)
+    if (lastDirection == Console::Direction::Unknown)
     {
-        return Console::Directon::Left;
+        return Console::Direction::Left;
     }
     return reverseDirection(direction);
 }
 
-std::vector<Console::Directon> Snake::getPossibleDirections(const Coordinate& snakeHead,
+std::vector<Console::Direction> Snake::getPossibleDirections(const Coordinate& snakeHead,
                                                             const Coordinate& destination)
 {
     int xDiff = destination.first - snakeHead.first;
     int yDiff = destination.second - snakeHead.second;
 
     auto horizontalDirection = getDirectionBaseOnDiff(yDiff,
-                                                      Console::Directon::Left,
-                                                      Console::Directon::Right);
+                                                      Console::Direction::Left,
+                                                      Console::Direction::Right);
     auto verticalDirection = getDirectionBaseOnDiff(xDiff,
-                                                    Console::Directon::Up,
-                                                    Console::Directon::Down);
+                                                    Console::Direction::Up,
+                                                    Console::Direction::Down);
 
-    std::vector<Console::Directon> directions{ horizontalDirection, verticalDirection,
-                                               Console::Directon::Left, Console::Directon::Right,
-                                               Console::Directon::Up, Console::Directon::Down };
+    std::vector<Console::Direction> directions{ horizontalDirection, verticalDirection,
+                                               Console::Direction::Left, Console::Direction::Right,
+                                               Console::Direction::Up, Console::Direction::Down };
 
     return directions;
 }
 
-Console::Directon Snake::calculateDirection(const Coordinate& snakeHead, const Coordinate& spawnCoordinate,
-                                            Console::Directon previousDirection, int depth)
+Console::Direction Snake::calculateDirection(const Coordinate& snakeHead, const Coordinate& spawnCoordinate,
+                                            Console::Direction previousDirection, int depth)
 {
     if (snakeHead == spawnCoordinate or
         depth <= 0)
@@ -182,7 +182,7 @@ Console::Directon Snake::calculateDirection(const Coordinate& snakeHead, const C
 
     for (const auto direction : directions)
     {
-        if (direction == Console::Directon::Unknown)
+        if (direction == Console::Direction::Unknown)
         {
             continue;
         }
@@ -193,23 +193,23 @@ Console::Directon Snake::calculateDirection(const Coordinate& snakeHead, const C
         }
     }
 
-    return Console::Directon::Unknown;
+    return Console::Direction::Unknown;
 }
 
-Coordinate Snake::moveCoordinate(const Coordinate& coordinate, Console::Directon direction)
+Coordinate Snake::moveCoordinate(const Coordinate& coordinate, Console::Direction direction)
 {
     switch (direction)
     {
-    case Console::Directon::Left:
+    case Console::Direction::Left:
         return Coordinate(coordinate.first, coordinate.second - 1);
 
-    case Console::Directon::Right:
+    case Console::Direction::Right:
         return Coordinate(coordinate.first, coordinate.second + 1);
 
-    case Console::Directon::Up:
+    case Console::Direction::Up:
         return Coordinate(coordinate.first - 1, coordinate.second);
 
-    case Console::Directon::Down:
+    case Console::Direction::Down:
         return Coordinate(coordinate.first + 1, coordinate.second);
 
     default:
