@@ -155,6 +155,17 @@ std::vector<Console::Directon> Snake::getPossibleDirections(const Coordinate& sn
                                                     Console::Directon::Up,
                                                     Console::Directon::Down);
 
+    auto oppositeDirection = getOppositeDirection(lastDirection);
+    if (horizontalDirection == oppositeDirection)
+    {
+        horizontalDirection = Console::Directon::Down;
+    }
+
+    if (verticalDirection == oppositeDirection)
+    {
+        verticalDirection = Console::Directon::Right;
+    }
+
     std::vector<Console::Directon> directions{ horizontalDirection, verticalDirection,
                                                reverseDirection(horizontalDirection),
                                                reverseDirection(verticalDirection) };

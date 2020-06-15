@@ -63,7 +63,7 @@ Board::~Board()
 {
 }
 
-void Board::loop()
+void Board::loop(bool isDemo)
 {
     while (true)
     {
@@ -73,7 +73,15 @@ void Board::loop()
             return;
         }
 
-        snake->move();
+        if (isDemo)
+        {
+            snake->move();
+        }
+        else
+        {
+            snake->move(direction);
+        }
+        
         auto snakeHead = snake->getCoordindate();
         auto interacted = getInteractionStatus(snakeHead);
 

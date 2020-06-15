@@ -18,7 +18,7 @@ namespace
                                                    "", "" };
 
     // Prerecorded options. For now, there are no needs for dynamic menu.
-    const std::vector<std::string> kMenuOptions {"Play", "Exit"};
+    const std::vector<std::string> kMenuOptions {"Play", "Demo", "Exit"};
 }
 
 
@@ -150,10 +150,10 @@ void Menu::handleKey(Console::Directon key)
 void Menu::handleOption()
 {
     auto action = optionRows[activeOption]->getText();
-    if (action == "Play")
+    if (action == "Play" or action == "Demo")
     {
         auto board = std::make_shared<Board>(console);
-        board->loop();
+        board->loop(action == "Demo");
 
         auto currentScore = board->getScore();
         board.reset(); // destroy the board before redraw the menu.

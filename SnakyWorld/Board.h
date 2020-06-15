@@ -18,7 +18,7 @@ public:
     Board(std::shared_ptr<Console> console);
     virtual ~Board();
 
-    void loop();
+    void loop(bool isDemo = false);
     int getScore();
 
     virtual void spawnWasEaten() override;
