@@ -1,0 +1,4825 @@
+Snake: x = 3 y = 4
+Spawn: x = 4 y = 28Diff 1 24
+1
+------------------
+Snake: x = 3 y = 5
+Spawn: x = 4 y = 28Diff 1 23
+1
+------------------
+Snake: x = 3 y = 6
+Spawn: x = 4 y = 28Diff 1 22
+1
+------------------
+Snake: x = 3 y = 7
+Spawn: x = 4 y = 28Diff 1 21
+1
+------------------
+Snake: x = 3 y = 8
+Spawn: x = 4 y = 28Diff 1 20
+1
+------------------
+Snake: x = 3 y = 9
+Spawn: x = 4 y = 28Diff 1 19
+1
+------------------
+Snake: x = 3 y = 10
+Spawn: x = 4 y = 28Diff 1 18
+1
+------------------
+Snake: x = 3 y = 11
+Spawn: x = 4 y = 28Diff 1 17
+1
+------------------
+Snake: x = 3 y = 12
+Spawn: x = 4 y = 28Diff 1 16
+1
+------------------
+Snake: x = 3 y = 13
+Spawn: x = 4 y = 28Diff 1 15
+1
+------------------
+Snake: x = 3 y = 14
+Spawn: x = 4 y = 28Diff 1 14
+1
+------------------
+Snake: x = 3 y = 15
+Spawn: x = 4 y = 28Diff 1 13
+1
+------------------
+Snake: x = 3 y = 16
+Spawn: x = 4 y = 28Diff 1 12
+1
+------------------
+Snake: x = 3 y = 17
+Spawn: x = 4 y = 28Diff 1 11
+1
+------------------
+Snake: x = 3 y = 18
+Spawn: x = 4 y = 28Diff 1 10
+1
+------------------
+Snake: x = 3 y = 19
+Spawn: x = 4 y = 28Diff 1 9
+1
+------------------
+Snake: x = 3 y = 20
+Spawn: x = 4 y = 28Diff 1 8
+1
+------------------
+Snake: x = 3 y = 21
+Spawn: x = 4 y = 28Diff 1 7
+1
+------------------
+Snake: x = 3 y = 22
+Spawn: x = 4 y = 28Diff 1 6
+1
+------------------
+Snake: x = 3 y = 23
+Spawn: x = 4 y = 28Diff 1 5
+1
+------------------
+Snake: x = 3 y = 24
+Spawn: x = 4 y = 28Diff 1 4
+1
+------------------
+Snake: x = 3 y = 25
+Spawn: x = 4 y = 28Diff 1 3
+1
+------------------
+Snake: x = 3 y = 26
+Spawn: x = 4 y = 28Diff 1 2
+1
+------------------
+Snake: x = 3 y = 27
+Spawn: x = 4 y = 28Diff 1 1
+1
+------------------
+Snake: x = 3 y = 28
+Spawn: x = 4 y = 28Diff 1 0
+continue
+3
+------------------
+Snake: x = 4 y = 28
+Spawn: x = 20 y = 22Diff 16 -6
+0
+------------------
+Snake: x = 4 y = 27
+Spawn: x = 20 y = 22Diff 16 -5
+0
+------------------
+Snake: x = 4 y = 26
+Spawn: x = 20 y = 22Diff 16 -4
+0
+------------------
+Snake: x = 4 y = 25
+Spawn: x = 20 y = 22Diff 16 -3
+0
+------------------
+Snake: x = 4 y = 24
+Spawn: x = 20 y = 22Diff 16 -2
+0
+------------------
+Snake: x = 4 y = 23
+Spawn: x = 20 y = 22Diff 16 -1
+0
+------------------
+Snake: x = 4 y = 22
+Spawn: x = 20 y = 22Diff 16 0
+continue
+3
+------------------
+Snake: x = 5 y = 22
+Spawn: x = 20 y = 22Diff 15 0
+continue
+3
+------------------
+Snake: x = 6 y = 22
+Spawn: x = 20 y = 22Diff 14 0
+continue
+3
+------------------
+Snake: x = 7 y = 22
+Spawn: x = 20 y = 22Diff 13 0
+continue
+3
+------------------
+Snake: x = 8 y = 22
+Spawn: x = 20 y = 22Diff 12 0
+continue
+3
+------------------
+Snake: x = 9 y = 22
+Spawn: x = 20 y = 22Diff 11 0
+continue
+3
+------------------
+Snake: x = 10 y = 22
+Spawn: x = 20 y = 22Diff 10 0
+continue
+3
+------------------
+Snake: x = 11 y = 22
+Spawn: x = 20 y = 22Diff 9 0
+continue
+3
+------------------
+Snake: x = 12 y = 22
+Spawn: x = 20 y = 22Diff 8 0
+continue
+3
+------------------
+Snake: x = 13 y = 22
+Spawn: x = 20 y = 22Diff 7 0
+continue
+3
+------------------
+Snake: x = 14 y = 22
+Spawn: x = 20 y = 22Diff 6 0
+continue
+3
+------------------
+Snake: x = 15 y = 22
+Spawn: x = 20 y = 22Diff 5 0
+continue
+3
+------------------
+Snake: x = 16 y = 22
+Spawn: x = 20 y = 22Diff 4 0
+continue
+3
+------------------
+Snake: x = 17 y = 22
+Spawn: x = 20 y = 22Diff 3 0
+continue
+3
+------------------
+Snake: x = 18 y = 22
+Spawn: x = 20 y = 22Diff 2 0
+continue
+3
+------------------
+Snake: x = 19 y = 22
+Spawn: x = 20 y = 22Diff 1 0
+continue
+3
+------------------
+Snake: x = 20 y = 22
+Spawn: x = 19 y = 17Diff -1 -5
+0
+------------------
+Snake: x = 20 y = 21
+Spawn: x = 19 y = 17Diff -1 -4
+0
+------------------
+Snake: x = 20 y = 20
+Spawn: x = 19 y = 17Diff -1 -3
+0
+------------------
+Snake: x = 20 y = 19
+Spawn: x = 19 y = 17Diff -1 -2
+0
+------------------
+Snake: x = 20 y = 18
+Spawn: x = 19 y = 17Diff -1 -1
+0
+------------------
+Snake: x = 20 y = 17
+Spawn: x = 19 y = 17Diff -1 0
+continue
+2
+------------------
+Snake: x = 19 y = 17
+Spawn: x = 19 y = 7Diff 0 -10
+0
+------------------
+Snake: x = 19 y = 16
+Spawn: x = 19 y = 7Diff 0 -9
+0
+------------------
+Snake: x = 19 y = 15
+Spawn: x = 19 y = 7Diff 0 -8
+0
+------------------
+Snake: x = 19 y = 14
+Spawn: x = 19 y = 7Diff 0 -7
+0
+------------------
+Snake: x = 19 y = 13
+Spawn: x = 19 y = 7Diff 0 -6
+0
+------------------
+Snake: x = 19 y = 12
+Spawn: x = 19 y = 7Diff 0 -5
+0
+------------------
+Snake: x = 19 y = 11
+Spawn: x = 19 y = 7Diff 0 -4
+0
+------------------
+Snake: x = 19 y = 10
+Spawn: x = 19 y = 7Diff 0 -3
+0
+------------------
+Snake: x = 19 y = 9
+Spawn: x = 19 y = 7Diff 0 -2
+0
+------------------
+Snake: x = 19 y = 8
+Spawn: x = 19 y = 7Diff 0 -1
+0
+------------------
+Snake: x = 19 y = 7
+Spawn: x = 22 y = 54Diff 3 47
+3
+------------------
+Snake: x = 20 y = 7
+Spawn: x = 22 y = 54Diff 2 47
+1
+------------------
+Snake: x = 20 y = 8
+Spawn: x = 22 y = 54Diff 2 46
+1
+------------------
+Snake: x = 20 y = 9
+Spawn: x = 22 y = 54Diff 2 45
+1
+------------------
+Snake: x = 20 y = 10
+Spawn: x = 22 y = 54Diff 2 44
+1
+------------------
+Snake: x = 20 y = 11
+Spawn: x = 22 y = 54Diff 2 43
+1
+------------------
+Snake: x = 20 y = 12
+Spawn: x = 22 y = 54Diff 2 42
+1
+------------------
+Snake: x = 20 y = 13
+Spawn: x = 22 y = 54Diff 2 41
+1
+------------------
+Snake: x = 20 y = 14
+Spawn: x = 22 y = 54Diff 2 40
+1
+------------------
+Snake: x = 20 y = 15
+Spawn: x = 22 y = 54Diff 2 39
+1
+------------------
+Snake: x = 20 y = 16
+Spawn: x = 22 y = 54Diff 2 38
+1
+------------------
+Snake: x = 20 y = 17
+Spawn: x = 22 y = 54Diff 2 37
+1
+------------------
+Snake: x = 20 y = 18
+Spawn: x = 22 y = 54Diff 2 36
+1
+------------------
+Snake: x = 20 y = 19
+Spawn: x = 22 y = 54Diff 2 35
+1
+------------------
+Snake: x = 20 y = 20
+Spawn: x = 22 y = 54Diff 2 34
+1
+------------------
+Snake: x = 20 y = 21
+Spawn: x = 22 y = 54Diff 2 33
+1
+------------------
+Snake: x = 20 y = 22
+Spawn: x = 22 y = 54Diff 2 32
+1
+------------------
+Snake: x = 20 y = 23
+Spawn: x = 22 y = 54Diff 2 31
+1
+------------------
+Snake: x = 20 y = 24
+Spawn: x = 22 y = 54Diff 2 30
+1
+------------------
+Snake: x = 20 y = 25
+Spawn: x = 22 y = 54Diff 2 29
+1
+------------------
+Snake: x = 20 y = 26
+Spawn: x = 22 y = 54Diff 2 28
+1
+------------------
+Snake: x = 20 y = 27
+Spawn: x = 22 y = 54Diff 2 27
+1
+------------------
+Snake: x = 20 y = 28
+Spawn: x = 22 y = 54Diff 2 26
+1
+------------------
+Snake: x = 20 y = 29
+Spawn: x = 22 y = 54Diff 2 25
+1
+------------------
+Snake: x = 20 y = 30
+Spawn: x = 22 y = 54Diff 2 24
+1
+------------------
+Snake: x = 20 y = 31
+Spawn: x = 22 y = 54Diff 2 23
+1
+------------------
+Snake: x = 20 y = 32
+Spawn: x = 22 y = 54Diff 2 22
+1
+------------------
+Snake: x = 20 y = 33
+Spawn: x = 22 y = 54Diff 2 21
+1
+------------------
+Snake: x = 20 y = 34
+Spawn: x = 22 y = 54Diff 2 20
+1
+------------------
+Snake: x = 20 y = 35
+Spawn: x = 22 y = 54Diff 2 19
+1
+------------------
+Snake: x = 20 y = 36
+Spawn: x = 22 y = 54Diff 2 18
+1
+------------------
+Snake: x = 20 y = 37
+Spawn: x = 22 y = 54Diff 2 17
+1
+------------------
+Snake: x = 20 y = 38
+Spawn: x = 22 y = 54Diff 2 16
+1
+------------------
+Snake: x = 20 y = 39
+Spawn: x = 22 y = 54Diff 2 15
+1
+------------------
+Snake: x = 20 y = 40
+Spawn: x = 22 y = 54Diff 2 14
+1
+------------------
+Snake: x = 20 y = 41
+Spawn: x = 22 y = 54Diff 2 13
+1
+------------------
+Snake: x = 20 y = 42
+Spawn: x = 22 y = 54Diff 2 12
+1
+------------------
+Snake: x = 20 y = 43
+Spawn: x = 22 y = 54Diff 2 11
+1
+------------------
+Snake: x = 20 y = 44
+Spawn: x = 22 y = 54Diff 2 10
+1
+------------------
+Snake: x = 20 y = 45
+Spawn: x = 22 y = 54Diff 2 9
+1
+------------------
+Snake: x = 20 y = 46
+Spawn: x = 22 y = 54Diff 2 8
+1
+------------------
+Snake: x = 20 y = 47
+Spawn: x = 22 y = 54Diff 2 7
+1
+------------------
+Snake: x = 20 y = 48
+Spawn: x = 22 y = 54Diff 2 6
+1
+------------------
+Snake: x = 20 y = 49
+Spawn: x = 22 y = 54Diff 2 5
+1
+------------------
+Snake: x = 20 y = 50
+Spawn: x = 22 y = 54Diff 2 4
+1
+------------------
+Snake: x = 20 y = 51
+Spawn: x = 22 y = 54Diff 2 3
+1
+------------------
+Snake: x = 20 y = 52
+Spawn: x = 22 y = 54Diff 2 2
+1
+------------------
+Snake: x = 20 y = 53
+Spawn: x = 22 y = 54Diff 2 1
+1
+------------------
+Snake: x = 20 y = 54
+Spawn: x = 22 y = 54Diff 2 0
+continue
+3
+------------------
+Snake: x = 21 y = 54
+Spawn: x = 22 y = 54Diff 1 0
+continue
+3
+------------------
+Snake: x = 22 y = 54
+Spawn: x = 10 y = 4Diff -12 -50
+0
+------------------
+Snake: x = 22 y = 53
+Spawn: x = 10 y = 4Diff -12 -49
+0
+------------------
+Snake: x = 22 y = 52
+Spawn: x = 10 y = 4Diff -12 -48
+0
+------------------
+Snake: x = 22 y = 51
+Spawn: x = 10 y = 4Diff -12 -47
+0
+------------------
+Snake: x = 22 y = 50
+Spawn: x = 10 y = 4Diff -12 -46
+0
+------------------
+Snake: x = 22 y = 49
+Spawn: x = 10 y = 4Diff -12 -45
+0
+------------------
+Snake: x = 22 y = 48
+Spawn: x = 10 y = 4Diff -12 -44
+0
+------------------
+Snake: x = 22 y = 47
+Spawn: x = 10 y = 4Diff -12 -43
+0
+------------------
+Snake: x = 22 y = 46
+Spawn: x = 10 y = 4Diff -12 -42
+0
+------------------
+Snake: x = 22 y = 45
+Spawn: x = 10 y = 4Diff -12 -41
+0
+------------------
+Snake: x = 22 y = 44
+Spawn: x = 10 y = 4Diff -12 -40
+0
+------------------
+Snake: x = 22 y = 43
+Spawn: x = 10 y = 4Diff -12 -39
+0
+------------------
+Snake: x = 22 y = 42
+Spawn: x = 10 y = 4Diff -12 -38
+0
+------------------
+Snake: x = 22 y = 41
+Spawn: x = 10 y = 4Diff -12 -37
+0
+------------------
+Snake: x = 22 y = 40
+Spawn: x = 10 y = 4Diff -12 -36
+0
+------------------
+Snake: x = 22 y = 39
+Spawn: x = 10 y = 4Diff -12 -35
+0
+------------------
+Snake: x = 22 y = 38
+Spawn: x = 10 y = 4Diff -12 -34
+0
+------------------
+Snake: x = 22 y = 37
+Spawn: x = 10 y = 4Diff -12 -33
+0
+------------------
+Snake: x = 22 y = 36
+Spawn: x = 10 y = 4Diff -12 -32
+0
+------------------
+Snake: x = 22 y = 35
+Spawn: x = 10 y = 4Diff -12 -31
+0
+------------------
+Snake: x = 22 y = 34
+Spawn: x = 10 y = 4Diff -12 -30
+0
+------------------
+Snake: x = 22 y = 33
+Spawn: x = 10 y = 4Diff -12 -29
+0
+------------------
+Snake: x = 22 y = 32
+Spawn: x = 10 y = 4Diff -12 -28
+0
+------------------
+Snake: x = 22 y = 31
+Spawn: x = 10 y = 4Diff -12 -27
+0
+------------------
+Snake: x = 22 y = 30
+Spawn: x = 10 y = 4Diff -12 -26
+0
+------------------
+Snake: x = 22 y = 29
+Spawn: x = 10 y = 4Diff -12 -25
+0
+------------------
+Snake: x = 22 y = 28
+Spawn: x = 10 y = 4Diff -12 -24
+0
+------------------
+Snake: x = 22 y = 27
+Spawn: x = 10 y = 4Diff -12 -23
+0
+------------------
+Snake: x = 22 y = 26
+Spawn: x = 10 y = 4Diff -12 -22
+0
+------------------
+Snake: x = 22 y = 25
+Spawn: x = 10 y = 4Diff -12 -21
+0
+------------------
+Snake: x = 22 y = 24
+Spawn: x = 10 y = 4Diff -12 -20
+0
+------------------
+Snake: x = 22 y = 23
+Spawn: x = 10 y = 4Diff -12 -19
+0
+------------------
+Snake: x = 22 y = 22
+Spawn: x = 10 y = 4Diff -12 -18
+0
+------------------
+Snake: x = 22 y = 21
+Spawn: x = 10 y = 4Diff -12 -17
+0
+------------------
+Snake: x = 22 y = 20
+Spawn: x = 10 y = 4Diff -12 -16
+0
+------------------
+Snake: x = 22 y = 19
+Spawn: x = 10 y = 4Diff -12 -15
+0
+------------------
+Snake: x = 22 y = 18
+Spawn: x = 10 y = 4Diff -12 -14
+0
+------------------
+Snake: x = 22 y = 17
+Spawn: x = 10 y = 4Diff -12 -13
+0
+------------------
+Snake: x = 22 y = 16
+Spawn: x = 10 y = 4Diff -12 -12
+0
+------------------
+Snake: x = 22 y = 15
+Spawn: x = 10 y = 4Diff -12 -11
+0
+------------------
+Snake: x = 22 y = 14
+Spawn: x = 10 y = 4Diff -12 -10
+0
+------------------
+Snake: x = 22 y = 13
+Spawn: x = 10 y = 4Diff -12 -9
+0
+------------------
+Snake: x = 22 y = 12
+Spawn: x = 10 y = 4Diff -12 -8
+0
+------------------
+Snake: x = 22 y = 11
+Spawn: x = 10 y = 4Diff -12 -7
+0
+------------------
+Snake: x = 22 y = 10
+Spawn: x = 10 y = 4Diff -12 -6
+0
+------------------
+Snake: x = 22 y = 9
+Spawn: x = 10 y = 4Diff -12 -5
+0
+------------------
+Snake: x = 22 y = 8
+Spawn: x = 10 y = 4Diff -12 -4
+0
+------------------
+Snake: x = 22 y = 7
+Spawn: x = 10 y = 4Diff -12 -3
+0
+------------------
+Snake: x = 22 y = 6
+Spawn: x = 10 y = 4Diff -12 -2
+0
+------------------
+Snake: x = 22 y = 5
+Spawn: x = 10 y = 4Diff -12 -1
+0
+------------------
+Snake: x = 22 y = 4
+Spawn: x = 10 y = 4Diff -12 0
+continue
+2
+------------------
+Snake: x = 21 y = 4
+Spawn: x = 10 y = 4Diff -11 0
+continue
+2
+------------------
+Snake: x = 20 y = 4
+Spawn: x = 10 y = 4Diff -10 0
+continue
+2
+------------------
+Snake: x = 19 y = 4
+Spawn: x = 10 y = 4Diff -9 0
+continue
+2
+------------------
+Snake: x = 18 y = 4
+Spawn: x = 10 y = 4Diff -8 0
+continue
+2
+------------------
+Snake: x = 17 y = 4
+Spawn: x = 10 y = 4Diff -7 0
+continue
+2
+------------------
+Snake: x = 16 y = 4
+Spawn: x = 10 y = 4Diff -6 0
+continue
+2
+------------------
+Snake: x = 15 y = 4
+Spawn: x = 10 y = 4Diff -5 0
+continue
+2
+------------------
+Snake: x = 14 y = 4
+Spawn: x = 10 y = 4Diff -4 0
+continue
+2
+------------------
+Snake: x = 13 y = 4
+Spawn: x = 10 y = 4Diff -3 0
+continue
+2
+------------------
+Snake: x = 12 y = 4
+Spawn: x = 10 y = 4Diff -2 0
+continue
+2
+------------------
+Snake: x = 11 y = 4
+Spawn: x = 10 y = 4Diff -1 0
+continue
+2
+------------------
+Snake: x = 10 y = 4
+Spawn: x = 8 y = 6Diff -2 2
+1
+------------------
+Snake: x = 10 y = 5
+Spawn: x = 8 y = 6Diff -2 1
+1
+------------------
+Snake: x = 10 y = 6
+Spawn: x = 8 y = 6Diff -2 0
+continue
+2
+------------------
+Snake: x = 9 y = 6
+Spawn: x = 8 y = 6Diff -1 0
+continue
+2
+------------------
+Snake: x = 8 y = 6
+Spawn: x = 8 y = 5Diff 0 -1
+0
+------------------
+Snake: x = 8 y = 5
+Spawn: x = 14 y = 10Diff 6 5
+3
+------------------
+Snake: x = 9 y = 5
+Spawn: x = 14 y = 10Diff 5 5
+0
+------------------
+Snake: x = 9 y = 4
+Spawn: x = 14 y = 10Diff 5 6
+0
+------------------
+Snake: x = 9 y = 3
+Spawn: x = 14 y = 10Diff 5 7
+3
+------------------
+Snake: x = 10 y = 3
+Spawn: x = 14 y = 10Diff 4 7
+3
+------------------
+Snake: x = 11 y = 3
+Spawn: x = 14 y = 10Diff 3 7
+1
+------------------
+Snake: x = 11 y = 4
+Spawn: x = 14 y = 10Diff 3 6
+1
+------------------
+Snake: x = 11 y = 5
+Spawn: x = 14 y = 10Diff 3 5
+1
+------------------
+Snake: x = 11 y = 6
+Spawn: x = 14 y = 10Diff 3 4
+1
+------------------
+Snake: x = 11 y = 7
+Spawn: x = 14 y = 10Diff 3 3
+1
+------------------
+Snake: x = 11 y = 8
+Spawn: x = 14 y = 10Diff 3 2
+1
+------------------
+Snake: x = 11 y = 9
+Spawn: x = 14 y = 10Diff 3 1
+1
+------------------
+Snake: x = 11 y = 10
+Spawn: x = 14 y = 10Diff 3 0
+continue
+3
+------------------
+Snake: x = 12 y = 10
+Spawn: x = 14 y = 10Diff 2 0
+continue
+3
+------------------
+Snake: x = 13 y = 10
+Spawn: x = 14 y = 10Diff 1 0
+continue
+3
+------------------
+Snake: x = 14 y = 10
+Spawn: x = 6 y = 39Diff -8 29
+1
+------------------
+Snake: x = 14 y = 11
+Spawn: x = 6 y = 39Diff -8 28
+1
+------------------
+Snake: x = 14 y = 12
+Spawn: x = 6 y = 39Diff -8 27
+1
+------------------
+Snake: x = 14 y = 13
+Spawn: x = 6 y = 39Diff -8 26
+1
+------------------
+Snake: x = 14 y = 14
+Spawn: x = 6 y = 39Diff -8 25
+1
+------------------
+Snake: x = 14 y = 15
+Spawn: x = 6 y = 39Diff -8 24
+1
+------------------
+Snake: x = 14 y = 16
+Spawn: x = 6 y = 39Diff -8 23
+1
+------------------
+Snake: x = 14 y = 17
+Spawn: x = 6 y = 39Diff -8 22
+1
+------------------
+Snake: x = 14 y = 18
+Spawn: x = 6 y = 39Diff -8 21
+1
+------------------
+Snake: x = 14 y = 19
+Spawn: x = 6 y = 39Diff -8 20
+1
+------------------
+Snake: x = 14 y = 20
+Spawn: x = 6 y = 39Diff -8 19
+1
+------------------
+Snake: x = 14 y = 21
+Spawn: x = 6 y = 39Diff -8 18
+1
+------------------
+Snake: x = 14 y = 22
+Spawn: x = 6 y = 39Diff -8 17
+1
+------------------
+Snake: x = 14 y = 23
+Spawn: x = 6 y = 39Diff -8 16
+1
+------------------
+Snake: x = 14 y = 24
+Spawn: x = 6 y = 39Diff -8 15
+1
+------------------
+Snake: x = 14 y = 25
+Spawn: x = 6 y = 39Diff -8 14
+1
+------------------
+Snake: x = 14 y = 26
+Spawn: x = 6 y = 39Diff -8 13
+1
+------------------
+Snake: x = 14 y = 27
+Spawn: x = 6 y = 39Diff -8 12
+1
+------------------
+Snake: x = 14 y = 28
+Spawn: x = 6 y = 39Diff -8 11
+1
+------------------
+Snake: x = 14 y = 29
+Spawn: x = 6 y = 39Diff -8 10
+1
+------------------
+Snake: x = 14 y = 30
+Spawn: x = 6 y = 39Diff -8 9
+1
+------------------
+Snake: x = 14 y = 31
+Spawn: x = 6 y = 39Diff -8 8
+1
+------------------
+Snake: x = 14 y = 32
+Spawn: x = 6 y = 39Diff -8 7
+1
+------------------
+Snake: x = 14 y = 33
+Spawn: x = 6 y = 39Diff -8 6
+1
+------------------
+Snake: x = 14 y = 34
+Spawn: x = 6 y = 39Diff -8 5
+1
+------------------
+Snake: x = 14 y = 35
+Spawn: x = 6 y = 39Diff -8 4
+1
+------------------
+Snake: x = 14 y = 36
+Spawn: x = 6 y = 39Diff -8 3
+1
+------------------
+Snake: x = 14 y = 37
+Spawn: x = 6 y = 39Diff -8 2
+1
+------------------
+Snake: x = 14 y = 38
+Spawn: x = 6 y = 39Diff -8 1
+1
+------------------
+Snake: x = 14 y = 39
+Spawn: x = 6 y = 39Diff -8 0
+continue
+2
+------------------
+Snake: x = 13 y = 39
+Spawn: x = 6 y = 39Diff -7 0
+continue
+2
+------------------
+Snake: x = 12 y = 39
+Spawn: x = 6 y = 39Diff -6 0
+continue
+2
+------------------
+Snake: x = 11 y = 39
+Spawn: x = 6 y = 39Diff -5 0
+continue
+2
+------------------
+Snake: x = 10 y = 39
+Spawn: x = 6 y = 39Diff -4 0
+continue
+2
+------------------
+Snake: x = 9 y = 39
+Spawn: x = 6 y = 39Diff -3 0
+continue
+2
+------------------
+Snake: x = 8 y = 39
+Spawn: x = 6 y = 39Diff -2 0
+continue
+2
+------------------
+Snake: x = 7 y = 39
+Spawn: x = 6 y = 39Diff -1 0
+continue
+2
+------------------
+Snake: x = 6 y = 39
+Spawn: x = 17 y = 11Diff 11 -28
+0
+------------------
+Snake: x = 6 y = 38
+Spawn: x = 17 y = 11Diff 11 -27
+0
+------------------
+Snake: x = 6 y = 37
+Spawn: x = 17 y = 11Diff 11 -26
+0
+------------------
+Snake: x = 6 y = 36
+Spawn: x = 17 y = 11Diff 11 -25
+0
+------------------
+Snake: x = 6 y = 35
+Spawn: x = 17 y = 11Diff 11 -24
+0
+------------------
+Snake: x = 6 y = 34
+Spawn: x = 17 y = 11Diff 11 -23
+0
+------------------
+Snake: x = 6 y = 33
+Spawn: x = 17 y = 11Diff 11 -22
+0
+------------------
+Snake: x = 6 y = 32
+Spawn: x = 17 y = 11Diff 11 -21
+0
+------------------
+Snake: x = 6 y = 31
+Spawn: x = 17 y = 11Diff 11 -20
+0
+------------------
+Snake: x = 6 y = 30
+Spawn: x = 17 y = 11Diff 11 -19
+0
+------------------
+Snake: x = 6 y = 29
+Spawn: x = 17 y = 11Diff 11 -18
+0
+------------------
+Snake: x = 6 y = 28
+Spawn: x = 17 y = 11Diff 11 -17
+0
+------------------
+Snake: x = 6 y = 27
+Spawn: x = 17 y = 11Diff 11 -16
+0
+------------------
+Snake: x = 6 y = 26
+Spawn: x = 17 y = 11Diff 11 -15
+0
+------------------
+Snake: x = 6 y = 25
+Spawn: x = 17 y = 11Diff 11 -14
+0
+------------------
+Snake: x = 6 y = 24
+Spawn: x = 17 y = 11Diff 11 -13
+0
+------------------
+Snake: x = 6 y = 23
+Spawn: x = 17 y = 11Diff 11 -12
+0
+------------------
+Snake: x = 6 y = 22
+Spawn: x = 17 y = 11Diff 11 -11
+0
+------------------
+Snake: x = 6 y = 21
+Spawn: x = 17 y = 11Diff 11 -10
+0
+------------------
+Snake: x = 6 y = 20
+Spawn: x = 17 y = 11Diff 11 -9
+0
+------------------
+Snake: x = 6 y = 19
+Spawn: x = 17 y = 11Diff 11 -8
+0
+------------------
+Snake: x = 6 y = 18
+Spawn: x = 17 y = 11Diff 11 -7
+0
+------------------
+Snake: x = 6 y = 17
+Spawn: x = 17 y = 11Diff 11 -6
+0
+------------------
+Snake: x = 6 y = 16
+Spawn: x = 17 y = 11Diff 11 -5
+0
+------------------
+Snake: x = 6 y = 15
+Spawn: x = 17 y = 11Diff 11 -4
+0
+------------------
+Snake: x = 6 y = 14
+Spawn: x = 17 y = 11Diff 11 -3
+0
+------------------
+Snake: x = 6 y = 13
+Spawn: x = 17 y = 11Diff 11 -2
+0
+------------------
+Snake: x = 6 y = 12
+Spawn: x = 17 y = 11Diff 11 -1
+0
+------------------
+Snake: x = 6 y = 11
+Spawn: x = 17 y = 11Diff 11 0
+continue
+3
+------------------
+Snake: x = 7 y = 11
+Spawn: x = 17 y = 11Diff 10 0
+continue
+3
+------------------
+Snake: x = 8 y = 11
+Spawn: x = 17 y = 11Diff 9 0
+continue
+3
+------------------
+Snake: x = 9 y = 11
+Spawn: x = 17 y = 11Diff 8 0
+continue
+3
+------------------
+Snake: x = 10 y = 11
+Spawn: x = 17 y = 11Diff 7 0
+continue
+3
+------------------
+Snake: x = 11 y = 11
+Spawn: x = 17 y = 11Diff 6 0
+continue
+3
+------------------
+Snake: x = 12 y = 11
+Spawn: x = 17 y = 11Diff 5 0
+continue
+3
+------------------
+Snake: x = 13 y = 11
+Spawn: x = 17 y = 11Diff 4 0
+continue
+3
+------------------
+Snake: x = 14 y = 11
+Spawn: x = 17 y = 11Diff 3 0
+continue
+3
+------------------
+Snake: x = 15 y = 11
+Spawn: x = 17 y = 11Diff 2 0
+continue
+3
+------------------
+Snake: x = 16 y = 11
+Spawn: x = 17 y = 11Diff 1 0
+continue
+3
+------------------
+Snake: x = 17 y = 11
+Spawn: x = 25 y = 7Diff 8 -4
+0
+------------------
+Snake: x = 17 y = 10
+Spawn: x = 25 y = 7Diff 8 -3
+0
+------------------
+Snake: x = 17 y = 9
+Spawn: x = 25 y = 7Diff 8 -2
+0
+------------------
+Snake: x = 17 y = 8
+Spawn: x = 25 y = 7Diff 8 -1
+0
+------------------
+Snake: x = 17 y = 7
+Spawn: x = 25 y = 7Diff 8 0
+continue
+3
+------------------
+Snake: x = 18 y = 7
+Spawn: x = 25 y = 7Diff 7 0
+continue
+3
+------------------
+Snake: x = 19 y = 7
+Spawn: x = 25 y = 7Diff 6 0
+continue
+3
+------------------
+Snake: x = 20 y = 7
+Spawn: x = 25 y = 7Diff 5 0
+continue
+3
+------------------
+Snake: x = 21 y = 7
+Spawn: x = 25 y = 7Diff 4 0
+continue
+3
+------------------
+Snake: x = 22 y = 7
+Spawn: x = 25 y = 7Diff 3 0
+continue
+3
+------------------
+Snake: x = 23 y = 7
+Spawn: x = 25 y = 7Diff 2 0
+continue
+3
+------------------
+Snake: x = 24 y = 7
+Spawn: x = 25 y = 7Diff 1 0
+continue
+3
+------------------
+Snake: x = 25 y = 7
+Spawn: x = 10 y = 4Diff -15 -3
+0
+------------------
+Snake: x = 25 y = 6
+Spawn: x = 10 y = 4Diff -15 -2
+0
+------------------
+Snake: x = 25 y = 5
+Spawn: x = 10 y = 4Diff -15 -1
+0
+------------------
+Snake: x = 25 y = 4
+Spawn: x = 10 y = 4Diff -15 0
+continue
+2
+------------------
+Snake: x = 24 y = 4
+Spawn: x = 10 y = 4Diff -14 0
+continue
+2
+------------------
+Snake: x = 23 y = 4
+Spawn: x = 10 y = 4Diff -13 0
+continue
+2
+------------------
+Snake: x = 22 y = 4
+Spawn: x = 10 y = 4Diff -12 0
+continue
+2
+------------------
+Snake: x = 21 y = 4
+Spawn: x = 10 y = 4Diff -11 0
+continue
+2
+------------------
+Snake: x = 20 y = 4
+Spawn: x = 10 y = 4Diff -10 0
+continue
+2
+------------------
+Snake: x = 19 y = 4
+Spawn: x = 10 y = 4Diff -9 0
+continue
+2
+------------------
+Snake: x = 18 y = 4
+Spawn: x = 10 y = 4Diff -8 0
+continue
+2
+------------------
+Snake: x = 17 y = 4
+Spawn: x = 10 y = 4Diff -7 0
+continue
+2
+------------------
+Snake: x = 16 y = 4
+Spawn: x = 10 y = 4Diff -6 0
+continue
+2
+------------------
+Snake: x = 15 y = 4
+Spawn: x = 10 y = 4Diff -5 0
+continue
+2
+------------------
+Snake: x = 14 y = 4
+Spawn: x = 10 y = 4Diff -4 0
+continue
+2
+------------------
+Snake: x = 13 y = 4
+Spawn: x = 10 y = 4Diff -3 0
+continue
+2
+------------------
+Snake: x = 12 y = 4
+Spawn: x = 10 y = 4Diff -2 0
+continue
+2
+------------------
+Snake: x = 11 y = 4
+Spawn: x = 10 y = 4Diff -1 0
+continue
+2
+------------------
+Snake: x = 10 y = 4
+Spawn: x = 23 y = 28Diff 13 24
+1
+------------------
+Snake: x = 10 y = 5
+Spawn: x = 23 y = 28Diff 13 23
+1
+------------------
+Snake: x = 10 y = 6
+Spawn: x = 23 y = 28Diff 13 22
+1
+------------------
+Snake: x = 10 y = 7
+Spawn: x = 23 y = 28Diff 13 21
+1
+------------------
+Snake: x = 10 y = 8
+Spawn: x = 23 y = 28Diff 13 20
+1
+------------------
+Snake: x = 10 y = 9
+Spawn: x = 23 y = 28Diff 13 19
+1
+------------------
+Snake: x = 10 y = 10
+Spawn: x = 23 y = 28Diff 13 18
+1
+------------------
+Snake: x = 10 y = 11
+Spawn: x = 23 y = 28Diff 13 17
+1
+------------------
+Snake: x = 10 y = 12
+Spawn: x = 23 y = 28Diff 13 16
+1
+------------------
+Snake: x = 10 y = 13
+Spawn: x = 23 y = 28Diff 13 15
+1
+------------------
+Snake: x = 10 y = 14
+Spawn: x = 23 y = 28Diff 13 14
+1
+------------------
+Snake: x = 10 y = 15
+Spawn: x = 23 y = 28Diff 13 13
+1
+------------------
+Snake: x = 10 y = 16
+Spawn: x = 23 y = 28Diff 13 12
+1
+------------------
+Snake: x = 10 y = 17
+Spawn: x = 23 y = 28Diff 13 11
+1
+------------------
+Snake: x = 10 y = 18
+Spawn: x = 23 y = 28Diff 13 10
+1
+------------------
+Snake: x = 10 y = 19
+Spawn: x = 23 y = 28Diff 13 9
+1
+------------------
+Snake: x = 10 y = 20
+Spawn: x = 23 y = 28Diff 13 8
+1
+------------------
+Snake: x = 10 y = 21
+Spawn: x = 23 y = 28Diff 13 7
+1
+------------------
+Snake: x = 10 y = 22
+Spawn: x = 23 y = 28Diff 13 6
+1
+------------------
+Snake: x = 10 y = 23
+Spawn: x = 23 y = 28Diff 13 5
+1
+------------------
+Snake: x = 10 y = 24
+Spawn: x = 23 y = 28Diff 13 4
+1
+------------------
+Snake: x = 10 y = 25
+Spawn: x = 23 y = 28Diff 13 3
+1
+------------------
+Snake: x = 10 y = 26
+Spawn: x = 23 y = 28Diff 13 2
+1
+------------------
+Snake: x = 10 y = 27
+Spawn: x = 23 y = 28Diff 13 1
+1
+------------------
+Snake: x = 10 y = 28
+Spawn: x = 23 y = 28Diff 13 0
+continue
+3
+------------------
+Snake: x = 11 y = 28
+Spawn: x = 23 y = 28Diff 12 0
+continue
+3
+------------------
+Snake: x = 12 y = 28
+Spawn: x = 23 y = 28Diff 11 0
+continue
+3
+------------------
+Snake: x = 13 y = 28
+Spawn: x = 23 y = 28Diff 10 0
+continue
+3
+------------------
+Snake: x = 14 y = 28
+Spawn: x = 23 y = 28Diff 9 0
+continue
+3
+------------------
+Snake: x = 15 y = 28
+Spawn: x = 23 y = 28Diff 8 0
+continue
+3
+------------------
+Snake: x = 16 y = 28
+Spawn: x = 23 y = 28Diff 7 0
+continue
+3
+------------------
+Snake: x = 17 y = 28
+Spawn: x = 23 y = 28Diff 6 0
+continue
+3
+------------------
+Snake: x = 18 y = 28
+Spawn: x = 23 y = 28Diff 5 0
+continue
+3
+------------------
+Snake: x = 19 y = 28
+Spawn: x = 23 y = 28Diff 4 0
+continue
+3
+------------------
+Snake: x = 20 y = 28
+Spawn: x = 23 y = 28Diff 3 0
+continue
+3
+------------------
+Snake: x = 21 y = 28
+Spawn: x = 23 y = 28Diff 2 0
+continue
+3
+------------------
+Snake: x = 22 y = 28
+Spawn: x = 23 y = 28Diff 1 0
+continue
+3
+------------------
+Snake: x = 23 y = 28
+Spawn: x = 22 y = 18Diff -1 -10
+0
+------------------
+Snake: x = 23 y = 27
+Spawn: x = 22 y = 18Diff -1 -9
+0
+------------------
+Snake: x = 23 y = 26
+Spawn: x = 22 y = 18Diff -1 -8
+0
+------------------
+Snake: x = 23 y = 25
+Spawn: x = 22 y = 18Diff -1 -7
+0
+------------------
+Snake: x = 23 y = 24
+Spawn: x = 22 y = 18Diff -1 -6
+0
+------------------
+Snake: x = 23 y = 23
+Spawn: x = 22 y = 18Diff -1 -5
+0
+------------------
+Snake: x = 23 y = 22
+Spawn: x = 22 y = 18Diff -1 -4
+0
+------------------
+Snake: x = 23 y = 21
+Spawn: x = 22 y = 18Diff -1 -3
+0
+------------------
+Snake: x = 23 y = 20
+Spawn: x = 22 y = 18Diff -1 -2
+0
+------------------
+Snake: x = 23 y = 19
+Spawn: x = 22 y = 18Diff -1 -1
+0
+------------------
+Snake: x = 23 y = 18
+Spawn: x = 22 y = 18Diff -1 0
+continue
+2
+------------------
+Snake: x = 22 y = 18
+Spawn: x = 15 y = 15Diff -7 -3
+0
+------------------
+Snake: x = 22 y = 17
+Spawn: x = 15 y = 15Diff -7 -2
+0
+------------------
+Snake: x = 22 y = 16
+Spawn: x = 15 y = 15Diff -7 -1
+0
+------------------
+Snake: x = 22 y = 15
+Spawn: x = 15 y = 15Diff -7 0
+continue
+2
+------------------
+Snake: x = 21 y = 15
+Spawn: x = 15 y = 15Diff -6 0
+continue
+2
+------------------
+Snake: x = 20 y = 15
+Spawn: x = 15 y = 15Diff -5 0
+continue
+2
+------------------
+Snake: x = 19 y = 15
+Spawn: x = 15 y = 15Diff -4 0
+continue
+2
+------------------
+Snake: x = 18 y = 15
+Spawn: x = 15 y = 15Diff -3 0
+continue
+2
+------------------
+Snake: x = 17 y = 15
+Spawn: x = 15 y = 15Diff -2 0
+continue
+2
+------------------
+Snake: x = 16 y = 15
+Spawn: x = 15 y = 15Diff -1 0
+continue
+2
+------------------
+Snake: x = 15 y = 15
+Spawn: x = 15 y = 50Diff 0 35
+1
+------------------
+Snake: x = 15 y = 16
+Spawn: x = 15 y = 50Diff 0 34
+1
+------------------
+Snake: x = 15 y = 17
+Spawn: x = 15 y = 50Diff 0 33
+1
+------------------
+Snake: x = 15 y = 18
+Spawn: x = 15 y = 50Diff 0 32
+1
+------------------
+Snake: x = 15 y = 19
+Spawn: x = 15 y = 50Diff 0 31
+1
+------------------
+Snake: x = 15 y = 20
+Spawn: x = 15 y = 50Diff 0 30
+1
+------------------
+Snake: x = 15 y = 21
+Spawn: x = 15 y = 50Diff 0 29
+1
+------------------
+Snake: x = 15 y = 22
+Spawn: x = 15 y = 50Diff 0 28
+1
+------------------
+Snake: x = 15 y = 23
+Spawn: x = 15 y = 50Diff 0 27
+1
+------------------
+Snake: x = 15 y = 24
+Spawn: x = 15 y = 50Diff 0 26
+1
+------------------
+Snake: x = 15 y = 25
+Spawn: x = 15 y = 50Diff 0 25
+1
+------------------
+Snake: x = 15 y = 26
+Spawn: x = 15 y = 50Diff 0 24
+1
+------------------
+Snake: x = 15 y = 27
+Spawn: x = 15 y = 50Diff 0 23
+1
+------------------
+Snake: x = 15 y = 28
+Spawn: x = 15 y = 50Diff 0 22
+1
+------------------
+Snake: x = 15 y = 29
+Spawn: x = 15 y = 50Diff 0 21
+1
+------------------
+Snake: x = 15 y = 30
+Spawn: x = 15 y = 50Diff 0 20
+1
+------------------
+Snake: x = 15 y = 31
+Spawn: x = 15 y = 50Diff 0 19
+1
+------------------
+Snake: x = 15 y = 32
+Spawn: x = 15 y = 50Diff 0 18
+1
+------------------
+Snake: x = 15 y = 33
+Spawn: x = 15 y = 50Diff 0 17
+1
+------------------
+Snake: x = 15 y = 34
+Spawn: x = 15 y = 50Diff 0 16
+1
+------------------
+Snake: x = 15 y = 35
+Spawn: x = 15 y = 50Diff 0 15
+1
+------------------
+Snake: x = 15 y = 36
+Spawn: x = 15 y = 50Diff 0 14
+1
+------------------
+Snake: x = 15 y = 37
+Spawn: x = 15 y = 50Diff 0 13
+1
+------------------
+Snake: x = 15 y = 38
+Spawn: x = 15 y = 50Diff 0 12
+1
+------------------
+Snake: x = 15 y = 39
+Spawn: x = 15 y = 50Diff 0 11
+1
+------------------
+Snake: x = 15 y = 40
+Spawn: x = 15 y = 50Diff 0 10
+1
+------------------
+Snake: x = 15 y = 41
+Spawn: x = 15 y = 50Diff 0 9
+1
+------------------
+Snake: x = 15 y = 42
+Spawn: x = 15 y = 50Diff 0 8
+1
+------------------
+Snake: x = 15 y = 43
+Spawn: x = 15 y = 50Diff 0 7
+1
+------------------
+Snake: x = 15 y = 44
+Spawn: x = 15 y = 50Diff 0 6
+1
+------------------
+Snake: x = 15 y = 45
+Spawn: x = 15 y = 50Diff 0 5
+1
+------------------
+Snake: x = 15 y = 46
+Spawn: x = 15 y = 50Diff 0 4
+1
+------------------
+Snake: x = 15 y = 47
+Spawn: x = 15 y = 50Diff 0 3
+1
+------------------
+Snake: x = 15 y = 48
+Spawn: x = 15 y = 50Diff 0 2
+1
+------------------
+Snake: x = 15 y = 49
+Spawn: x = 15 y = 50Diff 0 1
+1
+------------------
+Snake: x = 15 y = 50
+Spawn: x = 19 y = 36Diff 4 -14
+3
+------------------
+Snake: x = 16 y = 50
+Spawn: x = 19 y = 36Diff 3 -14
+0
+------------------
+Snake: x = 16 y = 49
+Spawn: x = 19 y = 36Diff 3 -13
+0
+------------------
+Snake: x = 16 y = 48
+Spawn: x = 19 y = 36Diff 3 -12
+0
+------------------
+Snake: x = 16 y = 47
+Spawn: x = 19 y = 36Diff 3 -11
+0
+------------------
+Snake: x = 16 y = 46
+Spawn: x = 19 y = 36Diff 3 -10
+0
+------------------
+Snake: x = 16 y = 45
+Spawn: x = 19 y = 36Diff 3 -9
+0
+------------------
+Snake: x = 16 y = 44
+Spawn: x = 19 y = 36Diff 3 -8
+0
+------------------
+Snake: x = 16 y = 43
+Spawn: x = 19 y = 36Diff 3 -7
+0
+------------------
+Snake: x = 16 y = 42
+Spawn: x = 19 y = 36Diff 3 -6
+0
+------------------
+Snake: x = 16 y = 41
+Spawn: x = 19 y = 36Diff 3 -5
+0
+------------------
+Snake: x = 16 y = 40
+Spawn: x = 19 y = 36Diff 3 -4
+0
+------------------
+Snake: x = 16 y = 39
+Spawn: x = 19 y = 36Diff 3 -3
+0
+------------------
+Snake: x = 16 y = 38
+Spawn: x = 19 y = 36Diff 3 -2
+0
+------------------
+Snake: x = 16 y = 37
+Spawn: x = 19 y = 36Diff 3 -1
+0
+------------------
+Snake: x = 16 y = 36
+Spawn: x = 19 y = 36Diff 3 0
+continue
+3
+------------------
+Snake: x = 17 y = 36
+Spawn: x = 19 y = 36Diff 2 0
+continue
+3
+------------------
+Snake: x = 18 y = 36
+Spawn: x = 19 y = 36Diff 1 0
+continue
+3
+------------------
+Snake: x = 19 y = 36
+Spawn: x = 8 y = 23Diff -11 -13
+0
+------------------
+Snake: x = 19 y = 35
+Spawn: x = 8 y = 23Diff -11 -12
+0
+------------------
+Snake: x = 19 y = 34
+Spawn: x = 8 y = 23Diff -11 -11
+0
+------------------
+Snake: x = 19 y = 33
+Spawn: x = 8 y = 23Diff -11 -10
+0
+------------------
+Snake: x = 19 y = 32
+Spawn: x = 8 y = 23Diff -11 -9
+0
+------------------
+Snake: x = 19 y = 31
+Spawn: x = 8 y = 23Diff -11 -8
+0
+------------------
+Snake: x = 19 y = 30
+Spawn: x = 8 y = 23Diff -11 -7
+0
+------------------
+Snake: x = 19 y = 29
+Spawn: x = 8 y = 23Diff -11 -6
+0
+------------------
+Snake: x = 19 y = 28
+Spawn: x = 8 y = 23Diff -11 -5
+0
+------------------
+Snake: x = 19 y = 27
+Spawn: x = 8 y = 23Diff -11 -4
+0
+------------------
+Snake: x = 19 y = 26
+Spawn: x = 8 y = 23Diff -11 -3
+0
+------------------
+Snake: x = 19 y = 25
+Spawn: x = 8 y = 23Diff -11 -2
+0
+------------------
+Snake: x = 19 y = 24
+Spawn: x = 8 y = 23Diff -11 -1
+0
+------------------
+Snake: x = 19 y = 23
+Spawn: x = 8 y = 23Diff -11 0
+continue
+2
+------------------
+Snake: x = 18 y = 23
+Spawn: x = 8 y = 23Diff -10 0
+continue
+2
+------------------
+Snake: x = 17 y = 23
+Spawn: x = 8 y = 23Diff -9 0
+continue
+2
+------------------
+Snake: x = 16 y = 23
+Spawn: x = 8 y = 23Diff -8 0
+continue
+2
+------------------
+Snake: x = 15 y = 23
+Spawn: x = 8 y = 23Diff -7 0
+continue
+2
+------------------
+Snake: x = 14 y = 23
+Spawn: x = 8 y = 23Diff -6 0
+continue
+2
+------------------
+Snake: x = 13 y = 23
+Spawn: x = 8 y = 23Diff -5 0
+continue
+2
+------------------
+Snake: x = 12 y = 23
+Spawn: x = 8 y = 23Diff -4 0
+continue
+2
+------------------
+Snake: x = 11 y = 23
+Spawn: x = 8 y = 23Diff -3 0
+continue
+2
+------------------
+Snake: x = 10 y = 23
+Spawn: x = 8 y = 23Diff -2 0
+continue
+2
+------------------
+Snake: x = 9 y = 23
+Spawn: x = 8 y = 23Diff -1 0
+continue
+2
+------------------
+Snake: x = 8 y = 23
+Spawn: x = 22 y = 35Diff 14 12
+1
+------------------
+Snake: x = 8 y = 24
+Spawn: x = 22 y = 35Diff 14 11
+1
+------------------
+Snake: x = 8 y = 25
+Spawn: x = 22 y = 35Diff 14 10
+1
+------------------
+Snake: x = 8 y = 26
+Spawn: x = 22 y = 35Diff 14 9
+1
+------------------
+Snake: x = 8 y = 27
+Spawn: x = 22 y = 35Diff 14 8
+1
+------------------
+Snake: x = 8 y = 28
+Spawn: x = 22 y = 35Diff 14 7
+1
+------------------
+Snake: x = 8 y = 29
+Spawn: x = 22 y = 35Diff 14 6
+1
+------------------
+Snake: x = 8 y = 30
+Spawn: x = 22 y = 35Diff 14 5
+1
+------------------
+Snake: x = 8 y = 31
+Spawn: x = 22 y = 35Diff 14 4
+1
+------------------
+Snake: x = 8 y = 32
+Spawn: x = 22 y = 35Diff 14 3
+1
+------------------
+Snake: x = 8 y = 33
+Spawn: x = 22 y = 35Diff 14 2
+1
+------------------
+Snake: x = 8 y = 34
+Spawn: x = 22 y = 35Diff 14 1
+1
+------------------
+Snake: x = 8 y = 35
+Spawn: x = 22 y = 35Diff 14 0
+continue
+3
+------------------
+Snake: x = 9 y = 35
+Spawn: x = 22 y = 35Diff 13 0
+continue
+3
+------------------
+Snake: x = 10 y = 35
+Spawn: x = 22 y = 35Diff 12 0
+continue
+3
+------------------
+Snake: x = 11 y = 35
+Spawn: x = 22 y = 35Diff 11 0
+continue
+3
+------------------
+Snake: x = 12 y = 35
+Spawn: x = 22 y = 35Diff 10 0
+continue
+3
+------------------
+Snake: x = 13 y = 35
+Spawn: x = 22 y = 35Diff 9 0
+continue
+3
+------------------
+Snake: x = 14 y = 35
+Spawn: x = 22 y = 35Diff 8 0
+continue
+3
+------------------
+Snake: x = 15 y = 35
+Spawn: x = 22 y = 35Diff 7 0
+continue
+3
+------------------
+Snake: x = 16 y = 35
+Spawn: x = 22 y = 35Diff 6 0
+continue
+3
+------------------
+Snake: x = 17 y = 35
+Spawn: x = 22 y = 35Diff 5 0
+continue
+3
+------------------
+Snake: x = 18 y = 35
+Spawn: x = 22 y = 35Diff 4 0
+continue
+3
+------------------
+Snake: x = 19 y = 35
+Spawn: x = 22 y = 35Diff 3 0
+continue
+3
+------------------
+Snake: x = 20 y = 35
+Spawn: x = 22 y = 35Diff 2 0
+continue
+3
+------------------
+Snake: x = 21 y = 35
+Spawn: x = 22 y = 35Diff 1 0
+continue
+3
+------------------
+Snake: x = 22 y = 35
+Spawn: x = 14 y = 38Diff -8 3
+1
+------------------
+Snake: x = 22 y = 36
+Spawn: x = 14 y = 38Diff -8 2
+1
+------------------
+Snake: x = 22 y = 37
+Spawn: x = 14 y = 38Diff -8 1
+1
+------------------
+Snake: x = 22 y = 38
+Spawn: x = 14 y = 38Diff -8 0
+continue
+2
+------------------
+Snake: x = 21 y = 38
+Spawn: x = 14 y = 38Diff -7 0
+continue
+2
+------------------
+Snake: x = 20 y = 38
+Spawn: x = 14 y = 38Diff -6 0
+continue
+2
+------------------
+Snake: x = 19 y = 38
+Spawn: x = 14 y = 38Diff -5 0
+continue
+2
+------------------
+Snake: x = 18 y = 38
+Spawn: x = 14 y = 38Diff -4 0
+continue
+2
+------------------
+Snake: x = 17 y = 38
+Spawn: x = 14 y = 38Diff -3 0
+continue
+2
+------------------
+Snake: x = 16 y = 38
+Spawn: x = 14 y = 38Diff -2 0
+continue
+2
+------------------
+Snake: x = 15 y = 38
+Spawn: x = 14 y = 38Diff -1 0
+continue
+2
+------------------
+Snake: x = 14 y = 38
+Spawn: x = 15 y = 33Diff 1 -5
+0
+------------------
+Snake: x = 14 y = 37
+Spawn: x = 15 y = 33Diff 1 -4
+0
+------------------
+Snake: x = 14 y = 36
+Spawn: x = 15 y = 33Diff 1 -3
+3
+------------------
+Snake: x = 15 y = 36
+Spawn: x = 15 y = 33Diff 0 -3
+continue
+1
+------------------
+Snake: x = 15 y = 37
+Spawn: x = 15 y = 33Diff 0 -4
+continue
+3
+------------------
+Snake: x = 16 y = 37
+Spawn: x = 15 y = 33Diff -1 -4
+0
+------------------
+Snake: x = 16 y = 36
+Spawn: x = 15 y = 33Diff -1 -3
+3
+------------------
+Snake: x = 17 y = 36
+Spawn: x = 15 y = 33Diff -2 -3
+1
+------------------
+Snake: x = 17 y = 37
+Spawn: x = 15 y = 33Diff -2 -4
+3
+------------------
+Snake: x = 18 y = 37
+Spawn: x = 15 y = 33Diff -3 -4
+0
+------------------
+Snake: x = 18 y = 36
+Spawn: x = 15 y = 33Diff -3 -3
+0
+------------------
+Snake: x = 18 y = 35
+Spawn: x = 15 y = 33Diff -3 -2
+0
+------------------
+Snake: x = 18 y = 34
+Spawn: x = 15 y = 33Diff -3 -1
+0
+------------------
+Snake: x = 18 y = 33
+Spawn: x = 15 y = 33Diff -3 0
+continue
+2
+------------------
+Snake: x = 17 y = 33
+Spawn: x = 15 y = 33Diff -2 0
+continue
+2
+------------------
+Snake: x = 16 y = 33
+Spawn: x = 15 y = 33Diff -1 0
+continue
+2
+------------------
+Snake: x = 15 y = 33
+Spawn: x = 2 y = 11Diff -13 -22
+0
+------------------
+Snake: x = 15 y = 32
+Spawn: x = 2 y = 11Diff -13 -21
+0
+------------------
+Snake: x = 15 y = 31
+Spawn: x = 2 y = 11Diff -13 -20
+0
+------------------
+Snake: x = 15 y = 30
+Spawn: x = 2 y = 11Diff -13 -19
+0
+------------------
+Snake: x = 15 y = 29
+Spawn: x = 2 y = 11Diff -13 -18
+0
+------------------
+Snake: x = 15 y = 28
+Spawn: x = 2 y = 11Diff -13 -17
+0
+------------------
+Snake: x = 15 y = 27
+Spawn: x = 2 y = 11Diff -13 -16
+0
+------------------
+Snake: x = 15 y = 26
+Spawn: x = 2 y = 11Diff -13 -15
+0
+------------------
+Snake: x = 15 y = 25
+Spawn: x = 2 y = 11Diff -13 -14
+0
+------------------
+Snake: x = 15 y = 24
+Spawn: x = 2 y = 11Diff -13 -13
+0
+------------------
+Snake: x = 15 y = 23
+Spawn: x = 2 y = 11Diff -13 -12
+0
+------------------
+Snake: x = 15 y = 22
+Spawn: x = 2 y = 11Diff -13 -11
+0
+------------------
+Snake: x = 15 y = 21
+Spawn: x = 2 y = 11Diff -13 -10
+0
+------------------
+Snake: x = 15 y = 20
+Spawn: x = 2 y = 11Diff -13 -9
+0
+------------------
+Snake: x = 15 y = 19
+Spawn: x = 2 y = 11Diff -13 -8
+0
+------------------
+Snake: x = 15 y = 18
+Spawn: x = 2 y = 11Diff -13 -7
+0
+------------------
+Snake: x = 15 y = 17
+Spawn: x = 2 y = 11Diff -13 -6
+0
+------------------
+Snake: x = 15 y = 16
+Spawn: x = 2 y = 11Diff -13 -5
+0
+------------------
+Snake: x = 15 y = 15
+Spawn: x = 2 y = 11Diff -13 -4
+0
+------------------
+Snake: x = 15 y = 14
+Spawn: x = 2 y = 11Diff -13 -3
+0
+------------------
+Snake: x = 15 y = 13
+Spawn: x = 2 y = 11Diff -13 -2
+0
+------------------
+Snake: x = 15 y = 12
+Spawn: x = 2 y = 11Diff -13 -1
+0
+------------------
+Snake: x = 15 y = 11
+Spawn: x = 2 y = 11Diff -13 0
+continue
+2
+------------------
+Snake: x = 14 y = 11
+Spawn: x = 2 y = 11Diff -12 0
+continue
+2
+------------------
+Snake: x = 13 y = 11
+Spawn: x = 2 y = 11Diff -11 0
+continue
+2
+------------------
+Snake: x = 12 y = 11
+Spawn: x = 2 y = 11Diff -10 0
+continue
+2
+------------------
+Snake: x = 11 y = 11
+Spawn: x = 2 y = 11Diff -9 0
+continue
+2
+------------------
+Snake: x = 10 y = 11
+Spawn: x = 2 y = 11Diff -8 0
+continue
+2
+------------------
+Snake: x = 9 y = 11
+Spawn: x = 2 y = 11Diff -7 0
+continue
+2
+------------------
+Snake: x = 8 y = 11
+Spawn: x = 2 y = 11Diff -6 0
+continue
+2
+------------------
+Snake: x = 7 y = 11
+Spawn: x = 2 y = 11Diff -5 0
+continue
+2
+------------------
+Snake: x = 6 y = 11
+Spawn: x = 2 y = 11Diff -4 0
+continue
+2
+------------------
+Snake: x = 5 y = 11
+Spawn: x = 2 y = 11Diff -3 0
+continue
+2
+------------------
+Snake: x = 4 y = 11
+Spawn: x = 2 y = 11Diff -2 0
+continue
+2
+------------------
+Snake: x = 3 y = 11
+Spawn: x = 2 y = 11Diff -1 0
+continue
+2
+------------------
+Snake: x = 2 y = 11
+Spawn: x = 26 y = 39Diff 24 28
+1
+------------------
+Snake: x = 2 y = 12
+Spawn: x = 26 y = 39Diff 24 27
+1
+------------------
+Snake: x = 2 y = 13
+Spawn: x = 26 y = 39Diff 24 26
+1
+------------------
+Snake: x = 2 y = 14
+Spawn: x = 26 y = 39Diff 24 25
+1
+------------------
+Snake: x = 2 y = 15
+Spawn: x = 26 y = 39Diff 24 24
+1
+------------------
+Snake: x = 2 y = 16
+Spawn: x = 26 y = 39Diff 24 23
+1
+------------------
+Snake: x = 2 y = 17
+Spawn: x = 26 y = 39Diff 24 22
+1
+------------------
+Snake: x = 2 y = 18
+Spawn: x = 26 y = 39Diff 24 21
+1
+------------------
+Snake: x = 2 y = 19
+Spawn: x = 26 y = 39Diff 24 20
+1
+------------------
+Snake: x = 2 y = 20
+Spawn: x = 26 y = 39Diff 24 19
+1
+------------------
+Snake: x = 2 y = 21
+Spawn: x = 26 y = 39Diff 24 18
+1
+------------------
+Snake: x = 2 y = 22
+Spawn: x = 26 y = 39Diff 24 17
+1
+------------------
+Snake: x = 2 y = 23
+Spawn: x = 26 y = 39Diff 24 16
+1
+------------------
+Snake: x = 2 y = 24
+Spawn: x = 26 y = 39Diff 24 15
+1
+------------------
+Snake: x = 2 y = 25
+Spawn: x = 26 y = 39Diff 24 14
+1
+------------------
+Snake: x = 2 y = 26
+Spawn: x = 26 y = 39Diff 24 13
+1
+------------------
+Snake: x = 2 y = 27
+Spawn: x = 26 y = 39Diff 24 12
+1
+------------------
+Snake: x = 2 y = 28
+Spawn: x = 26 y = 39Diff 24 11
+1
+------------------
+Snake: x = 2 y = 29
+Spawn: x = 26 y = 39Diff 24 10
+1
+------------------
+Snake: x = 2 y = 30
+Spawn: x = 26 y = 39Diff 24 9
+1
+------------------
+Snake: x = 2 y = 31
+Spawn: x = 26 y = 39Diff 24 8
+1
+------------------
+Snake: x = 2 y = 32
+Spawn: x = 26 y = 39Diff 24 7
+1
+------------------
+Snake: x = 2 y = 33
+Spawn: x = 26 y = 39Diff 24 6
+1
+------------------
+Snake: x = 2 y = 34
+Spawn: x = 26 y = 39Diff 24 5
+1
+------------------
+Snake: x = 2 y = 35
+Spawn: x = 26 y = 39Diff 24 4
+1
+------------------
+Snake: x = 2 y = 36
+Spawn: x = 26 y = 39Diff 24 3
+1
+------------------
+Snake: x = 2 y = 37
+Spawn: x = 26 y = 39Diff 24 2
+1
+------------------
+Snake: x = 2 y = 38
+Spawn: x = 26 y = 39Diff 24 1
+1
+------------------
+Snake: x = 2 y = 39
+Spawn: x = 26 y = 39Diff 24 0
+continue
+3
+------------------
+Snake: x = 3 y = 39
+Spawn: x = 26 y = 39Diff 23 0
+continue
+3
+------------------
+Snake: x = 4 y = 39
+Spawn: x = 26 y = 39Diff 22 0
+continue
+3
+------------------
+Snake: x = 5 y = 39
+Spawn: x = 26 y = 39Diff 21 0
+continue
+3
+------------------
+Snake: x = 6 y = 39
+Spawn: x = 26 y = 39Diff 20 0
+continue
+3
+------------------
+Snake: x = 7 y = 39
+Spawn: x = 26 y = 39Diff 19 0
+continue
+3
+------------------
+Snake: x = 8 y = 39
+Spawn: x = 26 y = 39Diff 18 0
+continue
+3
+------------------
+Snake: x = 9 y = 39
+Spawn: x = 26 y = 39Diff 17 0
+continue
+3
+------------------
+Snake: x = 10 y = 39
+Spawn: x = 26 y = 39Diff 16 0
+continue
+3
+------------------
+Snake: x = 11 y = 39
+Spawn: x = 26 y = 39Diff 15 0
+continue
+3
+------------------
+Snake: x = 12 y = 39
+Spawn: x = 26 y = 39Diff 14 0
+continue
+3
+------------------
+Snake: x = 13 y = 39
+Spawn: x = 26 y = 39Diff 13 0
+continue
+3
+------------------
+Snake: x = 14 y = 39
+Spawn: x = 26 y = 39Diff 12 0
+continue
+3
+------------------
+Snake: x = 15 y = 39
+Spawn: x = 26 y = 39Diff 11 0
+continue
+3
+------------------
+Snake: x = 16 y = 39
+Spawn: x = 26 y = 39Diff 10 0
+continue
+3
+------------------
+Snake: x = 17 y = 39
+Spawn: x = 26 y = 39Diff 9 0
+continue
+3
+------------------
+Snake: x = 18 y = 39
+Spawn: x = 26 y = 39Diff 8 0
+continue
+3
+------------------
+Snake: x = 19 y = 39
+Spawn: x = 26 y = 39Diff 7 0
+continue
+3
+------------------
+Snake: x = 20 y = 39
+Spawn: x = 26 y = 39Diff 6 0
+continue
+3
+------------------
+Snake: x = 21 y = 39
+Spawn: x = 26 y = 39Diff 5 0
+continue
+3
+------------------
+Snake: x = 22 y = 39
+Spawn: x = 26 y = 39Diff 4 0
+continue
+3
+------------------
+Snake: x = 23 y = 39
+Spawn: x = 26 y = 39Diff 3 0
+continue
+3
+------------------
+Snake: x = 24 y = 39
+Spawn: x = 26 y = 39Diff 2 0
+continue
+3
+------------------
+Snake: x = 25 y = 39
+Spawn: x = 26 y = 39Diff 1 0
+continue
+3
+------------------
+Snake: x = 26 y = 39
+Spawn: x = 17 y = 44Diff -9 5
+1
+------------------
+Snake: x = 26 y = 40
+Spawn: x = 17 y = 44Diff -9 4
+1
+------------------
+Snake: x = 26 y = 41
+Spawn: x = 17 y = 44Diff -9 3
+1
+------------------
+Snake: x = 26 y = 42
+Spawn: x = 17 y = 44Diff -9 2
+1
+------------------
+Snake: x = 26 y = 43
+Spawn: x = 17 y = 44Diff -9 1
+1
+------------------
+Snake: x = 26 y = 44
+Spawn: x = 17 y = 44Diff -9 0
+continue
+2
+------------------
+Snake: x = 25 y = 44
+Spawn: x = 17 y = 44Diff -8 0
+continue
+2
+------------------
+Snake: x = 24 y = 44
+Spawn: x = 17 y = 44Diff -7 0
+continue
+2
+------------------
+Snake: x = 23 y = 44
+Spawn: x = 17 y = 44Diff -6 0
+continue
+2
+------------------
+Snake: x = 22 y = 44
+Spawn: x = 17 y = 44Diff -5 0
+continue
+2
+------------------
+Snake: x = 21 y = 44
+Spawn: x = 17 y = 44Diff -4 0
+continue
+2
+------------------
+Snake: x = 20 y = 44
+Spawn: x = 17 y = 44Diff -3 0
+continue
+2
+------------------
+Snake: x = 19 y = 44
+Spawn: x = 17 y = 44Diff -2 0
+continue
+2
+------------------
+Snake: x = 18 y = 44
+Spawn: x = 17 y = 44Diff -1 0
+continue
+2
+------------------
+Snake: x = 17 y = 44
+Spawn: x = 10 y = 46Diff -7 2
+1
+------------------
+Snake: x = 17 y = 45
+Spawn: x = 10 y = 46Diff -7 1
+1
+------------------
+Snake: x = 17 y = 46
+Spawn: x = 10 y = 46Diff -7 0
+continue
+2
+------------------
+Snake: x = 16 y = 46
+Spawn: x = 10 y = 46Diff -6 0
+continue
+2
+------------------
+Snake: x = 15 y = 46
+Spawn: x = 10 y = 46Diff -5 0
+continue
+2
+------------------
+Snake: x = 14 y = 46
+Spawn: x = 10 y = 46Diff -4 0
+continue
+2
+------------------
+Snake: x = 13 y = 46
+Spawn: x = 10 y = 46Diff -3 0
+continue
+2
+------------------
+Snake: x = 12 y = 46
+Spawn: x = 10 y = 46Diff -2 0
+continue
+2
+------------------
+Snake: x = 11 y = 46
+Spawn: x = 10 y = 46Diff -1 0
+continue
+2
+------------------
+Snake: x = 10 y = 46
+Spawn: x = 15 y = 16Diff 5 -30
+0
+------------------
+Snake: x = 10 y = 45
+Spawn: x = 15 y = 16Diff 5 -29
+0
+------------------
+Snake: x = 10 y = 44
+Spawn: x = 15 y = 16Diff 5 -28
+0
+------------------
+Snake: x = 10 y = 43
+Spawn: x = 15 y = 16Diff 5 -27
+0
+------------------
+Snake: x = 10 y = 42
+Spawn: x = 15 y = 16Diff 5 -26
+0
+------------------
+Snake: x = 10 y = 41
+Spawn: x = 15 y = 16Diff 5 -25
+0
+------------------
+Snake: x = 10 y = 40
+Spawn: x = 15 y = 16Diff 5 -24
+0
+------------------
+Snake: x = 10 y = 39
+Spawn: x = 15 y = 16Diff 5 -23
+0
+------------------
+Snake: x = 10 y = 38
+Spawn: x = 15 y = 16Diff 5 -22
+0
+------------------
+Snake: x = 10 y = 37
+Spawn: x = 15 y = 16Diff 5 -21
+0
+------------------
+Snake: x = 10 y = 36
+Spawn: x = 15 y = 16Diff 5 -20
+0
+------------------
+Snake: x = 10 y = 35
+Spawn: x = 15 y = 16Diff 5 -19
+0
+------------------
+Snake: x = 10 y = 34
+Spawn: x = 15 y = 16Diff 5 -18
+0
+------------------
+Snake: x = 10 y = 33
+Spawn: x = 15 y = 16Diff 5 -17
+0
+------------------
+Snake: x = 10 y = 32
+Spawn: x = 15 y = 16Diff 5 -16
+0
+------------------
+Snake: x = 10 y = 31
+Spawn: x = 15 y = 16Diff 5 -15
+0
+------------------
+Snake: x = 10 y = 30
+Spawn: x = 15 y = 16Diff 5 -14
+0
+------------------
+Snake: x = 10 y = 29
+Spawn: x = 15 y = 16Diff 5 -13
+0
+------------------
+Snake: x = 10 y = 28
+Spawn: x = 15 y = 16Diff 5 -12
+0
+------------------
+Snake: x = 10 y = 27
+Spawn: x = 15 y = 16Diff 5 -11
+0
+------------------
+Snake: x = 10 y = 26
+Spawn: x = 15 y = 16Diff 5 -10
+0
+------------------
+Snake: x = 10 y = 25
+Spawn: x = 15 y = 16Diff 5 -9
+0
+------------------
+Snake: x = 10 y = 24
+Spawn: x = 15 y = 16Diff 5 -8
+0
+------------------
+Snake: x = 10 y = 23
+Spawn: x = 15 y = 16Diff 5 -7
+0
+------------------
+Snake: x = 10 y = 22
+Spawn: x = 15 y = 16Diff 5 -6
+0
+------------------
+Snake: x = 10 y = 21
+Spawn: x = 15 y = 16Diff 5 -5
+0
+------------------
+Snake: x = 10 y = 20
+Spawn: x = 15 y = 16Diff 5 -4
+0
+------------------
+Snake: x = 10 y = 19
+Spawn: x = 15 y = 16Diff 5 -3
+0
+------------------
+Snake: x = 10 y = 18
+Spawn: x = 15 y = 16Diff 5 -2
+0
+------------------
+Snake: x = 10 y = 17
+Spawn: x = 15 y = 16Diff 5 -1
+0
+------------------
+Snake: x = 10 y = 16
+Spawn: x = 15 y = 16Diff 5 0
+continue
+3
+------------------
+Snake: x = 11 y = 16
+Spawn: x = 15 y = 16Diff 4 0
+continue
+3
+------------------
+Snake: x = 12 y = 16
+Spawn: x = 15 y = 16Diff 3 0
+continue
+3
+------------------
+Snake: x = 13 y = 16
+Spawn: x = 15 y = 16Diff 2 0
+continue
+3
+------------------
+Snake: x = 14 y = 16
+Spawn: x = 15 y = 16Diff 1 0
+continue
+3
+------------------
+Snake: x = 15 y = 16
+Spawn: x = 25 y = 39Diff 10 23
+1
+------------------
+Snake: x = 15 y = 17
+Spawn: x = 25 y = 39Diff 10 22
+1
+------------------
+Snake: x = 15 y = 18
+Spawn: x = 25 y = 39Diff 10 21
+1
+------------------
+Snake: x = 15 y = 19
+Spawn: x = 25 y = 39Diff 10 20
+1
+------------------
+Snake: x = 15 y = 20
+Spawn: x = 25 y = 39Diff 10 19
+1
+------------------
+Snake: x = 15 y = 21
+Spawn: x = 25 y = 39Diff 10 18
+1
+------------------
+Snake: x = 15 y = 22
+Spawn: x = 25 y = 39Diff 10 17
+1
+------------------
+Snake: x = 15 y = 23
+Spawn: x = 25 y = 39Diff 10 16
+1
+------------------
+Snake: x = 15 y = 24
+Spawn: x = 25 y = 39Diff 10 15
+1
+------------------
+Snake: x = 15 y = 25
+Spawn: x = 25 y = 39Diff 10 14
+1
+------------------
+Snake: x = 15 y = 26
+Spawn: x = 25 y = 39Diff 10 13
+1
+------------------
+Snake: x = 15 y = 27
+Spawn: x = 25 y = 39Diff 10 12
+1
+------------------
+Snake: x = 15 y = 28
+Spawn: x = 25 y = 39Diff 10 11
+1
+------------------
+Snake: x = 15 y = 29
+Spawn: x = 25 y = 39Diff 10 10
+1
+------------------
+Snake: x = 15 y = 30
+Spawn: x = 25 y = 39Diff 10 9
+1
+------------------
+Snake: x = 15 y = 31
+Spawn: x = 25 y = 39Diff 10 8
+1
+------------------
+Snake: x = 15 y = 32
+Spawn: x = 25 y = 39Diff 10 7
+1
+------------------
+Snake: x = 15 y = 33
+Spawn: x = 25 y = 39Diff 10 6
+1
+------------------
+Snake: x = 15 y = 34
+Spawn: x = 25 y = 39Diff 10 5
+1
+------------------
+Snake: x = 15 y = 35
+Spawn: x = 25 y = 39Diff 10 4
+1
+------------------
+Snake: x = 15 y = 36
+Spawn: x = 25 y = 39Diff 10 3
+1
+------------------
+Snake: x = 15 y = 37
+Spawn: x = 25 y = 39Diff 10 2
+1
+------------------
+Snake: x = 15 y = 38
+Spawn: x = 25 y = 39Diff 10 1
+1
+------------------
+Snake: x = 15 y = 39
+Spawn: x = 25 y = 39Diff 10 0
+continue
+3
+------------------
+Snake: x = 16 y = 39
+Spawn: x = 25 y = 39Diff 9 0
+continue
+3
+------------------
+Snake: x = 17 y = 39
+Spawn: x = 25 y = 39Diff 8 0
+continue
+3
+------------------
+Snake: x = 18 y = 39
+Spawn: x = 25 y = 39Diff 7 0
+continue
+3
+------------------
+Snake: x = 19 y = 39
+Spawn: x = 25 y = 39Diff 6 0
+continue
+3
+------------------
+Snake: x = 20 y = 39
+Spawn: x = 25 y = 39Diff 5 0
+continue
+3
+------------------
+Snake: x = 21 y = 39
+Spawn: x = 25 y = 39Diff 4 0
+continue
+3
+------------------
+Snake: x = 22 y = 39
+Spawn: x = 25 y = 39Diff 3 0
+continue
+3
+------------------
+Snake: x = 23 y = 39
+Spawn: x = 25 y = 39Diff 2 0
+continue
+3
+------------------
+Snake: x = 24 y = 39
+Spawn: x = 25 y = 39Diff 1 0
+continue
+3
+------------------
+Snake: x = 25 y = 39
+Spawn: x = 25 y = 54Diff 0 15
+1
+------------------
+Snake: x = 25 y = 40
+Spawn: x = 25 y = 54Diff 0 14
+1
+------------------
+Snake: x = 25 y = 41
+Spawn: x = 25 y = 54Diff 0 13
+1
+------------------
+Snake: x = 25 y = 42
+Spawn: x = 25 y = 54Diff 0 12
+1
+------------------
+Snake: x = 25 y = 43
+Spawn: x = 25 y = 54Diff 0 11
+1
+------------------
+Snake: x = 25 y = 44
+Spawn: x = 25 y = 54Diff 0 10
+1
+------------------
+Snake: x = 25 y = 45
+Spawn: x = 25 y = 54Diff 0 9
+1
+------------------
+Snake: x = 25 y = 46
+Spawn: x = 25 y = 54Diff 0 8
+1
+------------------
+Snake: x = 25 y = 47
+Spawn: x = 25 y = 54Diff 0 7
+1
+------------------
+Snake: x = 25 y = 48
+Spawn: x = 25 y = 54Diff 0 6
+1
+------------------
+Snake: x = 25 y = 49
+Spawn: x = 25 y = 54Diff 0 5
+1
+------------------
+Snake: x = 25 y = 50
+Spawn: x = 25 y = 54Diff 0 4
+1
+------------------
+Snake: x = 25 y = 51
+Spawn: x = 25 y = 54Diff 0 3
+1
+------------------
+Snake: x = 25 y = 52
+Spawn: x = 25 y = 54Diff 0 2
+1
+------------------
+Snake: x = 25 y = 53
+Spawn: x = 25 y = 54Diff 0 1
+1
+------------------
+Snake: x = 25 y = 54
+Spawn: x = 2 y = 39Diff -23 -15
+2
+------------------
+Snake: x = 24 y = 54
+Spawn: x = 2 y = 39Diff -22 -15
+0
+------------------
+Snake: x = 24 y = 53
+Spawn: x = 2 y = 39Diff -22 -14
+0
+------------------
+Snake: x = 24 y = 52
+Spawn: x = 2 y = 39Diff -22 -13
+0
+------------------
+Snake: x = 24 y = 51
+Spawn: x = 2 y = 39Diff -22 -12
+0
+------------------
+Snake: x = 24 y = 50
+Spawn: x = 2 y = 39Diff -22 -11
+0
+------------------
+Snake: x = 24 y = 49
+Spawn: x = 2 y = 39Diff -22 -10
+0
+------------------
+Snake: x = 24 y = 48
+Spawn: x = 2 y = 39Diff -22 -9
+0
+------------------
+Snake: x = 24 y = 47
+Spawn: x = 2 y = 39Diff -22 -8
+0
+------------------
+Snake: x = 24 y = 46
+Spawn: x = 2 y = 39Diff -22 -7
+0
+------------------
+Snake: x = 24 y = 45
+Spawn: x = 2 y = 39Diff -22 -6
+0
+------------------
+Snake: x = 24 y = 44
+Spawn: x = 2 y = 39Diff -22 -5
+0
+------------------
+Snake: x = 24 y = 43
+Spawn: x = 2 y = 39Diff -22 -4
+0
+------------------
+Snake: x = 24 y = 42
+Spawn: x = 2 y = 39Diff -22 -3
+0
+------------------
+Snake: x = 24 y = 41
+Spawn: x = 2 y = 39Diff -22 -2
+0
+------------------
+Snake: x = 24 y = 40
+Spawn: x = 2 y = 39Diff -22 -1
+2
+------------------
+Snake: x = 23 y = 40
+Spawn: x = 2 y = 39Diff -21 -1
+0
+------------------
+Snake: x = 23 y = 39
+Spawn: x = 2 y = 39Diff -21 0
+continue
+2
+------------------
+Snake: x = 22 y = 39
+Spawn: x = 2 y = 39Diff -20 0
+continue
+2
+------------------
+Snake: x = 21 y = 39
+Spawn: x = 2 y = 39Diff -19 0
+continue
+2
+------------------
+Snake: x = 20 y = 39
+Spawn: x = 2 y = 39Diff -18 0
+continue
+2
+------------------
+Snake: x = 19 y = 39
+Spawn: x = 2 y = 39Diff -17 0
+continue
+2
+------------------
+Snake: x = 18 y = 39
+Spawn: x = 2 y = 39Diff -16 0
+continue
+2
+------------------
+Snake: x = 17 y = 39
+Spawn: x = 2 y = 39Diff -15 0
+continue
+2
+------------------
+Snake: x = 16 y = 39
+Spawn: x = 2 y = 39Diff -14 0
+continue
+2
+------------------
+Snake: x = 15 y = 39
+Spawn: x = 2 y = 39Diff -13 0
+continue
+2
+------------------
+Snake: x = 14 y = 39
+Spawn: x = 2 y = 39Diff -12 0
+continue
+2
+------------------
+Snake: x = 13 y = 39
+Spawn: x = 2 y = 39Diff -11 0
+continue
+2
+------------------
+Snake: x = 12 y = 39
+Spawn: x = 2 y = 39Diff -10 0
+continue
+2
+------------------
+Snake: x = 11 y = 39
+Spawn: x = 2 y = 39Diff -9 0
+continue
+2
+------------------
+Snake: x = 10 y = 39
+Spawn: x = 2 y = 39Diff -8 0
+continue
+2
+------------------
+Snake: x = 9 y = 39
+Spawn: x = 2 y = 39Diff -7 0
+continue
+2
+------------------
+Snake: x = 8 y = 39
+Spawn: x = 2 y = 39Diff -6 0
+continue
+2
+------------------
+Snake: x = 7 y = 39
+Spawn: x = 2 y = 39Diff -5 0
+continue
+2
+------------------
+Snake: x = 6 y = 39
+Spawn: x = 2 y = 39Diff -4 0
+continue
+2
+------------------
+Snake: x = 5 y = 39
+Spawn: x = 2 y = 39Diff -3 0
+continue
+2
+------------------
+Snake: x = 4 y = 39
+Spawn: x = 2 y = 39Diff -2 0
+continue
+2
+------------------
+Snake: x = 3 y = 39
+Spawn: x = 2 y = 39Diff -1 0
+continue
+2
+------------------
+Snake: x = 2 y = 39
+Spawn: x = 5 y = 25Diff 3 -14
+0
+------------------
+Snake: x = 2 y = 38
+Spawn: x = 5 y = 25Diff 3 -13
+0
+------------------
+Snake: x = 2 y = 37
+Spawn: x = 5 y = 25Diff 3 -12
+0
+------------------
+Snake: x = 2 y = 36
+Spawn: x = 5 y = 25Diff 3 -11
+0
+------------------
+Snake: x = 2 y = 35
+Spawn: x = 5 y = 25Diff 3 -10
+0
+------------------
+Snake: x = 2 y = 34
+Spawn: x = 5 y = 25Diff 3 -9
+0
+------------------
+Snake: x = 2 y = 33
+Spawn: x = 5 y = 25Diff 3 -8
+0
+------------------
+Snake: x = 2 y = 32
+Spawn: x = 5 y = 25Diff 3 -7
+0
+------------------
+Snake: x = 2 y = 31
+Spawn: x = 5 y = 25Diff 3 -6
+0
+------------------
+Snake: x = 2 y = 30
+Spawn: x = 5 y = 25Diff 3 -5
+0
+------------------
+Snake: x = 2 y = 29
+Spawn: x = 5 y = 25Diff 3 -4
+0
+------------------
+Snake: x = 2 y = 28
+Spawn: x = 5 y = 25Diff 3 -3
+0
+------------------
+Snake: x = 2 y = 27
+Spawn: x = 5 y = 25Diff 3 -2
+0
+------------------
+Snake: x = 2 y = 26
+Spawn: x = 5 y = 25Diff 3 -1
+0
+------------------
+Snake: x = 2 y = 25
+Spawn: x = 5 y = 25Diff 3 0
+continue
+3
+------------------
+Snake: x = 3 y = 25
+Spawn: x = 5 y = 25Diff 2 0
+continue
+3
+------------------
+Snake: x = 4 y = 25
+Spawn: x = 5 y = 25Diff 1 0
+continue
+3
+------------------
+Snake: x = 5 y = 25
+Spawn: x = 23 y = 40Diff 18 15
+1
+------------------
+Snake: x = 5 y = 26
+Spawn: x = 23 y = 40Diff 18 14
+1
+------------------
+Snake: x = 5 y = 27
+Spawn: x = 23 y = 40Diff 18 13
+1
+------------------
+Snake: x = 5 y = 28
+Spawn: x = 23 y = 40Diff 18 12
+1
+------------------
+Snake: x = 5 y = 29
+Spawn: x = 23 y = 40Diff 18 11
+1
+------------------
+Snake: x = 5 y = 30
+Spawn: x = 23 y = 40Diff 18 10
+1
+------------------
+Snake: x = 5 y = 31
+Spawn: x = 23 y = 40Diff 18 9
+1
+------------------
+Snake: x = 5 y = 32
+Spawn: x = 23 y = 40Diff 18 8
+1
+------------------
+Snake: x = 5 y = 33
+Spawn: x = 23 y = 40Diff 18 7
+1
+------------------
+Snake: x = 5 y = 34
+Spawn: x = 23 y = 40Diff 18 6
+1
+------------------
+Snake: x = 5 y = 35
+Spawn: x = 23 y = 40Diff 18 5
+1
+------------------
+Snake: x = 5 y = 36
+Spawn: x = 23 y = 40Diff 18 4
+1
+------------------
+Snake: x = 5 y = 37
+Spawn: x = 23 y = 40Diff 18 3
+1
+------------------
+Snake: x = 5 y = 38
+Spawn: x = 23 y = 40Diff 18 2
+3
+------------------
+Snake: x = 6 y = 38
+Spawn: x = 23 y = 40Diff 17 2
+1
+------------------
+Snake: x = 6 y = 39
+Spawn: x = 23 y = 40Diff 17 1
+1
+------------------
+Snake: x = 6 y = 40
+Spawn: x = 23 y = 40Diff 17 0
+continue
+3
+------------------
+Snake: x = 7 y = 40
+Spawn: x = 23 y = 40Diff 16 0
+continue
+3
+------------------
+Snake: x = 8 y = 40
+Spawn: x = 23 y = 40Diff 15 0
+continue
+3
+------------------
+Snake: x = 9 y = 40
+Spawn: x = 23 y = 40Diff 14 0
+continue
+3
+------------------
+Snake: x = 10 y = 40
+Spawn: x = 23 y = 40Diff 13 0
+continue
+3
+------------------
+Snake: x = 11 y = 40
+Spawn: x = 23 y = 40Diff 12 0
+continue
+3
+------------------
+Snake: x = 12 y = 40
+Spawn: x = 23 y = 40Diff 11 0
+continue
+3
+------------------
+Snake: x = 13 y = 40
+Spawn: x = 23 y = 40Diff 10 0
+continue
+3
+------------------
+Snake: x = 14 y = 40
+Spawn: x = 23 y = 40Diff 9 0
+continue
+3
+------------------
+Snake: x = 15 y = 40
+Spawn: x = 23 y = 40Diff 8 0
+continue
+3
+------------------
+Snake: x = 16 y = 40
+Spawn: x = 23 y = 40Diff 7 0
+continue
+3
+------------------
+Snake: x = 17 y = 40
+Spawn: x = 23 y = 40Diff 6 0
+continue
+3
+------------------
+Snake: x = 18 y = 40
+Spawn: x = 23 y = 40Diff 5 0
+continue
+3
+------------------
+Snake: x = 19 y = 40
+Spawn: x = 23 y = 40Diff 4 0
+continue
+3
+------------------
+Snake: x = 20 y = 40
+Spawn: x = 23 y = 40Diff 3 0
+continue
+3
+------------------
+Snake: x = 21 y = 40
+Spawn: x = 23 y = 40Diff 2 0
+continue
+3
+------------------
+Snake: x = 22 y = 40
+Spawn: x = 23 y = 40Diff 1 0
+continue
+3
+------------------
+Snake: x = 23 y = 40
+Spawn: x = 5 y = 3Diff -18 -37
+0
+------------------
+Snake: x = 23 y = 39
+Spawn: x = 5 y = 3Diff -18 -36
+0
+------------------
+Snake: x = 23 y = 38
+Spawn: x = 5 y = 3Diff -18 -35
+0
+------------------
+Snake: x = 23 y = 37
+Spawn: x = 5 y = 3Diff -18 -34
+0
+------------------
+Snake: x = 23 y = 36
+Spawn: x = 5 y = 3Diff -18 -33
+0
+------------------
+Snake: x = 23 y = 35
+Spawn: x = 5 y = 3Diff -18 -32
+0
+------------------
+Snake: x = 23 y = 34
+Spawn: x = 5 y = 3Diff -18 -31
+0
+------------------
+Snake: x = 23 y = 33
+Spawn: x = 5 y = 3Diff -18 -30
+0
+------------------
+Snake: x = 23 y = 32
+Spawn: x = 5 y = 3Diff -18 -29
+0
+------------------
+Snake: x = 23 y = 31
+Spawn: x = 5 y = 3Diff -18 -28
+0
+------------------
+Snake: x = 23 y = 30
+Spawn: x = 5 y = 3Diff -18 -27
+0
+------------------
+Snake: x = 23 y = 29
+Spawn: x = 5 y = 3Diff -18 -26
+0
+------------------
+Snake: x = 23 y = 28
+Spawn: x = 5 y = 3Diff -18 -25
+0
+------------------
+Snake: x = 23 y = 27
+Spawn: x = 5 y = 3Diff -18 -24
+0
+------------------
+Snake: x = 23 y = 26
+Spawn: x = 5 y = 3Diff -18 -23
+0
+------------------
+Snake: x = 23 y = 25
+Spawn: x = 5 y = 3Diff -18 -22
+0
+------------------
+Snake: x = 23 y = 24
+Spawn: x = 5 y = 3Diff -18 -21
+0
+------------------
+Snake: x = 23 y = 23
+Spawn: x = 5 y = 3Diff -18 -20
+0
+------------------
+Snake: x = 23 y = 22
+Spawn: x = 5 y = 3Diff -18 -19
+0
+------------------
+Snake: x = 23 y = 21
+Spawn: x = 5 y = 3Diff -18 -18
+0
+------------------
+Snake: x = 23 y = 20
+Spawn: x = 5 y = 3Diff -18 -17
+0
+------------------
+Snake: x = 23 y = 19
+Spawn: x = 5 y = 3Diff -18 -16
+0
+------------------
+Snake: x = 23 y = 18
+Spawn: x = 5 y = 3Diff -18 -15
+0
+------------------
+Snake: x = 23 y = 17
+Spawn: x = 5 y = 3Diff -18 -14
+0
+------------------
+Snake: x = 23 y = 16
+Spawn: x = 5 y = 3Diff -18 -13
+0
+------------------
+Snake: x = 23 y = 15
+Spawn: x = 5 y = 3Diff -18 -12
+0
+------------------
+Snake: x = 23 y = 14
+Spawn: x = 5 y = 3Diff -18 -11
+0
+------------------
+Snake: x = 23 y = 13
+Spawn: x = 5 y = 3Diff -18 -10
+0
+------------------
+Snake: x = 23 y = 12
+Spawn: x = 5 y = 3Diff -18 -9
+0
+------------------
+Snake: x = 23 y = 11
+Spawn: x = 5 y = 3Diff -18 -8
+0
+------------------
+Snake: x = 23 y = 10
+Spawn: x = 5 y = 3Diff -18 -7
+0
+------------------
+Snake: x = 23 y = 9
+Spawn: x = 5 y = 3Diff -18 -6
+0
+------------------
+Snake: x = 23 y = 8
+Spawn: x = 5 y = 3Diff -18 -5
+0
+------------------
+Snake: x = 23 y = 7
+Spawn: x = 5 y = 3Diff -18 -4
+0
+------------------
+Snake: x = 23 y = 6
+Spawn: x = 5 y = 3Diff -18 -3
+0
+------------------
+Snake: x = 23 y = 5
+Spawn: x = 5 y = 3Diff -18 -2
+0
+------------------
+Snake: x = 23 y = 4
+Spawn: x = 5 y = 3Diff -18 -1
+0
+------------------
+Snake: x = 23 y = 3
+Spawn: x = 5 y = 3Diff -18 0
+continue
+2
+------------------
+Snake: x = 22 y = 3
+Spawn: x = 5 y = 3Diff -17 0
+continue
+2
+------------------
+Snake: x = 21 y = 3
+Spawn: x = 5 y = 3Diff -16 0
+continue
+2
+------------------
+Snake: x = 20 y = 3
+Spawn: x = 5 y = 3Diff -15 0
+continue
+2
+------------------
+Snake: x = 19 y = 3
+Spawn: x = 5 y = 3Diff -14 0
+continue
+2
+------------------
+Snake: x = 18 y = 3
+Spawn: x = 5 y = 3Diff -13 0
+continue
+2
+------------------
+Snake: x = 17 y = 3
+Spawn: x = 5 y = 3Diff -12 0
+continue
+2
+------------------
+Snake: x = 16 y = 3
+Spawn: x = 5 y = 3Diff -11 0
+continue
+2
+------------------
+Snake: x = 15 y = 3
+Spawn: x = 5 y = 3Diff -10 0
+continue
+2
+------------------
+Snake: x = 14 y = 3
+Spawn: x = 5 y = 3Diff -9 0
+continue
+2
+------------------
+Snake: x = 13 y = 3
+Spawn: x = 5 y = 3Diff -8 0
+continue
+2
+------------------
+Snake: x = 12 y = 3
+Spawn: x = 5 y = 3Diff -7 0
+continue
+2
+------------------
+Snake: x = 11 y = 3
+Spawn: x = 5 y = 3Diff -6 0
+continue
+2
+------------------
+Snake: x = 10 y = 3
+Spawn: x = 5 y = 3Diff -5 0
+continue
+2
+------------------
+Snake: x = 9 y = 3
+Spawn: x = 5 y = 3Diff -4 0
+continue
+2
+------------------
+Snake: x = 8 y = 3
+Spawn: x = 5 y = 3Diff -3 0
+continue
+2
+------------------
+Snake: x = 7 y = 3
+Spawn: x = 5 y = 3Diff -2 0
+continue
+2
+------------------
+Snake: x = 6 y = 3
+Spawn: x = 5 y = 3Diff -1 0
+continue
+2
+------------------
+Snake: x = 5 y = 3
+Spawn: x = 3 y = 32Diff -2 29
+1
+------------------
+Snake: x = 5 y = 4
+Spawn: x = 3 y = 32Diff -2 28
+1
+------------------
+Snake: x = 5 y = 5
+Spawn: x = 3 y = 32Diff -2 27
+1
+------------------
+Snake: x = 5 y = 6
+Spawn: x = 3 y = 32Diff -2 26
+1
+------------------
+Snake: x = 5 y = 7
+Spawn: x = 3 y = 32Diff -2 25
+1
+------------------
+Snake: x = 5 y = 8
+Spawn: x = 3 y = 32Diff -2 24
+1
+------------------
+Snake: x = 5 y = 9
+Spawn: x = 3 y = 32Diff -2 23
+1
+------------------
+Snake: x = 5 y = 10
+Spawn: x = 3 y = 32Diff -2 22
+1
+------------------
+Snake: x = 5 y = 11
+Spawn: x = 3 y = 32Diff -2 21
+1
+------------------
+Snake: x = 5 y = 12
+Spawn: x = 3 y = 32Diff -2 20
+1
+------------------
+Snake: x = 5 y = 13
+Spawn: x = 3 y = 32Diff -2 19
+1
+------------------
+Snake: x = 5 y = 14
+Spawn: x = 3 y = 32Diff -2 18
+1
+------------------
+Snake: x = 5 y = 15
+Spawn: x = 3 y = 32Diff -2 17
+1
+------------------
+Snake: x = 5 y = 16
+Spawn: x = 3 y = 32Diff -2 16
+1
+------------------
+Snake: x = 5 y = 17
+Spawn: x = 3 y = 32Diff -2 15
+1
+------------------
+Snake: x = 5 y = 18
+Spawn: x = 3 y = 32Diff -2 14
+1
+------------------
+Snake: x = 5 y = 19
+Spawn: x = 3 y = 32Diff -2 13
+1
+------------------
+Snake: x = 5 y = 20
+Spawn: x = 3 y = 32Diff -2 12
+1
+------------------
+Snake: x = 5 y = 21
+Spawn: x = 3 y = 32Diff -2 11
+1
+------------------
+Snake: x = 5 y = 22
+Spawn: x = 3 y = 32Diff -2 10
+1
+------------------
+Snake: x = 5 y = 23
+Spawn: x = 3 y = 32Diff -2 9
+1
+------------------
+Snake: x = 5 y = 24
+Spawn: x = 3 y = 32Diff -2 8
+1
+------------------
+Snake: x = 5 y = 25
+Spawn: x = 3 y = 32Diff -2 7
+1
+------------------
+Snake: x = 5 y = 26
+Spawn: x = 3 y = 32Diff -2 6
+1
+------------------
+Snake: x = 5 y = 27
+Spawn: x = 3 y = 32Diff -2 5
+1
+------------------
+Snake: x = 5 y = 28
+Spawn: x = 3 y = 32Diff -2 4
+1
+------------------
+Snake: x = 5 y = 29
+Spawn: x = 3 y = 32Diff -2 3
+1
+------------------
+Snake: x = 5 y = 30
+Spawn: x = 3 y = 32Diff -2 2
+1
+------------------
+Snake: x = 5 y = 31
+Spawn: x = 3 y = 32Diff -2 1
+1
+------------------
+Snake: x = 5 y = 32
+Spawn: x = 3 y = 32Diff -2 0
+continue
+2
+------------------
+Snake: x = 4 y = 32
+Spawn: x = 3 y = 32Diff -1 0
+continue
+2
+------------------
+Snake: x = 3 y = 32
+Spawn: x = 7 y = 18Diff 4 -14
+0
+------------------
+Snake: x = 3 y = 31
+Spawn: x = 7 y = 18Diff 4 -13
+0
+------------------
+Snake: x = 3 y = 30
+Spawn: x = 7 y = 18Diff 4 -12
+0
+------------------
+Snake: x = 3 y = 29
+Spawn: x = 7 y = 18Diff 4 -11
+0
+------------------
+Snake: x = 3 y = 28
+Spawn: x = 7 y = 18Diff 4 -10
+0
+------------------
+Snake: x = 3 y = 27
+Spawn: x = 7 y = 18Diff 4 -9
+0
+------------------
+Snake: x = 3 y = 26
+Spawn: x = 7 y = 18Diff 4 -8
+0
+------------------
+Snake: x = 3 y = 25
+Spawn: x = 7 y = 18Diff 4 -7
+0
+------------------
+Snake: x = 3 y = 24
+Spawn: x = 7 y = 18Diff 4 -6
+0
+------------------
+Snake: x = 3 y = 23
+Spawn: x = 7 y = 18Diff 4 -5
+0
+------------------
+Snake: x = 3 y = 22
+Spawn: x = 7 y = 18Diff 4 -4
+0
+------------------
+Snake: x = 3 y = 21
+Spawn: x = 7 y = 18Diff 4 -3
+0
+------------------
+Snake: x = 3 y = 20
+Spawn: x = 7 y = 18Diff 4 -2
+0
+------------------
+Snake: x = 3 y = 19
+Spawn: x = 7 y = 18Diff 4 -1
+0
+------------------
+Snake: x = 3 y = 18
+Spawn: x = 7 y = 18Diff 4 0
+continue
+3
+------------------
+Snake: x = 4 y = 18
+Spawn: x = 7 y = 18Diff 3 0
+continue
+0
+------------------
+Snake: x = 4 y = 17
+Spawn: x = 7 y = 18Diff 3 1
+0
+------------------
+Snake: x = 4 y = 16
+Spawn: x = 7 y = 18Diff 3 2
+0
+------------------
+Snake: x = 4 y = 15
+Spawn: x = 7 y = 18Diff 3 3
+3
+------------------
+Snake: x = 5 y = 15
+Spawn: x = 7 y = 18Diff 2 3
+1
+------------------
+Snake: x = 5 y = 16
+Spawn: x = 7 y = 18Diff 2 2
+1
+------------------
+Snake: x = 5 y = 17
+Spawn: x = 7 y = 18Diff 2 1
+1
+------------------
+Snake: x = 5 y = 18
+Spawn: x = 7 y = 18Diff 2 0
+continue
+3
+------------------
+Snake: x = 6 y = 18
+Spawn: x = 7 y = 18Diff 1 0
+continue
+3
+------------------
+Snake: x = 7 y = 18
+Spawn: x = 23 y = 12Diff 16 -6
+0
+------------------
+Snake: x = 7 y = 17
+Spawn: x = 23 y = 12Diff 16 -5
+0
+------------------
+Snake: x = 7 y = 16
+Spawn: x = 23 y = 12Diff 16 -4
+0
+------------------
+Snake: x = 7 y = 15
+Spawn: x = 23 y = 12Diff 16 -3
+0
+------------------
+Snake: x = 7 y = 14
+Spawn: x = 23 y = 12Diff 16 -2
+0
+------------------
+Snake: x = 7 y = 13
+Spawn: x = 23 y = 12Diff 16 -1
+0
+------------------
+Snake: x = 7 y = 12
+Spawn: x = 23 y = 12Diff 16 0
+continue
+3
+------------------
+Snake: x = 8 y = 12
+Spawn: x = 23 y = 12Diff 15 0
+continue
+3
+------------------
+Snake: x = 9 y = 12
+Spawn: x = 23 y = 12Diff 14 0
+continue
+3
+------------------
+Snake: x = 10 y = 12
+Spawn: x = 23 y = 12Diff 13 0
+continue
+3
+------------------
+Snake: x = 11 y = 12
+Spawn: x = 23 y = 12Diff 12 0
+continue
+3
+------------------
+Snake: x = 12 y = 12
+Spawn: x = 23 y = 12Diff 11 0
+continue
+3
+------------------
+Snake: x = 13 y = 12
+Spawn: x = 23 y = 12Diff 10 0
+continue
+3
+------------------
+Snake: x = 14 y = 12
+Spawn: x = 23 y = 12Diff 9 0
+continue
+3
+------------------
+Snake: x = 15 y = 12
+Spawn: x = 23 y = 12Diff 8 0
+continue
+3
+------------------
+Snake: x = 16 y = 12
+Spawn: x = 23 y = 12Diff 7 0
+continue
+3
+------------------
+Snake: x = 17 y = 12
+Spawn: x = 23 y = 12Diff 6 0
+continue
+3
+------------------
+Snake: x = 18 y = 12
+Spawn: x = 23 y = 12Diff 5 0
+continue
+3
+------------------
+Snake: x = 19 y = 12
+Spawn: x = 23 y = 12Diff 4 0
+continue
+3
+------------------
+Snake: x = 20 y = 12
+Spawn: x = 23 y = 12Diff 3 0
+continue
+3
+------------------
+Snake: x = 21 y = 12
+Spawn: x = 23 y = 12Diff 2 0
+continue
+3
+------------------
+Snake: x = 22 y = 12
+Spawn: x = 23 y = 12Diff 1 0
+continue
+3
+------------------
+Snake: x = 23 y = 12
+Spawn: x = 16 y = 50Diff -7 38
+1
+------------------
+Snake: x = 23 y = 13
+Spawn: x = 16 y = 50Diff -7 37
+1
+------------------
+Snake: x = 23 y = 14
+Spawn: x = 16 y = 50Diff -7 36
+1
+------------------
+Snake: x = 23 y = 15
+Spawn: x = 16 y = 50Diff -7 35
+1
+------------------
+Snake: x = 23 y = 16
+Spawn: x = 16 y = 50Diff -7 34
+1
+------------------
+Snake: x = 23 y = 17
+Spawn: x = 16 y = 50Diff -7 33
+1
+------------------
+Snake: x = 23 y = 18
+Spawn: x = 16 y = 50Diff -7 32
+1
+------------------
+Snake: x = 23 y = 19
+Spawn: x = 16 y = 50Diff -7 31
+1
+------------------
+Snake: x = 23 y = 20
+Spawn: x = 16 y = 50Diff -7 30
+1
+------------------
+Snake: x = 23 y = 21
+Spawn: x = 16 y = 50Diff -7 29
+1
+------------------
+Snake: x = 23 y = 22
+Spawn: x = 16 y = 50Diff -7 28
+1
+------------------
+Snake: x = 23 y = 23
+Spawn: x = 16 y = 50Diff -7 27
+1
+------------------
+Snake: x = 23 y = 24
+Spawn: x = 16 y = 50Diff -7 26
+1
+------------------
+Snake: x = 23 y = 25
+Spawn: x = 16 y = 50Diff -7 25
+1
+------------------
+Snake: x = 23 y = 26
+Spawn: x = 16 y = 50Diff -7 24
+1
+------------------
+Snake: x = 23 y = 27
+Spawn: x = 16 y = 50Diff -7 23
+1
+------------------
+Snake: x = 23 y = 28
+Spawn: x = 16 y = 50Diff -7 22
+1
+------------------
+Snake: x = 23 y = 29
+Spawn: x = 16 y = 50Diff -7 21
+1
+------------------
+Snake: x = 23 y = 30
+Spawn: x = 16 y = 50Diff -7 20
+1
+------------------
+Snake: x = 23 y = 31
+Spawn: x = 16 y = 50Diff -7 19
+1
+------------------
+Snake: x = 23 y = 32
+Spawn: x = 16 y = 50Diff -7 18
+1
+------------------
+Snake: x = 23 y = 33
+Spawn: x = 16 y = 50Diff -7 17
+1
+------------------
+Snake: x = 23 y = 34
+Spawn: x = 16 y = 50Diff -7 16
+1
+------------------
+Snake: x = 23 y = 35
+Spawn: x = 16 y = 50Diff -7 15
+1
+------------------
+Snake: x = 23 y = 36
+Spawn: x = 16 y = 50Diff -7 14
+1
+------------------
+Snake: x = 23 y = 37
+Spawn: x = 16 y = 50Diff -7 13
+1
+------------------
+Snake: x = 23 y = 38
+Spawn: x = 16 y = 50Diff -7 12
+1
+------------------
+Snake: x = 23 y = 39
+Spawn: x = 16 y = 50Diff -7 11
+1
+------------------
+Snake: x = 23 y = 40
+Spawn: x = 16 y = 50Diff -7 10
+1
+------------------
+Snake: x = 23 y = 41
+Spawn: x = 16 y = 50Diff -7 9
+1
+------------------
+Snake: x = 23 y = 42
+Spawn: x = 16 y = 50Diff -7 8
+1
+------------------
+Snake: x = 23 y = 43
+Spawn: x = 16 y = 50Diff -7 7
+1
+------------------
+Snake: x = 23 y = 44
+Spawn: x = 16 y = 50Diff -7 6
+1
+------------------
+Snake: x = 23 y = 45
+Spawn: x = 16 y = 50Diff -7 5
+1
+------------------
+Snake: x = 23 y = 46
+Spawn: x = 16 y = 50Diff -7 4
+1
+------------------
+Snake: x = 23 y = 47
+Spawn: x = 16 y = 50Diff -7 3
+1
+------------------
+Snake: x = 23 y = 48
+Spawn: x = 16 y = 50Diff -7 2
+1
+------------------
+Snake: x = 23 y = 49
+Spawn: x = 16 y = 50Diff -7 1
+1
+------------------
+Snake: x = 23 y = 50
+Spawn: x = 16 y = 50Diff -7 0
+continue
+2
+------------------
+Snake: x = 22 y = 50
+Spawn: x = 16 y = 50Diff -6 0
+continue
+2
+------------------
+Snake: x = 21 y = 50
+Spawn: x = 16 y = 50Diff -5 0
+continue
+2
+------------------
+Snake: x = 20 y = 50
+Spawn: x = 16 y = 50Diff -4 0
+continue
+2
+------------------
+Snake: x = 19 y = 50
+Spawn: x = 16 y = 50Diff -3 0
+continue
+2
+------------------
+Snake: x = 18 y = 50
+Spawn: x = 16 y = 50Diff -2 0
+continue
+2
+------------------
+Snake: x = 17 y = 50
+Spawn: x = 16 y = 50Diff -1 0
+continue
+2
+------------------
+Snake: x = 16 y = 50
+Spawn: x = 8 y = 19Diff -8 -31
+0
+------------------
+Snake: x = 16 y = 49
+Spawn: x = 8 y = 19Diff -8 -30
+0
+------------------
+Snake: x = 16 y = 48
+Spawn: x = 8 y = 19Diff -8 -29
+0
+------------------
+Snake: x = 16 y = 47
+Spawn: x = 8 y = 19Diff -8 -28
+0
+------------------
+Snake: x = 16 y = 46
+Spawn: x = 8 y = 19Diff -8 -27
+0
+------------------
+Snake: x = 16 y = 45
+Spawn: x = 8 y = 19Diff -8 -26
+0
+------------------
+Snake: x = 16 y = 44
+Spawn: x = 8 y = 19Diff -8 -25
+0
+------------------
+Snake: x = 16 y = 43
+Spawn: x = 8 y = 19Diff -8 -24
+0
+------------------
+Snake: x = 16 y = 42
+Spawn: x = 8 y = 19Diff -8 -23
+0
+------------------
+Snake: x = 16 y = 41
+Spawn: x = 8 y = 19Diff -8 -22
+0
+------------------
+Snake: x = 16 y = 40
+Spawn: x = 8 y = 19Diff -8 -21
+0
+------------------
+Snake: x = 16 y = 39
+Spawn: x = 8 y = 19Diff -8 -20
+0
+------------------
+Snake: x = 16 y = 38
+Spawn: x = 8 y = 19Diff -8 -19
+0
+------------------
+Snake: x = 16 y = 37
+Spawn: x = 8 y = 19Diff -8 -18
+0
+------------------
+Snake: x = 16 y = 36
+Spawn: x = 8 y = 19Diff -8 -17
+0
+------------------
+Snake: x = 16 y = 35
+Spawn: x = 8 y = 19Diff -8 -16
+0
+------------------
+Snake: x = 16 y = 34
+Spawn: x = 8 y = 19Diff -8 -15
+0
+------------------
+Snake: x = 16 y = 33
+Spawn: x = 8 y = 19Diff -8 -14
+0
+------------------
+Snake: x = 16 y = 32
+Spawn: x = 8 y = 19Diff -8 -13
+0
+------------------
+Snake: x = 16 y = 31
+Spawn: x = 8 y = 19Diff -8 -12
+0
+------------------
+Snake: x = 16 y = 30
+Spawn: x = 8 y = 19Diff -8 -11
+0
+------------------
+Snake: x = 16 y = 29
+Spawn: x = 8 y = 19Diff -8 -10
+0
+------------------
+Snake: x = 16 y = 28
+Spawn: x = 8 y = 19Diff -8 -9
+0
+------------------
+Snake: x = 16 y = 27
+Spawn: x = 8 y = 19Diff -8 -8
+0
+------------------
+Snake: x = 16 y = 26
+Spawn: x = 8 y = 19Diff -8 -7
+0
+------------------
+Snake: x = 16 y = 25
+Spawn: x = 8 y = 19Diff -8 -6
+0
+------------------
+Snake: x = 16 y = 24
+Spawn: x = 8 y = 19Diff -8 -5
+0
+------------------
+Snake: x = 16 y = 23
+Spawn: x = 8 y = 19Diff -8 -4
+0
+------------------
+Snake: x = 16 y = 22
+Spawn: x = 8 y = 19Diff -8 -3
+0
+------------------
+Snake: x = 16 y = 21
+Spawn: x = 8 y = 19Diff -8 -2
+0
+------------------
+Snake: x = 16 y = 20
+Spawn: x = 8 y = 19Diff -8 -1
+0
+------------------
+Snake: x = 16 y = 19
+Spawn: x = 8 y = 19Diff -8 0
+continue
+2
+------------------
+Snake: x = 15 y = 19
+Spawn: x = 8 y = 19Diff -7 0
+continue
+2
+------------------
+Snake: x = 14 y = 19
+Spawn: x = 8 y = 19Diff -6 0
+continue
+2
+------------------
+Snake: x = 13 y = 19
+Spawn: x = 8 y = 19Diff -5 0
+continue
+2
+------------------
+Snake: x = 12 y = 19
+Spawn: x = 8 y = 19Diff -4 0
+continue
+2
+------------------
+Snake: x = 11 y = 19
+Spawn: x = 8 y = 19Diff -3 0
+continue
+2
+------------------
+Snake: x = 10 y = 19
+Spawn: x = 8 y = 19Diff -2 0
+continue
+2
+------------------
+Snake: x = 9 y = 19
+Spawn: x = 8 y = 19Diff -1 0
+continue
+2
+------------------
+Snake: x = 8 y = 19
+Spawn: x = 2 y = 22Diff -6 3
+1
+------------------
+Snake: x = 8 y = 20
+Spawn: x = 2 y = 22Diff -6 2
+1
+------------------
+Snake: x = 8 y = 21
+Spawn: x = 2 y = 22Diff -6 1
+1
+------------------
+Snake: x = 8 y = 22
+Spawn: x = 2 y = 22Diff -6 0
+continue
+2
+------------------
+Snake: x = 7 y = 22
+Spawn: x = 2 y = 22Diff -5 0
+continue
+2
+------------------
+Snake: x = 6 y = 22
+Spawn: x = 2 y = 22Diff -4 0
+continue
+2
+------------------
+Snake: x = 5 y = 22
+Spawn: x = 2 y = 22Diff -3 0
+continue
+2
+------------------
+Snake: x = 4 y = 22
+Spawn: x = 2 y = 22Diff -2 0
+continue
+2
+------------------
+Snake: x = 3 y = 22
+Spawn: x = 2 y = 22Diff -1 0
+continue
+2
+------------------
+Snake: x = 2 y = 22
+Spawn: x = 26 y = 39Diff 24 17
+1
+------------------
+Snake: x = 2 y = 23
+Spawn: x = 26 y = 39Diff 24 16
+1
+------------------
+Snake: x = 2 y = 24
+Spawn: x = 26 y = 39Diff 24 15
+1
+------------------
+Snake: x = 2 y = 25
+Spawn: x = 26 y = 39Diff 24 14
+1
+------------------
+Snake: x = 2 y = 26
+Spawn: x = 26 y = 39Diff 24 13
+1
+------------------
+Snake: x = 2 y = 27
+Spawn: x = 26 y = 39Diff 24 12
+1
+------------------
+Snake: x = 2 y = 28
+Spawn: x = 26 y = 39Diff 24 11
+1
+------------------
+Snake: x = 2 y = 29
+Spawn: x = 26 y = 39Diff 24 10
+1
+------------------
+Snake: x = 2 y = 30
+Spawn: x = 26 y = 39Diff 24 9
+1
+------------------
+Snake: x = 2 y = 31
+Spawn: x = 26 y = 39Diff 24 8
+1
+------------------
+Snake: x = 2 y = 32
+Spawn: x = 26 y = 39Diff 24 7
+1
+------------------
+Snake: x = 2 y = 33
+Spawn: x = 26 y = 39Diff 24 6
+1
+------------------
+Snake: x = 2 y = 34
+Spawn: x = 26 y = 39Diff 24 5
+1
+------------------
+Snake: x = 2 y = 35
+Spawn: x = 26 y = 39Diff 24 4
+1
+------------------
+Snake: x = 2 y = 36
+Spawn: x = 26 y = 39Diff 24 3
+1
+------------------
+Snake: x = 2 y = 37
+Spawn: x = 26 y = 39Diff 24 2
+1
+------------------
+Snake: x = 2 y = 38
+Spawn: x = 26 y = 39Diff 24 1
+1
+------------------
+Snake: x = 2 y = 39
+Spawn: x = 26 y = 39Diff 24 0
+continue
+3
+------------------
+Snake: x = 3 y = 39
+Spawn: x = 26 y = 39Diff 23 0
+continue
+3
+------------------
+Snake: x = 4 y = 39
+Spawn: x = 26 y = 39Diff 22 0
+continue
+3
+------------------
+Snake: x = 5 y = 39
+Spawn: x = 26 y = 39Diff 21 0
+continue
+3
+------------------
+Snake: x = 6 y = 39
+Spawn: x = 26 y = 39Diff 20 0
+continue
+3
+------------------
+Snake: x = 7 y = 39
+Spawn: x = 26 y = 39Diff 19 0
+continue
+3
+------------------
+Snake: x = 8 y = 39
+Spawn: x = 26 y = 39Diff 18 0
+continue
+3
+------------------
+Snake: x = 9 y = 39
+Spawn: x = 26 y = 39Diff 17 0
+continue
+3
+------------------
+Snake: x = 10 y = 39
+Spawn: x = 26 y = 39Diff 16 0
+continue
+3
+------------------
+Snake: x = 11 y = 39
+Spawn: x = 26 y = 39Diff 15 0
+continue
+3
+------------------
+Snake: x = 12 y = 39
+Spawn: x = 26 y = 39Diff 14 0
+continue
+3
+------------------
+Snake: x = 13 y = 39
+Spawn: x = 26 y = 39Diff 13 0
+continue
+3
+------------------
+Snake: x = 14 y = 39
+Spawn: x = 26 y = 39Diff 12 0
+continue
+3
+------------------
+Snake: x = 15 y = 39
+Spawn: x = 26 y = 39Diff 11 0
+continue
+3
+------------------
+Snake: x = 16 y = 39
+Spawn: x = 26 y = 39Diff 10 0
+continue
+3
+------------------
+Snake: x = 17 y = 39
+Spawn: x = 26 y = 39Diff 9 0
+continue
+3
+------------------
+Snake: x = 18 y = 39
+Spawn: x = 26 y = 39Diff 8 0
+continue
+3
+------------------
+Snake: x = 19 y = 39
+Spawn: x = 26 y = 39Diff 7 0
+continue
+3
+------------------
+Snake: x = 20 y = 39
+Spawn: x = 26 y = 39Diff 6 0
+continue
+3
+------------------
+Snake: x = 21 y = 39
+Spawn: x = 26 y = 39Diff 5 0
+continue
+3
+------------------
+Snake: x = 22 y = 39
+Spawn: x = 26 y = 39Diff 4 0
+continue
+3
+------------------
+Snake: x = 23 y = 39
+Spawn: x = 26 y = 39Diff 3 0
+continue
+3
+------------------
+Snake: x = 24 y = 39
+Spawn: x = 26 y = 39Diff 2 0
+continue
+3
+------------------
+Snake: x = 25 y = 39
+Spawn: x = 26 y = 39Diff 1 0
+continue
+3
+------------------
+Snake: x = 26 y = 39
+Spawn: x = 12 y = 35Diff -14 -4
+0
+------------------
+Snake: x = 26 y = 38
+Spawn: x = 12 y = 35Diff -14 -3
+0
+------------------
+Snake: x = 26 y = 37
+Spawn: x = 12 y = 35Diff -14 -2
+0
+------------------
+Snake: x = 26 y = 36
+Spawn: x = 12 y = 35Diff -14 -1
+0
+------------------
+Snake: x = 26 y = 35
+Spawn: x = 12 y = 35Diff -14 0
+continue
+2
+------------------
+Snake: x = 25 y = 35
+Spawn: x = 12 y = 35Diff -13 0
+continue
+2
+------------------
+Snake: x = 24 y = 35
+Spawn: x = 12 y = 35Diff -12 0
+continue
+2
+------------------
+Snake: x = 23 y = 35
+Spawn: x = 12 y = 35Diff -11 0
+continue
+2
+------------------
+Snake: x = 22 y = 35
+Spawn: x = 12 y = 35Diff -10 0
+continue
+2
+------------------
+Snake: x = 21 y = 35
+Spawn: x = 12 y = 35Diff -9 0
+continue
+2
+------------------
+Snake: x = 20 y = 35
+Spawn: x = 12 y = 35Diff -8 0
+continue
+2
+------------------
+Snake: x = 19 y = 35
+Spawn: x = 12 y = 35Diff -7 0
+continue
+2
+------------------
+Snake: x = 18 y = 35
+Spawn: x = 12 y = 35Diff -6 0
+continue
+2
+------------------
+Snake: x = 17 y = 35
+Spawn: x = 12 y = 35Diff -5 0
+continue
+2
+------------------
+Snake: x = 16 y = 35
+Spawn: x = 12 y = 35Diff -4 0
+continue
+2
+------------------
+Snake: x = 15 y = 35
+Spawn: x = 12 y = 35Diff -3 0
+continue
+2
+------------------
+Snake: x = 14 y = 35
+Spawn: x = 12 y = 35Diff -2 0
+continue
+2
+------------------
+Snake: x = 13 y = 35
+Spawn: x = 12 y = 35Diff -1 0
+continue
+2
+------------------
+Snake: x = 12 y = 35
+Spawn: x = 15 y = 17Diff 3 -18
+0
+------------------
+Snake: x = 12 y = 34
+Spawn: x = 15 y = 17Diff 3 -17
+0
+------------------
+Snake: x = 12 y = 33
+Spawn: x = 15 y = 17Diff 3 -16
+0
+------------------
+Snake: x = 12 y = 32
+Spawn: x = 15 y = 17Diff 3 -15
+0
+------------------
+Snake: x = 12 y = 31
+Spawn: x = 15 y = 17Diff 3 -14
+0
+------------------
+Snake: x = 12 y = 30
+Spawn: x = 15 y = 17Diff 3 -13
+0
+------------------
+Snake: x = 12 y = 29
+Spawn: x = 15 y = 17Diff 3 -12
+0
+------------------
+Snake: x = 12 y = 28
+Spawn: x = 15 y = 17Diff 3 -11
+0
+------------------
+Snake: x = 12 y = 27
+Spawn: x = 15 y = 17Diff 3 -10
+0
+------------------
+Snake: x = 12 y = 26
+Spawn: x = 15 y = 17Diff 3 -9
+0
+------------------
+Snake: x = 12 y = 25
+Spawn: x = 15 y = 17Diff 3 -8
+0
+------------------
+Snake: x = 12 y = 24
+Spawn: x = 15 y = 17Diff 3 -7
+0
+------------------
+Snake: x = 12 y = 23
+Spawn: x = 15 y = 17Diff 3 -6
+0
+------------------
+Snake: x = 12 y = 22
+Spawn: x = 15 y = 17Diff 3 -5
+0
+------------------
+Snake: x = 12 y = 21
+Spawn: x = 15 y = 17Diff 3 -4
+0
+------------------
+Snake: x = 12 y = 20
+Spawn: x = 15 y = 17Diff 3 -3
+0
+------------------
+Snake: x = 12 y = 19
+Spawn: x = 15 y = 17Diff 3 -2
+0
+------------------
+Snake: x = 12 y = 18
+Spawn: x = 15 y = 17Diff 3 -1
+0
+------------------
+Snake: x = 12 y = 17
+Spawn: x = 15 y = 17Diff 3 0
+continue
+3
+------------------
+Snake: x = 13 y = 17
+Spawn: x = 15 y = 17Diff 2 0
+continue
+3
+------------------
+Snake: x = 14 y = 17
+Spawn: x = 15 y = 17Diff 1 0
+continue
+3
+------------------
+Snake: x = 15 y = 17
+Spawn: x = 14 y = 25Diff -1 8
+1
+------------------
+Snake: x = 15 y = 18
+Spawn: x = 14 y = 25Diff -1 7
+1
+------------------
+Snake: x = 15 y = 19
+Spawn: x = 14 y = 25Diff -1 6
+1
+------------------
+Snake: x = 15 y = 20
+Spawn: x = 14 y = 25Diff -1 5
+1
+------------------
+Snake: x = 15 y = 21
+Spawn: x = 14 y = 25Diff -1 4
+1
+------------------
+Snake: x = 15 y = 22
+Spawn: x = 14 y = 25Diff -1 3
+1
+------------------
+Snake: x = 15 y = 23
+Spawn: x = 14 y = 25Diff -1 2
+1
+------------------
+Snake: x = 15 y = 24
+Spawn: x = 14 y = 25Diff -1 1
+1
+------------------
+Snake: x = 15 y = 25
+Spawn: x = 14 y = 25Diff -1 0
+continue
+2
+------------------
+Snake: x = 14 y = 25
+Spawn: x = 6 y = 54Diff -8 29
+1
+------------------
+Snake: x = 14 y = 26
+Spawn: x = 6 y = 54Diff -8 28
+1
+------------------
+Snake: x = 14 y = 27
+Spawn: x = 6 y = 54Diff -8 27
+1
+------------------
+Snake: x = 14 y = 28
+Spawn: x = 6 y = 54Diff -8 26
+1
+------------------
+Snake: x = 14 y = 29
+Spawn: x = 6 y = 54Diff -8 25
+1
+------------------
+Snake: x = 14 y = 30
+Spawn: x = 6 y = 54Diff -8 24
+1
+------------------
+Snake: x = 14 y = 31
+Spawn: x = 6 y = 54Diff -8 23
+1
+------------------
+Snake: x = 14 y = 32
+Spawn: x = 6 y = 54Diff -8 22
+1
+------------------
+Snake: x = 14 y = 33
+Spawn: x = 6 y = 54Diff -8 21
+1
+------------------
+Snake: x = 14 y = 34
+Spawn: x = 6 y = 54Diff -8 20
+2
+------------------
+Snake: x = 13 y = 34
+Spawn: x = 6 y = 54Diff -7 20
+0
+------------------
+Snake: x = 13 y = 33
+Spawn: x = 6 y = 54Diff -7 21
+0
+------------------
+Snake: x = 13 y = 32
+Spawn: x = 6 y = 54Diff -7 22
+0
+------------------
+Snake: x = 13 y = 31
+Spawn: x = 6 y = 54Diff -7 23
+0
+------------------
+Snake: x = 13 y = 30
+Spawn: x = 6 y = 54Diff -7 24
+0
+------------------
+Snake: x = 13 y = 29
+Spawn: x = 6 y = 54Diff -7 25
+0
+------------------
+Snake: x = 13 y = 28
+Spawn: x = 6 y = 54Diff -7 26
+0
+------------------
+Snake: x = 13 y = 27
+Spawn: x = 6 y = 54Diff -7 27
+0
+------------------
+Snake: x = 13 y = 26
+Spawn: x = 6 y = 54Diff -7 28
+0
+------------------
+Snake: x = 13 y = 25
+Spawn: x = 6 y = 54Diff -7 29
+0
+------------------
+Snake: x = 13 y = 24
+Spawn: x = 6 y = 54Diff -7 30
+0
+------------------
+Snake: x = 13 y = 23
+Spawn: x = 6 y = 54Diff -7 31
+0
+------------------
+Snake: x = 13 y = 22
+Spawn: x = 6 y = 54Diff -7 32
+0
+------------------
+Snake: x = 13 y = 21
+Spawn: x = 6 y = 54Diff -7 33
+0
+------------------
+Snake: x = 13 y = 20
+Spawn: x = 6 y = 54Diff -7 34
+0
+------------------
+Snake: x = 13 y = 19
+Spawn: x = 6 y = 54Diff -7 35
+0
+------------------
+Snake: x = 13 y = 18
+Spawn: x = 6 y = 54Diff -7 36
+3
+------------------
+Snake: x = 14 y = 18
+Spawn: x = 6 y = 54Diff -8 36
+1
+------------------
+Snake: x = 14 y = 19
+Spawn: x = 6 y = 54Diff -8 35
+1
+------------------
+Snake: x = 14 y = 20
+Spawn: x = 6 y = 54Diff -8 34
+1
+------------------
+Snake: x = 14 y = 21
+Spawn: x = 6 y = 54Diff -8 33
+1
+------------------
+Snake: x = 14 y = 22
+Spawn: x = 6 y = 54Diff -8 32
+1
+------------------
+Snake: x = 14 y = 23
+Spawn: x = 6 y = 54Diff -8 31
+1
+------------------
+Snake: x = 14 y = 24
+Spawn: x = 6 y = 54Diff -8 30
+failed to find
+------------------
