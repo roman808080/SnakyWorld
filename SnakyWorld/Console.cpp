@@ -239,7 +239,7 @@ std::tuple<int, int> Console::getRealScreenSize()
         return std::make_tuple(-1, -1);
     }
 
-    return std::make_tuple(bufferInfo.srWindow.Bottom, bufferInfo.srWindow.Right);
+    return std::make_tuple(bufferInfo.srWindow.Bottom + 1, bufferInfo.srWindow.Right + 1);
 }
 
 Console::Direction Console::getArrowDirection()
