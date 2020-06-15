@@ -11,7 +11,7 @@ namespace
     const Coordinate kTopLeftCorner(1, 0);
     const Coordinate kDefaultSnakePosition(3, 4);
     const std::chrono::milliseconds kMaxTime(150);
-    const std::chrono::milliseconds kMinTime(60);
+    const std::chrono::milliseconds kMinTime(40);
     const std::chrono::milliseconds kAcceleration(5);
 
     int getRandomNumberInRange(int start, int end)
