@@ -8,6 +8,7 @@
 
 namespace
 {
+    const Coordinate kTopLeftCorner(1, 0);
     const Coordinate kDefaultSnakePosition(3, 4);
     const std::chrono::milliseconds kMaxTime(150);
     const std::chrono::milliseconds kMinTime(60);
@@ -39,10 +40,13 @@ Board::Board(std::shared_ptr<Console> console)
 
     std::tie(sizeX, sizeY) = console->getScreenSize();
 
-    auto leftLine = std::make_shared<Line>(console, Coordinate(1, 0), Coordinate(sizeX, 0));
+    const Coordinate topLeftCorner(1, 0);
+    const Coordinate topRifhtCorner(sizeX - 1, sizeY - 1);
+
+    auto leftLine = std::make_shared<Line>(console, topLeftCorner, Coordinate(sizeX, 0));
     auto rightLine = std::make_shared<Line>(console, Coordinate(1, sizeY - 1), Coordinate(sizeX, sizeY - 1));
 
-    auto bottomLine = std::make_shared<Line>(console, Coordinate(sizeX - 1, 1), Coordinate(sizeX - 1, sizeY - 1));
+    auto bottomLine = std::make_shared<Line>(console, Coordinate(sizeX - 1, 1), topRifhtCorner);
     auto topLine = std::make_shared<Line>(console, Coordinate(1, 1), Coordinate(1, sizeY - 1));
 
     objects.push_back(leftLine);

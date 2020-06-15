@@ -14,6 +14,8 @@ public:
 
     void move();
     void move(Console::Directon direction);
+
+    void setBorders(const Coordinate& topLeftCorner, const Coordinate& bottomRightCorner);
     void setSpawn(std::shared_ptr<Cell> spawn);
     void setConsumptionObserver(ConsumptionObserver* consumptionObserver);
 
@@ -31,6 +33,7 @@ private:
                                          const Coordinate& spawnCoordinate);
     Coordinate moveCoordinate(const Coordinate& coordinate,
                               Console::Directon direction);
+    bool isBorderCollision(const Coordinate& otherCoordinate);
 
 private:
     std::shared_ptr<Console> console;
@@ -38,6 +41,9 @@ private:
     std::deque<Cell> cellDeque;
 
     Coordinate head;
+    Coordinate topLeftCorner;
+    Coordinate bottomRightCorner;
+
     Console::Directon lastDirection;
 
     ConsumptionObserver* consumptionObserver;

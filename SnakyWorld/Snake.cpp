@@ -42,8 +42,8 @@ namespace
 }
 
 Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int size)
-    : console(console), head(coordinate), lastDirection(Console::Directon::Unknown),
-      consumptionObserver(nullptr)
+    : console(console), head(coordinate), topLeftCorner(0, 0), bottomRightCorner(0, 0),
+      lastDirection(Console::Directon::Unknown), consumptionObserver(nullptr)
 {
     auto teil = head;
     for (int i = 0; i < size; ++i)
@@ -80,6 +80,12 @@ void Snake::move(Console::Directon direction)
         tryToUseLastStep();
         return;
     }
+}
+
+void Snake::setBorders(const Coordinate& topLeftCorner, const Coordinate& bottomRightCorner)
+{
+    this->topLeftCorner = topLeftCorner;
+    this->bottomRightCorner = bottomRightCorner;
 }
 
 void Snake::setSpawn(std::shared_ptr<Cell> spawn)
@@ -172,7 +178,7 @@ Console::Directon Snake::calculateDirection(const Coordinate& snakeHead, const C
             continue;
         }
         auto coordinate = moveCoordinate(head, direction);
-        if (!isInteracted(coordinate))
+        if (!isInteracted(coordinate) and !isBorderCollision(coordinate))
         {
             return direction;
         }
@@ -200,4 +206,12 @@ Coordinate Snake::moveCoordinate(const Coordinate& coordinate, Console::Directon
     default:
         return coordinate;
     }
+}
+
+bool Snake::isBorderCollision(const Coordinate& otherCoordinate)
+{
+    return (otherCoordinate.first == topLeftCorner.first or
+            otherCoordinate.first == bottomRightCorner.first or
+            otherCoordinate.second == topLeftCorner.second or
+            otherCoordinate.second == bottomRightCorner.second);
 }
