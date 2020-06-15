@@ -12,6 +12,7 @@ class Console
 {
 public:
 
+    // represents directions and special keys.
     enum class Direction
     {
         Left,
@@ -23,6 +24,7 @@ public:
         Unknown // If was pressed a different key.
     };
 
+    // colors which I used.
     enum class Color
     {
         Black,
@@ -56,6 +58,7 @@ public:
     // Fills the screen with a background color.
     void drawBackground();
 
+    // print a text line which centred. possibly too many parameters, maybe needs refactoring.
     void printLine(Color color, int line,
                    const std::string& text, Color textBackgroundColor, bool isBold);
 

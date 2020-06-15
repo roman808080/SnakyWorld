@@ -30,6 +30,7 @@ namespace
     }
 }
 
+// there are magic numbers which I didn't clean. Needs to clean up.
 Board::Board(std::shared_ptr<Console> console)
     : console(console),
       score(0),
@@ -55,6 +56,7 @@ Board::Board(std::shared_ptr<Console> console)
 
     snake = std::make_shared<Snake>(console, kDefaultSnakePosition);
 
+    // setup the snake.
     snake->setSpawn(std::make_shared<Cell>(console, getSpawnCoordinate()));
     snake->setBorders(topLeftCorner, topRifhtCorner);
     snake->setConsumptionObserver(this);
@@ -74,26 +76,32 @@ void Board::loop(bool isDemo)
         auto direction = console->getCurrentDirection();
         if (direction == Console::Direction::Esc)
         {
+            // returns to menu.
             return;
         }
 
         if (isDemo)
         {
+            // automovent
             snake->move();
         }
         else
         {
+            // user based movement.
             snake->move(direction);
         }
         
         auto snakeHead = snake->getCoordindate();
+        // checks collisions
         auto interacted = getInteractionStatus(snakeHead);
 
+        // if the snake collided returns to menu. GAME OVER(
         if (interacted)
         {
             return;
         }
 
+        // sleep until next iteration.
         std::this_thread::sleep_for(pause);
     }
 }
@@ -105,6 +113,8 @@ int Board::getScore()
 
 void Board::spawnWasEaten()
 {
+    // our snake ate someone. generate a new spawn, speed up the game and add a score.
+
     snake->setSpawn(std::make_shared<Cell>(console, getSpawnCoordinate()));
     speedUp();
     addScore(1);
@@ -131,6 +141,7 @@ Coordinate Board::getSpawnCoordinate()
 
     if (collided)
     {
+        // generate recursively until no collision occurs.
         return getSpawnCoordinate();
     }
 

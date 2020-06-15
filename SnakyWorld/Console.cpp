@@ -25,6 +25,8 @@ namespace
 
     const char kCell[] = "  ";
 
+    // convert colors from an outter representation to inner which we can use to draw.
+    // possible overhead.
     cpp_sgr::sgr convertColor(Console::Color color)
     {
         switch (color)
@@ -46,6 +48,7 @@ namespace
         }
     }
 
+    // generate a space row by size.
     std::string getSpaces(int size)
     {
         std::string result = "";
@@ -61,16 +64,21 @@ namespace
 Console::Console()
     : consoleHandler(GetStdHandle(STD_OUTPUT_HANDLE))
 {
+    // anables an ability to draw colors.
     enableVirtualTerminalProcessing();
     showConsoleCursor(false);
+    // clears everything just in case.
     clear();
 }
 
 Console::~Console()
 {
+    // clears at the end everything
     clear();
+    // restores cursor.
     showConsoleCursor(true);
 
+    // close our handler.
     CloseHandle(consoleHandler);
 }
 
@@ -80,7 +88,7 @@ Console::Direction Console::getCurrentDirection()
     {
         return Direction::Unknown;
     }
-
+ 
     auto symbol = _getch();
     switch (symbol)
     {
@@ -174,6 +182,7 @@ void Console::clear()
     SetConsoleCursorPosition(consoleHandler, coordScreen);
 }
 
+// fills background with the special color.
 void Console::drawBackground()
 {
     int sizeX, sizeY;
@@ -190,9 +199,10 @@ void Console::printLine(Color color, int line,
 {
     int _, sizeY;
     std::tie(_, sizeY) = getScreenSize();
-    drawHorizontalLine(color, line, 0, sizeY);
+    drawHorizontalLine(color, line, 0, sizeY); // draws background
 
-    int textPosition = (sizeY / 2 - text.size() / 4) * kReductionRate;
+    // finds the text start position.
+    int textPosition = (sizeY / 2 - text.size() / (kReductionRate * 2)) * kReductionRate;
     setRealCursorPositon(line, textPosition);
     if (isBold)
     {
@@ -239,6 +249,7 @@ Console::Direction Console::getArrowDirection()
         return Direction::Unknown;
     }
 
+    // additionaly adds <-,-> keys.
     switch (_getch())
     {
     case kArrowLeft:
@@ -249,8 +260,6 @@ Console::Direction Console::getArrowDirection()
         return Direction::Up;
     case kArrowDown:
         return Direction::Down;
-    case kArrowKey:
-        return getArrowDirection();
     default:
         return Direction::Unknown;
     }
