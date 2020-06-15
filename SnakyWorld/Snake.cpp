@@ -168,9 +168,17 @@ std::vector<Console::Directon> Snake::getPossibleDirections(const Coordinate& sn
     return directions;
 }
 
-Console::Directon Snake::calculateDirection(const Coordinate& snakeHead, const Coordinate& spawnCoordinate)
+Console::Directon Snake::calculateDirection(const Coordinate& snakeHead, const Coordinate& spawnCoordinate,
+                                            Console::Directon previousDirection, int depth)
 {
+    if (snakeHead == spawnCoordinate or
+        depth <= 0)
+    {
+        return previousDirection;
+    }
+
     auto directions = getPossibleDirections(snakeHead, spawnCoordinate);
+
     for (const auto direction : directions)
     {
         if (direction == Console::Directon::Unknown)
@@ -180,7 +188,7 @@ Console::Directon Snake::calculateDirection(const Coordinate& snakeHead, const C
         auto coordinate = moveCoordinate(head, direction);
         if (!isInteracted(coordinate) and !isBorderCollision(coordinate))
         {
-            return direction;
+            return calculateDirection(coordinate, spawnCoordinate, direction, depth - 1);
         }
     }
 

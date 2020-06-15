@@ -29,8 +29,9 @@ private:
     Console::Directon getOppositeDirection(Console::Directon direction);
     std::vector<Console::Directon> getPossibleDirections(const Coordinate& snakeHead,
                                                          const Coordinate& destination);
-    Console::Directon calculateDirection(const Coordinate& snakeHead,
-                                         const Coordinate& spawnCoordinate);
+    Console::Directon calculateDirection(const Coordinate& snakeHead, const Coordinate& spawnCoordinate,
+                                        Console::Directon previousDirection = Console::Directon::Unknown,
+                                        int depth = 40);
     Coordinate moveCoordinate(const Coordinate& coordinate,
                               Console::Directon direction);
     bool isBorderCollision(const Coordinate& otherCoordinate);
