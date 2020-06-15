@@ -57,6 +57,7 @@ Board::Board(std::shared_ptr<Console> console)
     snake = std::make_shared<Snake>(console, kDefaultSnakePosition);
 
     snake->setSpawn(std::make_shared<Cell>(console, getSpawnCoordinate()));
+    snake->setBorders(topLeftCorner, topRifhtCorner);
     snake->setConsumptionObserver(this);
 
     objects.push_back(snake);
