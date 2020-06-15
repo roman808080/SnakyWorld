@@ -2,6 +2,7 @@
 #include <memory>
 #include <deque>
 #include <vector>
+#include <future>
 
 #include "Cell.h"
 #include "ConsumptionObserver.h"
@@ -39,6 +40,7 @@ private:
 private:
     std::shared_ptr<Console> console;
     std::shared_ptr<Cell> spawn;
+
     std::deque<Cell> cellDeque;
 
     Coordinate head;
@@ -46,6 +48,7 @@ private:
     Coordinate bottomRightCorner;
 
     Console::Directon lastDirection;
+    std::future<Console::Directon> nextDirection;
 
     ConsumptionObserver* consumptionObserver;
 };

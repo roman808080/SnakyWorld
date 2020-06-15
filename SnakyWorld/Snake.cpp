@@ -55,8 +55,11 @@ Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int
 
 void Snake::move()
 {
-    auto direction = calculateDirection(head, spawn->getCoordindate());
-    move(direction);
+    move(nextDirection.get());
+
+    nextDirection = std::async([&](Coordinate first, Coordinate second) {
+        return calculateDirection(first, second);
+        }, head, spawn->getCoordindate());
 }
 
 void Snake::move(Console::Directon direction)
@@ -91,6 +94,10 @@ void Snake::setBorders(const Coordinate& topLeftCorner, const Coordinate& bottom
 void Snake::setSpawn(std::shared_ptr<Cell> spawn)
 {
     this->spawn = spawn;
+
+    nextDirection = std::async([&] (Coordinate first, Coordinate second) {
+            return calculateDirection(first, second);
+        }, head, spawn->getCoordindate());
 }
 
 void Snake::setConsumptionObserver(ConsumptionObserver* consumptionObserver)
