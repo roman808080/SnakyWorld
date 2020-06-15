@@ -36,6 +36,7 @@ private:
     Coordinate moveCoordinate(const Coordinate& coordinate,
                               Console::Directon direction);
     bool isBorderCollision(const Coordinate& otherCoordinate);
+    void calculationRequest();
 
 private:
     std::shared_ptr<Console> console;

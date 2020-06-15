@@ -56,10 +56,7 @@ Snake::Snake(std::shared_ptr<Console> console, const Coordinate& coordinate, int
 void Snake::move()
 {
     move(nextDirection.get());
-
-    nextDirection = std::async([&](Coordinate first, Coordinate second) {
-        return calculateDirection(first, second);
-        }, head, spawn->getCoordindate());
+    calculationRequest();
 }
 
 void Snake::move(Console::Directon direction)
@@ -94,10 +91,7 @@ void Snake::setBorders(const Coordinate& topLeftCorner, const Coordinate& bottom
 void Snake::setSpawn(std::shared_ptr<Cell> spawn)
 {
     this->spawn = spawn;
-
-    nextDirection = std::async([&] (Coordinate first, Coordinate second) {
-            return calculateDirection(first, second);
-        }, head, spawn->getCoordindate());
+    calculationRequest();
 }
 
 void Snake::setConsumptionObserver(ConsumptionObserver* consumptionObserver)
@@ -229,4 +223,15 @@ bool Snake::isBorderCollision(const Coordinate& otherCoordinate)
             otherCoordinate.first == bottomRightCorner.first or
             otherCoordinate.second == topLeftCorner.second or
             otherCoordinate.second == bottomRightCorner.second);
+}
+
+void Snake::calculationRequest()
+{
+    // calling a private method because of this in lambda.
+    auto request = [&](Coordinate first, Coordinate second) 
+                      {
+                          return calculateDirection(first, second);
+                      };
+
+    nextDirection = std::async(request, head, spawn->getCoordindate());
 }
